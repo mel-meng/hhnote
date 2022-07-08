@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<DatFileXmlList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <FileName>C:\Users\Mel.Meng\Documents\GitHub\xpswmm\models\swmm5_runoff\model\scs_infiltration\runoff_scs_infiltration.xml</FileName>
+  <CpuThreads>0</CpuThreads>
+  <Items>
+    <DatFile>
+      <FileName>C:\Users\Mel.Meng\Documents\GitHub\xpswmm\models\swmm5_runoff\model\scs_infiltration\1D\runoff_scs_infiltration\runoff_scs_infiltration.dat</FileName>
+      <ScenarioName />
+      <StormName />
+      <EnginePath>C:\Program Files\Innovyze\xpswmm2021.3_x64\engine\swmmengw2D64.exe</EnginePath>
+      <EngineType>ENGINE_SP_64</EngineType>
+    </DatFile>
+  </Items>
+</DatFileXmlList>

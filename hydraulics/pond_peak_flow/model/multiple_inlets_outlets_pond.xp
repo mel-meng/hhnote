@@ -1,0 +1,684 @@
+SWMM   0MODE   0   0     2 1                                                                             
+FONT   0LIST   0   0            0        Arial                                                           
+FONT   0FLAG   0   0            0                                                                        
+CATC   0MATR   0   0          32768     65280  255  128     32768    1         0         40     4.000    
+1DWL   0OPT    0   0                          1                                                          
+EXTN   0MATR   0   0              0         0    0    0  16711680    1         0        -10     4.000    
+EXTN   0MATR   0   1            255  16777215  255    0  10025368    1         0        -10     4.000    
+EXTR   0B1A    0   0        1   0   0   0    1   4   0   02022 102022 11                                 
+RUNF   0B1     0   0                   1    2                        1    1 2022           2022    1     
+EXTR   0B2     0   0        0                                                                           0
+SWMM   0LICO   0   0     NDItMjItOTk5OSAoWFBTV01NKQ==                                                    
+SWMM   0MISC   0   0     1                                                                               
+SWMM   0MCTL   0 201       1                                                                             
+SWMM   0MCTL   0 202       1                                                                             
+SWMM   0MCTL   0 203       1                                                                             
+SWMM   0MCTL   0 204       1                                                                             
+SWMM   0MCTL   0 205       1                                                                             
+SWMM   0MCTL   0 206       1                                                                             
+SWMM   0MCTL   0 207       1                                                                             
+SWMM   0MCTL   0 208       1                                                                             
+SWMM   0MCTL   0 209       1                                                                             
+EXTR   0I1     0 206                 1                                                        0          
+EXTR   0J2A    0 206            0.0                                                                      
+EXTR   0D1     0 206                 20.000      0.000      0.0     0.0 0                    1     100.0 
+EXTR   0SP1N   0 206         0                        0                   1 0                     0 0 0  
+EXTR   0BMP    0 206     0                                                                               
+EXTR   0I1     0 208                 1                                                        0          
+EXTR   0J2A    0 208            0.0                                                                      
+EXTR   0D1     0 208                 20.000      0.000      0.0     0.0 0                    1     100.0 
+EXTR   0SP1N   0 208         0                        0                   1 0                     0 0 0  
+EXTR   0BMP    0 208     0                                                                               
+DMY1   0DMY1   0 209    storage                                                                          
+DMY2   0DMY2   0 209    outfall2                                                                         
+EXTR   0C1     0 209             0.0  1               1.                33.       5.      0.0      0.014 
+EXTR   0C1A    0 209                                    0.0                                              
+EXTR   0C1C    0 209     000                      0P0                                                    
+EXTR   0D1     0 202                      20.       2.      0.0     0.0 0                    1     100.0 
+EXTR   0SPSC   0 209                                                                               0     
+DMY1   0DMY1   0 207    storage                                                                          
+DMY2   0DMY2   0 207    outfall1                                                                         
+EXTR   0C1     0 207             0.0  1               2.                33.       5.      0.0      0.014 
+EXTR   0C1A    0 207                                    0.0                                              
+EXTR   0C1C    0 207     000                      0P0                                                    
+EXTR   0SPSC   0 207                                                                               0     
+DMY1   0DMY1   0 203    Node1                                                                            
+DMY2   0DMY2   0 203    Node2                                                                            
+EXTR   0C1     0 203             0.0  1               2.                33.      10.       5.      0.014 
+EXTR   0C1A    0 203                               15.15152                                              
+EXTR   0C1C    0 203     000                      0P0                                                    
+EXTR   0D1     0 201                      20.      10.       5.     0.0 0                    1     100.0 
+EXTR   0SPSC   0 203                                                                               0     
+EXTR   0SP1N   0 204         0                        0                   0 0                     0 0 0  
+DMY1   0DMY1   0 205    Node3                                                                            
+DMY2   0DMY2   0 205    Node2                                                                            
+EXTR   0C1     0 205             0.0  1               2.                33.      10.       5.      0.014 
+EXTR   0C1A    0 205                                    0.0                                              
+EXTR   0C1C    0 205     000                      0P0                                                    
+EXTR   0D1     0 204                      20.      10.       5.     0.0 0                    1     100.0 
+EXTR   0SPSC   0 205                                                                               0     
+LAYS   0LAYS   0   0     Nodes                                                                           
+LAYE   0LAYE   0   0     0        11                                                                     
+LAYS   0LAYS   0   1     DTM                                                                             
+LAYE   0LAYE   0   1     0                                                                               
+LAYS   0LAYS   0   2     Spatial Reports                                                                 
+LAYE   0LAYE   0   2     0                                                                               
+LAYS   0LAYS   0   3     Links                                                                           
+LAYE   0LAYE   0   3     0                                                                               
+LAYS   0LAYS   0   4     2D Model                                                                        
+LAYE   0LAYE   0   4     0                                                                               
+LAYS   0LAYS   0   5     Catchments                                                                      
+LAYE   0LAYE   0   5     0                                                                               
+LAYS   0LAYS   0   6     Sewersheds                                                                      
+LAYE   0LAYE   0   6     0                                                                               
+LAYS   0LAYS   0   7     Time Series Outputs                                                             
+LAYE   0LAYE   0   7     0                                                                               
+LAYS   0LAYS   0   8     Topography                                                                      
+LAYE   0LAYE   0   8     0                                                                               
+LAYS   0LAYS   0   9     Reporting                                                                       
+LAYE   0LAYE   0   9     0                                                                               
+LAYS   0LAYS   0  10     1D Network                                                                      
+LAYE   0LAYE   0  10     0                                                                               
+ZZZN   0NETW   0   0     0                                                                               
+ZIMG   0ATT    0   0         0                                                                           
+LACH   0NAME   0   0     LA County Runoff Curves                     0   10    5    0                    
+QDV    0SET    0   0           1   1   -1   -1   -1 0   -1   -1                                          
+2D     0RMSH   0   0              0         0         0                   0                              
+2D     0SMSH   0   0              0                   0                   0                              
+2D     0TMSH   0   0              0         0         0                   0                              
+2D     0PMSH   0   0                                  0         0         0                              
+2D     0JOB7   0   0                                                      0                              
+2D     0EXTE   0   0              1Layer 1                                                               
+2DMD   0DATA   0   0         0                                                                           
+2D     0EXNT   0   0                                             111           0     65                  
+LINK   0LKLB   0 203       562.9340 -279.4270                                                            
+LINK   0LKLB   0 205       553.3854 -383.5069                                                            
+LINK   0LKLB   0 207       846.5278 -302.3437                                                            
+LINK   0LKLB   0 209       844.6181 -393.0555                                                            
+TEXT   0CNTL   0   0         0                                                                           
+TINF   0GEN1   0   0         0                                                                           
+2D     0ASCG   0   0              0                                                                      
+DT     0DTST   0   0                                                      0                              
+2D     0CMSH   0   0              0                   0                   0                              
+2D     0CATC   0   0     1        1         1                                                            
+SRPT   0VIEW   0   0                   1    1           0 0 3 3     0.000     0.000   10   10            
+SRPT   0FONT   0   0     Arial                                   Arial                                   
+GE     0ENCO   0   0     0                                                                               
+RSFL   0PROP   0   0     0001  16776960    0                                                             
+RFLF   0PROP   0   0     arial                                                                           
+RSPT   0PROP   0   0     01                 16776960    0                                                
+RPTF   0PROP   0   0     arial                                                                           
+RSPT   0PROP   0   1     01                 16776960    0                                                
+RPTF   0PROP   0   1     arial                                                                           
+RSFL   0PROP   0   1     0001  16776960    0                                                             
+RFLF   0PROP   0   1     arial                                                                           
+GRID   0SPEC   0   0        10.0000   10.0000         0.0000         0.0000    0    0    1    1.0000     
+ZZZG   0GRID   0   0                                                                          80AC80FF   
+GIS    0NUMB   0   0              0                                                                      
+CAD    0NUMB   0   0              0                                                                      
+RSFN   0RSNB   0   0            1                                                                        
+RSFN   0RSID   0   0            0                                                                        
+RSFN   0RDFL   0   0                                                                                     
+2D     0RELG   0   0     0        1         0                                                            
+2D     0RELV   0   0     0        0                                                                      
+2D     0RESV   0   0     3                                                                               
+2D     0RESM   0   0      1                                                                              
+RSVF   3FLOW   0   0      0   0.00000   0.00000   0   1 0255 1         3         2 1 1  10.00000         
+RSVF   3FCOL   0   0     0                                                                               
+RSVF   3FPOS   0   0     0.00000                                                                         
+RSVF   3FLO1   0   0      1     1.000                                                                    
+RSVF   3FLBL   0   0      0 0  12648447   0 0     65535                                                  
+RSVF   3FRLF   0   0     Arial                                                                           
+RSVF   3FRCF   0   0     Arial                                                                           
+RSMP   12DRM   0   0      011932477957447289013   2 0255 1 10  1 1 00                                    
+RSMP   1MCOL   0   0     255       29183     58111     65450     65336     3735296   11140864  16769536  
+RSMP   1MCOL   1   0     16740608  16711680                                                              
+RSMP   1MPOS   0   0     0.00000   0.11000   0.22000   0.33000   0.44000   0.55000   0.66000   0.77000   
+RSMP   1MPOS   1   0     0.88000   1.00000                                                               
+RSMP   1MCCL   0   0     0                                                                               
+RSMP   1MCPS   0   0     0.00000                                                                         
+RSMP   1MLBL   0   0      0 0  12648447   0 0     65535                                                  
+RSMP   1MRLF   0   0     Arial                                                                           
+RSMP   1MRCF   0   0     Arial                                                                           
+VIEW   0SAV    0   0     0                                                                               
+CUHP   0JOB1   0   0                                        0                                            
+LACH   0CTL    0   0     0   0   50        10        40        35       100                              
+PRNT   0PSTP   0   0       9  1   3.670   9.520   3.670   9.520   2.000   2.000   2.000   2.00001  0     
+PRNT   0AFRM   0   0                                                                                     
+PRNT   0PSP2   0   0     1000.0001000.000  00         00                  0                              
+PRNT   0PSP3   0   0     Arial                                              12  0         0              
+PRNT   0PSP4   0   0     Arial                                              12  0         0              
+SRPT   0CNTL   0   0              1         0    0    0    1    0                                        
+SRPT   1GLOB   0   0    0.0047625 0.00687917                                                             
+SRPT   1GLOB   1   0    17.1875 24.8264                                                                  
+SRPT   0GLOB   0   0    0.0047625 0.00687917                                                             
+SRPT   0GLOB   1   0    17.1875 24.8264                                                                  
+ZRPT   0NAME   0   0     RPT Headings                                0   40    5    0                    
+ZSYM   0NAME   0   0     Pollutant                                   0   40    5    0                    
+ZSYM   1NAME   0   0     Buildup/Washoff                             0   40    5    0                    
+ZSYM   2NAME   0   0     Erosion                                     0   40    5    0                    
+ZSYM   3NAME   0   0     Groundwater                                 0   40    5    0                    
+ZSYM   4NAME   0   0     Infiltration                                0   40    5    0                    
+ZSYM   5NAME   0   0     Landuse                                     0   40    5    0                    
+ZSYM   6NAME   0   0     Initial Loads                               0   40    5    0                    
+ZSYM   7NAME   0   0     Rainfall                                    0   40    5    0                    
+ZSYM   8NAME   0   0     Snow Melt                                   0   40    5    0                    
+ZSYM   9NAME   0   0     RDII                                        0   40    5    0                    
+ZSYM  10NAME   0   0     BMP                                         0   40    5    0                    
+ZSYM  11NAME   0   0     DW Sewer Inflows                            0   40    5    0                    
+ZSYM  12NAME   0   0     Sewer infiltration                          0   40    5    0                    
+ZSYM  13NAME   0   0     WS Temperatures                             0   40    5    0                    
+ZSYM  24NAME   0   0     Temporal Variations                         0   40    5    0                    
+ZSYM  14NAME   0   0     Pollutant List                              0   40    5    0                    
+ZSYM  15NAME   0   0     Landuse List                                0   40    5    0                    
+ZSYM  17NAME   0   0     StatPollutants                              0   40    5    0                    
+ZSYM  18NAME   0   0     Gauged Pollutants                           0   40    5    0                    
+ZSYM  19NAME   0   0     Pump Ratings                                0   40    5    0                    
+ZSYM  21NAME   0   0     Pit Rating Curves                           0   40    5    0                    
+ZSYM  22NAME   0   0     Hydraulic Brakes                            0   40    5    0                    
+ZSYM  20NAME   0   0     User Defined File Types                     0   40    5    0                    
+ZSYM  23NAME   0   0     XP Tables                                   0   40    5    0                    
+ZSYM  25NAME   0   0     Pavement Crossfall                          0   40    5    0                    
+ZSYM  26NAME   0   0     HEC 22                                      0   40    5    0                    
+ZSYM  27NAME   0   0     Rational Formula                            0   40    5    0                    
+ZSYM  28NAME   0   0     Natural Section Shape                       0   40    5    0                    
+ZSYM  29NAME   0   0     2D Landuse                                  0   40    5    0                    
+ZSYM  30NAME   0   0     WSPG Channel Group                          0   40    5    0                    
+ZSYM  31NAME   0   0     (2D) Soil Type                              0   40    5    0                    
+ZSYM  32NAME   0   0     User Defined Conduit                        0   40    5    0                    
+ZSYM  33NAME   0   0     Bridge Section Shapes                       0   40    5    0                    
+ZSYM  34NAME   0   0     LID/WSUD                                    0   40    5    0                    
+ZSYM  35NAME   0   0     User Hazard Classifications                 0   40    5    0                    
+ZSYM  36NAME   0   0     User Hazard Values                          0   40    5    0                    
+ZSYM   0GLDB   0   0         0                                                                           
+SWMM   0SWMM   0   0         22.300                                                                      
+SWMM   0LICE   0   0     NDItMjItOTk5OSAoWFBTV01NKQ==                                                    
+SWMM   0PVER   0   0     22.3.0.0            2021.3                                                      
+ZZZC   0CNTL   0   0    10   8    0    999   999   1100       0    450  swmmxp                           
+ZZZC   0CNTL   1   0    27.2570             -185.8507                                                    
+ZZZC   0NAME   0   0    1    Node           14   Link           10                                       
+ZZZD   0DIRT   0   0         1    1                                                                      
+NAME   0NODE   0 201     inflow1                                                                         
+ZZZN 201NODE   0 201    0   45  0   inflow1        0 0 3.70417  203 -1  -1  -1  -1  201 134 1   0   0    
+ZZZN 201NODE   1 201    1   2   0   0   1   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  0    
+ZZZN 201NODE   2 201    708.1644            409.5533            711.9744            413.3633             
+QAS    0GLOB   0 201    .014816666 .014816666 460.069444 758.680555 1 1 0                              0 
+NAME   0NODE   0 202     storage                                                                         
+ZZZN 202NODE   0 202    0   45  0   storage        0 0 3.70417  203 205 207 209 -1  202 133 1   0   0    
+ZZZN 202NODE   1 202    1   2   0   0   0   0   1   1   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  0    
+ZZZN 202NODE   2 202    844.4492            709.9006            848.2592            713.7106             
+QAS    0GLOB   0 202    .014816666 .014816666 760.416666 894.965277 1 1 0                              0 
+NAME   0NODE   0 204     inflow2                                                                         
+ZZZN 204NODE   0 204    0   45  0   inflow2        0 0 3.70417  205 -1  -1  -1  -1  204 134 1   0   0    
+ZZZN 204NODE   1 204    1   2   0   0   1   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  0    
+ZZZN 204NODE   2 204    917.3658            392.1922            921.1758            396.0022             
+QAS    0GLOB   0 204    .014816666 .014816666 442.708333 967.013888 1 1 0                              0 
+NAME   0NODE   0 206     outfall1                                                                        
+ZZZN 206NODE   0 206    0   45  0   outfall1       0 0 3.70417  207 -1  -1  -1  -1  206 134 1   0   0    
+ZZZN 206NODE   1 206    1   2   0   0   0   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  0    
+ZZZN 206NODE   2 206    755.9075            982.4700            759.7175            986.2800             
+QAS    0GLOB   0 206    .014816666 .014816666 1032.98611 806.423611 1 1 0                              0 
+NAME   0NODE   0 208     outfall2                                                                        
+ZZZN 208NODE   0 208    0   45  0   outfall2       0 0 3.70417  209 -1  -1  -1  -1  208 134 1   0   0    
+ZZZN 208NODE   1 208    1   2   0   0   0   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  0    
+ZZZN 208NODE   2 208    934.7269            975.5256            938.5369            979.3356             
+QAS    0GLOB   0 208    .014816666 .014816666 1026.04166 984.375 1 1 0                                 0 
+NAME   0LINK   0 203     Link1                                                                           
+SWMM   0TMP1   0 203     Link1                                                                           
+ZZZE 203EDGE   0 203    201 Link1          0           202 203 136 1   0   0   0   0                     
+ZZZE 203EDGE   1 203    2   0   0   1   0 3.70417   0 0.762                                              
+QAS    0GLOB   0 203    .002116665 -.00502707 568.576388 761.284722 1 1 0                              0 
+NAME   0LINK   0 205     Link2                                                                           
+SWMM   0TMP1   0 205     Link2                                                                           
+ZZZE 205EDGE   0 205    204 Link2          0           202 205 136 1   0   0   0   0                     
+ZZZE 205EDGE   1 205    2   0   0   1   0 3.70417   0 0.762                                              
+QAS    0GLOB   0 205    -.00105832 -.00529165 549.479166 865.451388 1 1 0                              0 
+NAME   0LINK   0 207     Link3                                                                           
+SWMM   0TMP1   0 207     Link3                                                                           
+ZZZE 207EDGE   0 207    202 Link3          0           206 207 136 1   0   0   0   0                     
+ZZZE 207EDGE   1 207    2   0   0   1   0 3.70417   0 0.762                                              
+QAS    0GLOB   0 207    -.00158747 -.00502707 842.881944 785.590277 1 1 0                              0 
+NAME   0LINK   0 209     Link4                                                                           
+SWMM   0TMP1   0 209     Link4                                                                           
+ZZZE 209EDGE   0 209    202 Link4          0           208 209 136 1   0   0   0   0                     
+ZZZE 209EDGE   1 209    2   0   0   1   0 3.70417   0 0.762                                              
+QAS    0GLOB   0 209    .001587499 -.00502707 849.826388 874.131944 1 1 0                              0 
+EXTR   0SP1N   0 201         0                        0                   0 0                     0 0 0  
+EXTR   0BMP    0 201     0                                                                               
+EXTR   0BMP    0 204     0                                                                               
+2D     0JOB1   0   0                                                                                   0 
+RUNF   2INT    0   0        1                                                                            
+CONF   0PAR1   0   0         1                                                                           
+DUMY   0DUMY   0   0     0                                                                               
+EXTR   0JCTL   0   0     0                                                                               
+EXTR   0B0     0   0                                                                    0 0 0 0          
+EXTR   0B1     0   0     0          60.0                                                     0000    60.0
+EXTR   0A1B    0   0                                                                                     
+EXTR   0A1C    0   0     0     0.010                                                                     
+WSPG   0RES    0   0                                                        -9999.000                    
+JCTL   0A1     0   0     0                                                                               
+EXTR   0A1     0   0                                                                                     
+PEST   0MAIN   0   0                        1                                                            
+EXTR   0RSLT   0 203                                                       5.005849270                   
+EXTR   0LR01   0 203                         14.38880460         4.997652960         4.99765296.353333683
+EXTR   0LR02   0 203     .2075451961.49781177.0028580791.7161321281.767740526.0274806.062263945.25       
+EXTR   0LR03   0 203     5.99242424.033333333.033333333233.7575754.30886856239.750000.0643073510         
+EXTR   0DR01   0 203                                                                 5.00813446          
+EXTR   0CRS1   0 203     -9E99     10.33538175.33417546-9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS2   0 203     -9E99     10.34812435.37278235.372782356.186391178.9253128303.1415926 1.70210E-5
+EXTR   0ENCR   0 203               -1        -1                                                          
+EXTR   0CRS3   0 203     .353140712          4.30886856.207460586.014      .999880325.787423074.334175200
+EXTR   0CRS4   0 203     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS5   0 203     -9E99     -9E99     -9E99     -9E99     240       0         0         0         
+EXTR   0CRS6   0 203     0         0         0         0         -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS7   0 203     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS8   0 203     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS9   0 203     -9E99     -9E99     -9E99     -9E99     -9E99     .3533336835.3727823510.3350346
+EXTR   0CRSA   0 203     .20754519614.150929311.66001151.497811774.9937890371910.5620.925312830-9E99     
+EXTR   0CRSB   0 203     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     4.99999999
+EXTR   0RSLT   0 205                                                       5.009044070                   
+EXTR   0LR01   0 205                         14.36232760         4.969374920         4.96937492.353333683
+EXTR   0LR02   0 205     .2075451961.49781177.0028580791.7161321281.767740526.0274806.0624725480         
+EXTR   0LR03   0 205     6.24242424.033333333.049999999233.7575754.30931901240.000000.0642572490         
+EXTR   0DR01   0 205                                                                 5.00813446          
+EXTR   0CRS1   0 205     -9E99     10.33602525.33426707-9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS2   0 205     -9E99     10.34685515.37278235.372782356.186391178.9253128303.1415926 3.69365E-6
+EXTR   0ENCR   0 205               -1        -1                                                          
+EXTR   0CRS3   0 205     .353143335          4.30931901.207462671.014      .999880325.787693533.334272965
+EXTR   0CRS4   0 205     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS5   0 205     -9E99     -9E99     -9E99     -9E99     240       0         0         0         
+EXTR   0CRS6   0 205     0         0         0         0         -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS7   0 205     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS8   0 205     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS9   0 205     -9E99     -9E99     -9E99     -9E99     -9E99     .3533336835.3727823510.3350346
+EXTR   0CRSA   0 205     .20754519614.150929311.66001151.497811774.9940553271914.3966.925312830-9E99     
+EXTR   0CRSB   0 205     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     4.99999999
+EXTR   0RSLT   0 207                                                       6.191692480                   
+EXTR   0LR01   0 207                         15.28779220         4.969873250         4.96987325.405008936
+EXTR   0LR02   0 207     .2261027541.55415927.0028580791.6802297781.767740526.0274806.0757229245.39393939
+EXTR   0LR03   0 207     0         .383333333.3833333330         4.34490884234.606060.0757229240         
+EXTR   0DR01   0 207                                                                 5.68129349          
+EXTR   0CRS1   0 207     -9E99     5.37278235.370463418-9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS2   0 207     -9E99     5.37278235.370463418.372782356.186391178.9867939183.1415926 4.19015E-5
+EXTR   0ENCR   0 207               -1        -1                                                          
+EXTR   0CRS3   0 207     .396954773          4.34490884.221707897.014      .982168501.880523308.370463418
+EXTR   0CRS4   0 207     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS5   0 207     -9E99     -9E99     -9E99     -9E99     240       0         0         0         
+EXTR   0CRS6   0 207     0         0         0         0         -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS7   0 207     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS8   0 207     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS9   0 207     -9E99     -9E99     -9E99     -9E99     -9E99     .405008936.3704634185.37278235
+EXTR   0CRSA   0 207     .22610275415.287792213.36529491.554159276.0364018086924.1860.986793918-9E99     
+EXTR   0CRSB   0 207     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     6.19169248
+EXTR   0RSLT   0 209                                                       3.808307510                   
+EXTR   0LR01   0 209                         14.26436630         4.994712530         4.99471253.266980490
+EXTR   0LR02   0 209     .203022146.966304786.0028580791.6802297712.877611816.3962849.2957308815.39393939
+EXTR   0LR03   0 209     0         .383333333.3833333330         4.04411256234.606060.2957308810         
+EXTR   0DR01   0 209                                                                 5.31426505          
+EXTR   0CRS1   0 209     -9E99     5.37278235.372328211-9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS2   0 209     -9E99     5.37278235.372328211.372782356.372782356.655635765.78539815 2.55991E-5
+EXTR   0ENCR   0 209               -1        -1                                                          
+EXTR   0CRS3   0 209     .261681629          4.04411256.199095504.014      .982168501.829414199.372328211
+EXTR   0CRS4   0 209     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS5   0 209     -9E99     -9E99     -9E99     -9E99     240       0         0         0         
+EXTR   0CRS6   0 209     0         0         0         0         -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS7   0 209     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS8   0 209     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS9   0 209     -9E99     -9E99     -9E99     -9E99     -9E99     .266980490.3723282115.37278235
+EXTR   0CRSA   0 209     .20302214614.26436638.81035618.9663047863.7131237653468.9821.655635765-9E99     
+EXTR   0CRSB   0 209     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     3.80830751
+EXTR   0NR01   0 201     .33557142010.335571412.566    4.37967354.0286502680         8541      1.02213977
+EXTR   0NR02   0 201     72000     0         0         10.33557149.664428579.6644285758        0         
+EXTR   0NR03   0 201     1.022139778541      0         0         0         5         0         0         
+EXTR   0NR04   0 201     72000     0         0         0         0         0         0         0         
+EXTR   0NR05   0 201     0         12        .335034681.33503468110.33503460         9.664965314.37967354
+EXTR   0NR06   0 201     56.7276985.028650268.03941729110.4154952          67.1431938143910.5620         
+EXTR   0NR07   0 201     0                                                 0                             
+EXTR   0NR08   0 201     0                                                                               
+EXTR   0NR01   0 202     3.372782355.372782351000      3372.782353.48208E-40         8643      1.03434657
+EXTR   0NR02   0 202     0         0         0         8.5490520211.450947914.627217613        0         
+EXTR   0NR03   0 202     1.034346578643      0         0         0         0         0         0         
+EXTR   0NR04   0 202     0         0         0         0         0         0         0         0         
+EXTR   0NR05   0 202     .35       7         3.372782356.482235815.372782350         14.62721763372.78235
+EXTR   0NR06   0 202     -.689455193.48208E-4-2.4113E-43396.25471          3395.56525284218.1260         
+EXTR   0NR07   0 202     0                                                 0                             
+EXTR   0NR08   0 202     0                                                                               
+EXTR   0NR01   0 204     .33612122010.336121212.566    4.35858138.0289809590         8550      1.02321685
+EXTR   0NR02   0 204     72000     0         0         10.33612129.663878779.6638787755        0         
+EXTR   0NR03   0 204     1.023216858550      0         0         0         5         0         0         
+EXTR   0NR04   0 204     72000     0         0         0         0         0         0         0         
+EXTR   0NR05   0 204     0         12        .335034681.33503468110.33503460         9.664965314.35858138
+EXTR   0NR06   0 204     57.3824681.028980959.03987119610.4154952          67.7979634143914.3960         
+EXTR   0NR07   0 204     0                                                 0                             
+EXTR   0NR08   0 204     0                                                                               
+EXTR   0NR01   0 206     .370463418.37046341812.566    4.65524331.0057050260         8649      1.03506462
+EXTR   0NR02   0 206     0         0         0         3.9996030416.000396919.62953658         0         
+EXTR   0NR03   0 206     1.035064628649      0         0         86922.31400         6.036271800         
+EXTR   0NR04   0 206     0         0         0         0         0         0         0         0         
+EXTR   0NR05   0 206     .35       2         .3704634183.99960304.3704634180         19.62953654.65524331
+EXTR   0NR06   0 206     -11.295984.005705026-.0064974611.3144292          .018444565173846.5000         
+EXTR   0NR07   0 206     0                                                 0                             
+EXTR   0NR08   0 206     0                                                                               
+EXTR   0NR01   0 208     .372328211.37232821112.566    4.67867631.0045806500         8640      1.03398755
+EXTR   0NR02   0 208     0         0         0         3.5318335916.468166419.62767177         0         
+EXTR   0NR03   0 208     1.033987558640      0         0         53467.81000         3.713042360         
+EXTR   0NR04   0 208     0         0         0         0         0         0         0         0         
+EXTR   0NR05   0 208     .35       1         .3723282113.53183359.3723282110         19.62767174.67867631
+EXTR   0NR06   0 208     -9.0697147.004580650-.008481019.08094656          .011231811106936.7920         
+EXTR   0NR07   0 208     0                                                 0                             
+EXTR   0NR08   0 208     0                                                                               
+EXTR   0SP1N   0 202         0                        1                   0 0                     0 0 00 
+EXTR   0E1A    0 202     0    1                                                                          
+EXTR   0E2F    0 202          0.000  0.000                                                               
+EXTR   0E3     0 202     0                                                                               
+EXTR   0E1     0 202                   0.000 1000.00                                          1          
+EXTR   0BMP    0 202     0                                                                               
+REVS   0REVD   0   0                                1                                                    
+SWMM   0TEMP   0 201                                 411.46         -210.07                              
+OBJT   0ATTR   0 201                                                                                     
+NODE   0ZONE   0 201                                                                                     
+PICT   0FILE   0 201                                                                                     
+NODE   0YEAR   0 201        0                                                                            
+SWMM   0TEMP   0 204                                 394.10         -419.27                              
+OBJT   0ATTR   0 204                                                                                     
+NODE   0ZONE   0 204                                                                                     
+PICT   0FILE   0 204                                                                                     
+NODE   0YEAR   0 204        0                                                                            
+SWMM   0TEMP   0 202                                 711.81         -346.35                              
+OBJT   0ATTR   0 202                                                                                     
+NODE   0ZONE   0 202                                                                                     
+PICT   0FILE   0 202                                                                                     
+NODE   0YEAR   0 202        0                                                                            
+SWMM   0TEMP   0 206                                 984.38         -257.81                              
+OBJT   0ATTR   0 206                                                                                     
+NODE   0ZONE   0 206                                                                                     
+PICT   0FILE   0 206                                                                                     
+NODE   0YEAR   0 206        0                                                                            
+SWMM   0TEMP   0 208                                 977.43         -436.63                              
+OBJT   0ATTR   0 208                                                                                     
+NODE   0ZONE   0 208                                                                                     
+PICT   0FILE   0 208                                                                                     
+NODE   0YEAR   0 208        0                                                                            
+SWMM   0TMP2   0 201     inflow1                                                                         
+SWMM   0TMP2   0 202     storage                                                                         
+SWMM   0TMP2   0 204     inflow2                                                                         
+SWMM   0TMP2   0 206     outfall1                                                                        
+SWMM   0TMP2   0 208     outfall2                                                                        
+ZZZW   0BUFF   0   0    @_@_@_@_@_@_@_@                                                                  
+LACH   0FREQ   0   0      1       2     0.387 1       5     0.584 1      10     0.714 1      25     0.878
+LACH   0FREQ   1   0      1      50     1.000 1     100     1.122 1     500     1.402                    
+LACH   0ZONE   0   0     A03            0.600A04            0.800A05            1.000A06            1.200
+LACH   0ZONE   1   0     A07            1.400A08            1.600A09            1.800A10            2.000
+LACH   0ZONE   2   0     A11            2.200A12            2.400A13            2.600A14            2.800
+LACH   0ZONE   3   0     A15            3.000A16            3.200A17            3.400A18            3.600
+LACH   0ZONE   4   0     A19            3.800A20            4.000A21            4.200A22            4.400
+LACH   0ZONE   5   0     A23            4.600A24            4.800A25            5.000A26            5.200
+LACH   0ZONE   6   0     A27            5.400A28            5.600A29            5.800A30            6.000
+LACH   0ZONE   7   0     A31            6.200A32            6.400A33            6.600A34            6.800
+LACH   0ZONE   8   0     A35            7.000A36            7.200A37            7.400A38            7.600
+LACH   0ZONE   9   0     A39            7.800A40            8.000A41            8.200A42            8.400
+LACH   0ZONE  10   0     A43            8.600A44            8.800A45            9.000A46            9.200
+LACH   0ZONE  11   0     A47            9.400A48            9.600A49            9.800A50           10.000
+LACH   0ZONE  12   0     A51           10.200A52           10.400A53           10.600A54           10.800
+LACH   0ZONE  13   0     A55           11.000A56           11.200A57           11.400A58           11.600
+LACH   0ZONE  14   0     A59           11.800A60           12.000A61           12.200A62           12.400
+LACH   0ZONE  15   0     A63           12.600A64           12.800A65           13.000A66           13.200
+LACH   0ZONE  16   0     A67           13.400A68           13.600A69           13.800A70           14.000
+LACH   0ZONE  17   0     A71           14.200A72           14.400A73           14.600A74           14.800
+LACH   0ZONE  18   0     A75           15.000A76           15.200A77           15.400A78           15.600
+LACH   0ZONE  19   0     A79           15.800A80           16.000A81           16.200A82           16.400
+LACH   0ZONE  20   0     A83           16.600A84           16.800A85           17.000A86           17.200
+LACH   0ZONE  21   0     A87           17.400A88           17.600A89           17.800A90           18.000
+LACH   0ZONE  22   0     A91           18.200A92           18.400A93           18.600A94           18.800
+LACH   0ZONE  23   0     A95           19.000A96           19.200A97           19.400A98           19.600
+LACH   0ZONE  24   0     A99           19.800                                                            
+LACH   0CTL2   0   0              5        50                                                            
+2D     0IN2D   0   0      1                                                                              
+SWMM   0MCTL   0 223       1                                                                             
+EXTR   0D1     0 223                      20.      10.       0.     0.0 0                    1     100.0 
+NAME   0NODE   0 223     inflow1.1                                                                       
+ZZZN 223NODE   0 223    0   45  0   inflow1.1      0 0 3.70417  228 -1  -1  -1  -1  223 134 1   0   0    
+ZZZN 223NODE   1 223    1   2   0   0   1   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  0    
+ZZZN 223NODE   2 223    986.8103            411.2895            990.6203            415.0995             
+QAS    0GLOB   0 223    .014816666 .014816666 468.749999 767.36111 1 1 0                               0 
+EXTR   0SP1N   0 223         1                        0                   0 0                     0 0 0  
+EXTR   0BMP    0 223     0                                                                               
+EXTR   0NR01   0 223     .33562069610.335620612.566    4.21752812.0015151830         18638     2.23049305
+EXTR   0NR02   0 223     36000.58160         0         10.33562069.664379309.66437930501       1         
+EXTR   0NR03   0 223     2.2304930518638     0         36000.00000         2.500040390         0         
+EXTR   0NR04   0 223     0         0         0         0         0         0         0         0         
+EXTR   0NR05   0 223     1         12        .007733548.00773354810.00773350         9.992266454.21752812
+EXTR   0NR06   0 223     3.00007197.001515183.004166897.349323541          3.3493955171997.56000         
+EXTR   0NR07   0 223     0                                                 0                             
+EXTR   0NR08   0 223     0                                                                               
+SWMM   0TEMP   0 223                                 411.46         -210.07                              
+OBJT   0ATTR   0 223                                                                                     
+NODE   0ZONE   0 223                                                                                     
+PICT   0FILE   0 223                                                                                     
+NODE   0YEAR   0 223        0                                                                            
+SWMM   0TMP2   0 223     inflow1.1                                                                       
+SWMM   0MCTL   0 224       1                                                                             
+EXTR   0D1     0 224                      20.       2.      0.0     0.0 0                    1     100.0 
+NAME   0NODE   0 224     storage.1                                                                       
+ZZZN 224NODE   0 224    0   45  0   storage.1      0 0 3.70417  228 229 230 231 -1  224 133 1   0   0    
+ZZZN 224NODE   1 224    1   2   0   0   0   0   1   1   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  0    
+ZZZN 224NODE   2 224    1123.0951           711.6368            1126.9051           715.4468             
+QAS    0GLOB   0 224    .014816666 .014816666 769.097221 903.645832 1 1 0                              0 
+EXTR   0NR01   0 224     3.303661415.303661411000      3303.787122.60023E-50         24290     2.90689325
+EXTR   0NR02   0 224     0         0         0         8.5341602211.465839714.6963385501       3         
+EXTR   0NR03   0 224     2.9068932524290     0         0         0         0         0         0         
+EXTR   0NR04   0 224     0         0         0         0         0         0         0         0         
+EXTR   0NR05   0 224     3         7         3.058175053.110660415.058175050         14.94182493303.78712
+EXTR   0NR06   0 224     -.051484802.60023E-5-4.8356E-53059.44579          3059.39431104938.5620         
+EXTR   0NR07   0 224     0                                                 0                             
+EXTR   0NR08   0 224     0                                                                               
+EXTR   0SP1N   0 224         0                        1                   0 0                     0 0 00 
+EXTR   0E1A    0 224     0    1                                                                          
+EXTR   0E2F    0 224          0.000  0.000                                                               
+EXTR   0E3     0 224     0                                                                               
+EXTR   0E1     0 224                   0.000 1000.00                                          1          
+EXTR   0BMP    0 224     0                                                                               
+SWMM   0TEMP   0 224                                 711.81         -346.35                              
+OBJT   0ATTR   0 224                                                                                     
+NODE   0ZONE   0 224                                                                                     
+PICT   0FILE   0 224                                                                                     
+NODE   0YEAR   0 224        0                                                                            
+SWMM   0TMP2   0 224     storage.1                                                                       
+SWMM   0MCTL   0 225       1                                                                             
+EXTR   0SP1N   0 225         1                        0                   0 0                     0 0 0  
+EXTR   0D1     0 225                      20.      10.       0.     0.0 0                    1     100.0 
+NAME   0NODE   0 225     inflow2.1                                                                       
+ZZZN 225NODE   0 225    0   45  0   inflow2.1      0 0 3.70417  229 -1  -1  -1  -1  225 134 1   0   0    
+ZZZN 225NODE   1 225    1   2   0   0   1   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  0    
+ZZZN 225NODE   2 225    1196.0117           393.9284            1199.8217           397.7384             
+QAS    0GLOB   0 225    .014816666 .014816666 451.388888 975.694443 1 1 0                              0 
+EXTR   0BMP    0 225     0                                                                               
+EXTR   0NR01   0 225     .33561753610.335617512.566    4.21733053.0014787470         17993     2.15330301
+EXTR   0NR02   0 225     17999.99990         0         10.33561759.664382469.66438246416       0         
+EXTR   0NR03   0 225     2.1533030117993     0         17999.99990         1.249999990         0         
+EXTR   0NR04   0 225     0         0         0         0         0         0         0         0         
+EXTR   0NR05   0 225     3         12        .013787929.01378792910.01378790         9.986212074.21733053
+EXTR   0NR06   0 225     -2.9279291.001478747-.00813253.464420755          -2.463508436002.41600         
+EXTR   0NR07   0 225     0                                                 0                             
+EXTR   0NR08   0 225     0                                                                               
+SWMM   0TEMP   0 225                                 394.10         -419.27                              
+OBJT   0ATTR   0 225                                                                                     
+NODE   0ZONE   0 225                                                                                     
+PICT   0FILE   0 225                                                                                     
+NODE   0YEAR   0 225        0                                                                            
+SWMM   0TMP2   0 225     inflow2.1                                                                       
+SWMM   0MCTL   0 226       1                                                                             
+EXTR   0I1     0 226                 1                                                        0          
+EXTR   0J2A    0 226            0.0                                                                      
+EXTR   0D1     0 226                 20.000      0.000      0.0     0.0 0                    1     100.0 
+EXTR   0SP1N   0 226         0                        0                   1 0                     0 0 0  
+EXTR   0BMP    0 226     0                                                                               
+NAME   0NODE   0 226     outfall1.1                                                                      
+ZZZN 226NODE   0 226    0   45  0   outfall1.1     0 0 3.70417  230 -1  -1  -1  -1  226 134 1   0   0    
+ZZZN 226NODE   1 226    1   2   0   0   0   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  0    
+ZZZN 226NODE   2 226    1034.5534           984.2062            1038.3634           988.0162             
+QAS    0GLOB   0 226    .014816666 .014816666 1041.66666 815.104166 1 1 0                              0 
+EXTR   0NR01   0 226     .301331501.30133150112.566    3.788920205.99255E-40         23401     2.80050263
+EXTR   0NR02   0 226     0         0         0         3.1245294416.875470519.6986684432       0         
+EXTR   0NR03   0 226     2.8005026323401     0         0         30901.40900         2.145931180         
+EXTR   0NR04   0 226     0         0         0         0         0         0         0         0         
+EXTR   0NR05   0 226     3         2         .040854312.313151370.0408543120         19.95914563.78892020
+EXTR   0NR06   0 226     -1.18652965.99255E-4-.00191982.941084195          -.2454454761803.45000         
+EXTR   0NR07   0 226     0                                                 0                             
+EXTR   0NR08   0 226     0                                                                               
+SWMM   0TEMP   0 226                                 984.38         -257.81                              
+OBJT   0ATTR   0 226                                                                                     
+NODE   0ZONE   0 226                                                                                     
+PICT   0FILE   0 226                                                                                     
+NODE   0YEAR   0 226        0                                                                            
+SWMM   0TMP2   0 226     outfall1.1                                                                      
+SWMM   0MCTL   0 227       1                                                                             
+EXTR   0I1     0 227                 1                                                        0          
+EXTR   0J2A    0 227            0.0                                                                      
+EXTR   0D1     0 227                 20.000      0.000      0.0     0.0 0                    1     100.0 
+EXTR   0SP1N   0 227         0                        0                   1 0                     0 0 0  
+EXTR   0BMP    0 227     0                                                                               
+NAME   0NODE   0 227     outfall2.1                                                                      
+ZZZN 227NODE   0 227    0   45  0   outfall2.1     0 0 3.70417  231 -1  -1  -1  -1  227 134 1   0   0    
+ZZZN 227NODE   1 227    1   2   0   0   0   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  0    
+ZZZN 227NODE   2 227    1213.3728           977.2618            1217.1828           981.0718             
+QAS    0GLOB   0 227    .014816666 .014816666 1034.72221 993.055555 1 1 0                              0 
+EXTR   0NR01   0 227     .302909983.30290998312.566    3.808525005.96446E-40         38027     4.55086165
+EXTR   0NR02   0 227     0         0         0         2.8397102217.160289719.6970900406       0         
+EXTR   0NR03   0 227     4.5508616538027     0         0         20036.77360         1.391442610         
+EXTR   0NR04   0 227     0         0         0         0         0         0         0         0         
+EXTR   0NR05   0 227     3         1         .054285761.364474463.0542857610         19.94571423.80852500
+EXTR   0NR06   0 227     -1.18096815.96446E-4-.00294693.981879275          -.1990888340073.90050         
+EXTR   0NR07   0 227     0                                                 0                             
+EXTR   0NR08   0 227     0                                                                               
+SWMM   0TEMP   0 227                                 977.43         -436.63                              
+OBJT   0ATTR   0 227                                                                                     
+NODE   0ZONE   0 227                                                                                     
+PICT   0FILE   0 227                                                                                     
+NODE   0YEAR   0 227        0                                                                            
+SWMM   0TMP2   0 227     outfall2.1                                                                      
+SWMM   0MCTL   0 228       1                                                                             
+DMY1   0DMY1   0 228    Node1                                                                            
+DMY2   0DMY2   0 228    Node2                                                                            
+EXTR   0C1     0 228             0.0  1               2.                33.      10.       5.      0.014 
+EXTR   0C1A    0 228                               15.15152                                              
+EXTR   0C1C    0 228     000                      0P0                                                    
+EXTR   0SPSC   0 228                                                                               0     
+LINK   0LKLB   0 228       563.3681 -556.8577                                                            
+NAME   0LINK   0 228     Link1.1                                                                         
+SWMM   0TMP1   0 228     Link1.1                                                                         
+ZZZE 228EDGE   0 228    223 Link1.1        0           224 228 136 1   0   0   0   0                     
+ZZZE 228EDGE   1 228    2   0   0   1   0 3.70417   0 0.762                                              
+QAS    0GLOB   0 228    .002116665 -.00502707 577.256943 769.965277 1 1 0                              0 
+EXTR   0RSLT   0 228                                                       4.997623870                   
+EXTR   0LR01   0 228                         14.35314930         4.993280180         4.99328018.348190136
+EXTR   0LR02   0 228     .2056980521.49220314.0028580791.7161321281.767740526.0274806.061150373.25       
+EXTR   0LR03   0 228     140.7499991.016666661.0166666698.79999994.02513507239.750000.1223663350         
+EXTR   0DR01   0 228                                                                 4.80503436          
+EXTR   0CRS1   0 228     -9E99     10.33562065.33392356-9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS2   0 228     -9E99     10.33562065.33399897.335620696.167810348.7650814843.1415926 6.09199E-5
+EXTR   0CRS3   0 228     .209387723          4.02513507.143802367.014      .999880325.786726744.333923493
+EXTR   0CRS4   0 228     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS5   0 228     -9E99     -9E99     -9E99     -9E99     240       0         0         0         
+EXTR   0CRS6   0 228     0         0         0         0         -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS7   0 228     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS8   0 228     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS9   0 228     -9E99     -9E99     -9E99     -9E99     -9E99     .0067238915.0581750510.0077335
+EXTR   0CRSA   0 228     .0125708441.12816065.221888403.7838     2.4997901635996.9783.765081484-9E99     
+EXTR   0CRSB   0 228     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     .007585629
+SWMM   0MCTL   0 229       1                                                                             
+DMY1   0DMY1   0 229    Node3                                                                            
+DMY2   0DMY2   0 229    Node2                                                                            
+EXTR   0C1     0 229             0.0  1               2.                33.      10.       5.      0.014 
+EXTR   0C1A    0 229                                    0.0                                              
+EXTR   0C1C    0 229     000                      0P0                                                    
+EXTR   0SPSC   0 229                                                                               0     
+LINK   0LKLB   0 229       554.6876 -661.4584                                                            
+NAME   0LINK   0 229     Link2.1                                                                         
+SWMM   0TMP1   0 229     Link2.1                                                                         
+ZZZE 229EDGE   0 229    225 Link2.1        0           224 229 136 1   0   0   0   0                     
+ZZZE 229EDGE   1 229    2   0   0   1   0 3.70417   0 0.762                                              
+QAS    0GLOB   0 229    -.00105832 -.00529165 558.159721 874.131943 1 1 0                              0 
+EXTR   0RSLT   0 229                                                       4.996958230                   
+EXTR   0LR01   0 229                         14.35596190         4.991487270         4.99148727.348077821
+EXTR   0LR02   0 229     .2056577171.49208110.002858079.85447582581.767740526.0274806.061144222119.999999
+EXTR   0LR03   0 229     69.28571423.016666663.0166666646.91428572.02083837119.542857.1228300250         
+EXTR   0DR01   0 229                                                                 4.80527589          
+EXTR   0CRS1   0 229     -9E99     10.33554155.33390518-9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS2   0 229     -9E99     10.33559715.33398588.335597124.167798562.7648708283.1415926 5.75709E-5
+EXTR   0CRS3   0 229     .111867257          2.02083837.078721252.014      .502513164.786670394.333903124
+EXTR   0CRS4   0 229     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS5   0 229     -9E99     -9E99     -9E99     -9E99     240       0         0         0         
+EXTR   0CRS6   0 229     0         0         0         0         -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS7   0 229     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS8   0 229     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS9   0 229     -9E99     -9E99     -9E99     -9E99     -9E99     .0096654025.0581750510.0137879
+EXTR   0CRSA   0 229     .0158828741.91851228.318958278.7838     1.2501677818002.4160.764870828-9E99     
+EXTR   0CRSB   0 229     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     .018543193
+SWMM   0MCTL   0 230       1                                                                             
+DMY1   0DMY1   0 230    storage                                                                          
+DMY2   0DMY2   0 230    outfall1                                                                         
+EXTR   0C1     0 230             0.0  1               2.                33.       5.      0.0      0.014 
+EXTR   0C1A    0 230                                    0.0                                              
+EXTR   0C1C    0 230     000                      0P0                                                    
+EXTR   0SPSC   0 230                                                                               0     
+LINK   0LKLB   0 230       849.8265 -580.7292                                                            
+NAME   0LINK   0 230     Link3.1                                                                         
+SWMM   0TMP1   0 230     Link3.1                                                                         
+ZZZE 230EDGE   0 230    224 Link3.1        0           226 230 136 1   0   0   0   0                     
+ZZZE 230EDGE   1 230    2   0   0   1   0 3.70417   0 0.762                                              
+QAS    0GLOB   0 230    -.00158747 -.00502707 851.562499 794.270832 1 1 0                              0 
+EXTR   0RSLT   0 230                                                       4.066178070                   
+EXTR   0LR01   0 230                         13.48395750         4.993296430         4.99329643.301554102
+EXTR   0LR02   0 230     .1875883041.43188969.0028580791.4719961781.767740526.0274806.04978685634.6857142
+EXTR   0LR03   0 230     0         3.016666663.01666666.7142857143.59605909205.314285.1229130330         
+EXTR   0DR01   0 230                                                                 4.07884939          
+EXTR   0CRS1   0 230     -9E99     5.30366141.301331501-9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS2   0 230     -9E99     5.30378570.301521582.303785702.151892851.5971528583.1415926 5.73120E-5
+EXTR   0CRS3   0 230     .182337466          3.59605909.127127331.014      .859861177.706633084.301334272
+EXTR   0CRS4   0 230     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS5   0 230     -9E99     -9E99     -9E99     -9E99     240       0         0         0         
+EXTR   0CRS6   0 230     0         0         0         0         -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS7   0 230     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS8   0 230     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS9   0 230     -9E99     -9E99     -9E99     -9E99     -9E99     .029701276.0408543125.05817505
+EXTR   0CRSA   0 230     .0384425044.18718539.980142135.7838     2.1459750630902.0409.597152858-9E99     
+EXTR   0CRSB   0 230     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     .124364752
+SWMM   0MCTL   0 231       1                                                                             
+DMY1   0DMY1   0 231    storage                                                                          
+DMY2   0DMY2   0 231    outfall2                                                                         
+EXTR   0C1     0 231             0.0  1               1.                33.       5.      0.0      0.014 
+EXTR   0C1A    0 231                                    0.0                                              
+EXTR   0C1C    0 231     000                      0P0                                                    
+EXTR   0SPSC   0 231                                                                               0     
+LINK   0LKLB   0 231       846.3543 -670.1389                                                            
+NAME   0LINK   0 231     Link4.1                                                                         
+SWMM   0TMP1   0 231     Link4.1                                                                         
+ZZZE 231EDGE   0 231    224 Link4.1        0           227 231 136 1   0   0   0   0                     
+ZZZE 231EDGE   1 231    2   0   0   1   0 3.70417   0 0.762                                              
+QAS    0GLOB   0 231    .001587499 -.00502707 858.506943 882.812499 1 1 0                              0 
+EXTR   0RSLT   0 231                                                       2.577332010                   
+EXTR   0LR01   0 231                         12.78172200         4.996582140         4.99658214.201640469
+EXTR   0LR02   0 231     .172426442.918637988.0028580791.4719961712.877611816.3962849.20035468634.6857142
+EXTR   0LR03   0 231     0         3.016666663.016666662.057142853.44918210205.314285.4916857160         
+EXTR   0DR01   0 231                                                                 3.87651351          
+EXTR   0CRS1   0 231     -9E99     5.30366141.302909983-9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS2   0 231     -9E99     5.30378570.303081729.303785702.303785702.402568352.78539815 3.62805E-5
+EXTR   0CRS3   0 231     .123117799          3.44918210.119243835.014      .859861177.687680136.302912391
+EXTR   0CRS4   0 231     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS5   0 231     -9E99     -9E99     -9E99     -9E99     240       0         0         0         
+EXTR   0CRS6   0 231     0         0         0         0         -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS7   0 231     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS8   0 231     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS9   0 231     -9E99     -9E99     -9E99     -9E99     -9E99     .018905867.0542857615.05817505
+EXTR   0CRSA   0 231     .0373608184.46915997.623893638.4589092391.3914671420037.1269.402568352-9E99     
+EXTR   0CRSB   0 231     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     .084493347
+EXTR   0K3     0 223     0       0       1       5       4       0                                       
+EXTR   0K3     0 225     0       0       1       0       2       0       3       5       4       0       
+EXTR   0ENCR   0 228               -1        -1                                                          
+EXTR   0ENCR   0 229               -1        -1                                                          
+EXTR   0ENCR   0 230               -1        -1                                                          
+EXTR   0ENCR   0 231               -1        -1                                                          
+ZZZS   0SEL    0   0          0     1                                                                    
+ZZZS   1SEL    0   0          0     1                                                                    
+ZZZS   2SEL    0   0          0     1                                                                    

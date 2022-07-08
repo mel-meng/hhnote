@@ -1,0 +1,214 @@
+;;EPASWMM 5.1.012
+[TITLE]
+ 
+
+[OPTIONS]
+ FLOW_UNITS            CFS
+ FLOW_ROUTING          DYNWAVE
+ START_DATE            01/01/2022
+ START_TIME            00:00:00
+ REPORT_START_DATE     01/01/2022
+ REPORT_START_TIME     00:00:00
+ END_DATE              01/01/2022
+ END_TIME              04:00:00
+ REPORT_STEP           00:01:00
+ WET_STEP              00:01:00
+ DRY_STEP              24:00:00
+ ROUTING_STEP          00:01:00
+ ALLOW_PONDING         NO
+ INERTIAL_DAMPING      PARTIAL
+ VARIABLE_STEP         0.750000
+ LENGTHENING_STEP      0.000000
+ MIN_SURFAREA          0.000000
+ NORMAL_FLOW_LIMITED   FROUDE
+ SKIP_STEADY_STATE     NO
+ IGNORE_RAINFALL       NO
+ FORCE_MAIN_EQUATION   H-W
+ LINK_OFFSETS          DEPTH
+ COMPATIBILITY         5
+
+[REPORT]
+ INPUT YES
+ CONTINUITY YES
+ FLOWSTATS YES
+ CONTROLS NO
+ SUBCATCHMENTS ALL
+ NODES ALL
+ LINKS ALL
+
+[RAINGAGES]
+;;                 Rain      Recd.  Snow   Data       Source           Station    Rain  Start
+;;Name             Type      Freq.  Catch  Source     Name             ID         Units Date
+;;------------------------------------------------------------------------------------------------
+
+[JUNCTIONS]
+;;                 Invert     Max.       Init.      Surcharge  Ponded
+;;Name             Elev.      Depth      Depth      Depth      Area
+;;------------------------------------------------------------------------
+  inflow1          10         10         0         
+  inflow2          10         10         0         
+  inflow1.1        10         10         0         
+  inflow2.1        10         10         0         
+
+[STORAGE]
+;;                 Invert   Max.       Init.        Shape       Shape                           Ponded        Evap. 
+;;Name             Elev.    Depth      Depth        Curve       Params                          Area          Frac. 
+;;------------------------------------------------------------------------------------------------------------------
+  storage          2      18           0          TABULAR       storage_ST                     13591.4        0     
+  storage.1        2      18           0          TABULAR       storage.1_ST                   13591.4        0     
+[SUBCATCHMENTS]
+;;                                                   Total    Pcnt.             Pcnt.    Curb     Snow
+;;Name             Raingage         Outlet           Area     Imperv   Width    Slope    Length   Pack
+;;----------------------------------------------------------------------------------------------------
+
+[SUBAREAS]
+;;Subcatchment     N-Imperv   N-Perv     S-Imperv   S-Perv     PctZero    RouteTo    PctRouted
+;;--------------------------------------------------------------------------------------------
+
+
+[RDII]
+;;                                                    
+;;Name             UH Group          Sewer Area
+;;----------------------------------------------------------------------------------------------------
+
+[OUTFALLS]
+;;                 Invert     Outfall    Stage/Table      Tide
+;;Name             Elev.      Type       Time Series      Gate
+;;------------------------------------------------------------
+  outfall1         0          FREE                        NO 
+  outfall2         0          FREE                        NO 
+  outfall1.1       0          FREE                        NO 
+  outfall2.1       0          FREE                        NO 
+
+[CONDUITS]
+;;                 Inlet            Outlet                      Manning    Inlet      Outlet     Init.
+;;Name             Node             Node             Length     N          Height     Height     Flow
+;;------------------------------------------------------------------------------------------------------------
+  Link1            inflow1          storage          33         0.014      0          3          0         
+  Link2            inflow2          storage          33         0.014      0          3          0         
+  Link3            storage          outfall1         33         0.014      3          0          0         
+  Link4            storage          outfall2         33         0.014      3          0          0         
+  Link1.1          inflow1.1        storage.1        33         0.014      0          3          0         
+  Link2.1          inflow2.1        storage.1        33         0.014      0          3          0         
+  Link3.1          storage.1        outfall1.1       33         0.014      3          0          0         
+  Link4.1          storage.1        outfall2.1       33         0.014      3          0          0         
+
+[LOSSES]
+;;                               
+;;Name             Kentry           Kexit            Kavg 
+;;---------------------------------------------------------
+
+[PUMPS]
+;;                 Inlet            Outlet           Pump             Initial   Startup      Shutoff
+;;Name             Node             Node             Curve            Status    Depth        Depth
+;;---------------------------------------------------------------------------------------------------------------
+
+[ORIFICES]
+;;                 Inlet            Outlet                        Crest     Disch.     Flap
+;;Name             Node             Node             Type         Height     Coeff.     Gate
+;;------------------------------------------------------------------------------------------
+
+[OUTLETS]
+;;Name             From Node        To Node     Offset     Type           QTable/Qcoeff     Qexpon     Gated
+;;----------------------------------------------------------------------------------------------------------
+
+[WEIRS]
+;;                     Inlet            Outlet                           Crest     Disch.    Flap      End       End
+;;Name                 Node             Node             Type            Height    Coeff.    Gate      Coeff.    Con.
+;;-------------------------------------------------------------------------------------------------------------------
+
+[XSECTIONS]
+;;Link             Shape         Geom1      Geom2      Geom3      Geom4      Barrels    Culvert
+;;--------------------------------------------------------------------------------------------
+  Link1            CIRCULAR     2          0          0          0          1         
+  Link2            CIRCULAR     2          0          0          0          1         
+  Link3            CIRCULAR     2          0          0          0          1         
+  Link4            CIRCULAR     1          0          0          0          1         
+  Link1.1          CIRCULAR     2          0          0          0          1         
+  Link2.1          CIRCULAR     2          0          0          0          1         
+  Link3.1          CIRCULAR     2          0          0          0          1         
+  Link4.1          CIRCULAR     1          0          0          0          1         
+
+[TRANSECTS]
+[DWF]
+;;                                  Average    Time
+;;Node             Parameter        Value      Patterns
+;;-----------------------------------------------------
+
+[POLLUTANTS]
+;;                 Mass   Rain       GW         I&I        Decay      Snow
+;;Name             Units  Conc.      Conc.      Conc.      Coeff.     Only  Co-Pollutant
+;;------------------------------------------------------------------------------------------
+
+[LANDUSES]
+;;                 Cleaning   Fraction   Last
+;;Name             Interval   Available  Cleaned
+;;-------------------------------------------------
+
+[COVERAGES]
+;;Subcatchment     Landuse          Percent
+;;--------------------------------------------
+
+[BUILDUP]
+;;LandUse          Pollutant        Function   Coeff1   Coeff2   Coeff3   Normalizer
+;;----------------------------------------------------------------------------------
+
+[WASHOFF]
+;;                                                               Clean.   BMP   
+;;LandUse          Pollutant        Function   Coeff1   Coeff2   Effic.   Effic.
+;;------------------------------------------------------------------------------
+
+[INFLOWS]
+;;                                                   Param           Units             Scale             Baseline
+;;Node             Parameter        Time Series      Type            Factor            Factor             Value
+;;---------------------------------------------------------------------------------------------------------------
+  inflow1          FLOW             ""               FLOW             1.0              1.0              5.000000        
+  inflow2          FLOW             ""               FLOW             1.0              1.0              5.000000        
+  inflow1.1        FLOW             inflow1.1        FLOW             1.0             
+  inflow2.1        FLOW             inflow2.1        FLOW             1.0             
+
+[TIMESERIES]
+;;Name             Date       Time       Value
+;;-------------------------------------------------
+;;RAINFALL
+;;-------------------------------------------------
+;;INFLOW
+  inflow1.1                   0          0         
+  inflow1.1                   1          5         
+  inflow1.1                   4          0         
+
+  inflow2.1                   0          0         
+  inflow2.1                   1          0         
+  inflow2.1                   2          0         
+  inflow2.1                   3          5         
+  inflow2.1                   4          0         
+
+
+[PATTERNS]
+;;Name             Type       Multipliers
+;;----------------------------------------------------------------------
+
+[COORDINATES]
+;;Node             X-Coord          Y-Coord
+  inflow1          411.458          -210.069        
+  storage          711.806          -346.354        
+  inflow2          394.097          -419.271        
+  outfall1         984.375          -257.813        
+  outfall2         977.431          -436.632        
+  inflow1.1        413.194          -488.715        
+  storage.1        713.542          -625.000        
+  inflow2.1        395.833          -697.917        
+  outfall1.1       986.111          -536.458        
+  outfall2.1       979.167          -715.278        
+
+[Polygons]
+;;Subcatchment    X-Coord          Y-Coord
+
+[CURVES]
+;;Name             Type       x-Value         y-Value
+;;---------------------------------------------------
+storage_ST         Storage    0               1000      
+storage_ST                    1               1000      
+storage.1_ST       Storage    0               1000      
+storage.1_ST                  1               1000      
+;;Special Conduit Curves
