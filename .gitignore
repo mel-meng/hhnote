@@ -128,3 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 *tmp/
+*xf/
+workflow/data/dtm/modify_elevation/model/

@@ -1,0 +1,17 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  File "Aerial_Photo_M01.jpg"
+  Type "RASTER"
+  (0,1) (0,0) Label "Pt 1",
+  (1,1) (1,0) Label "Pt 2",
+  (0,0) (0,1) Label "Pt 3"
+  CoordSys Earth Projection 8, 104, "m", 177, 0, 0.9996, 500000, 10000000
+  Units "m"
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "49eaa20f-376a-4285-a8ba-419976502e33"
+end_metadata
