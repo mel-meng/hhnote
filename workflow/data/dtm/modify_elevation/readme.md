@@ -58,7 +58,7 @@ Figure Thin breakline example
 
 You’ll complete the following exercises,
 
--   Exercise 1 Compare 2D grid with DEM (TODO: add link)
+-   [Exercise 1 Compare 2D grid with DEM](./Exercise%201%20Compare%202D%20grid%20with%20DEM.md)
 
 -   Exercise 2 Create Breakline (TODO: add link)
 
