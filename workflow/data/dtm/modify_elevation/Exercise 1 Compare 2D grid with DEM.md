@@ -1,5 +1,6 @@
 # Exercise 1 Compare 2D grid with DEM
 
+
 In this exercise, you’ll use QGIS to compare the input DEM, and the 2D engine created 2D surface.
 
 1.  Open the **“./data/model/starter_model.xp”**
