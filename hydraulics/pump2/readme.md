@@ -40,6 +40,6 @@ When using 15 seconds timestep, the downstream pipe is receiving a more forceful
 
 # Conclusion
 
-In the mode, pumps are modeled in rather simplistic manner, and the way it can ramp up in no time is far from realistic. And this can cause a little bump when the flow is discharged into the downstream pipe.
+In the model, pumps are modeled in rather simplistic manner, and the way it can ramp up in no time is far from realistic. And this can cause a little bump when the flow is discharged into the downstream pipe.
 
 In most of the applications, this very small bump will be quickly absorbed as it is routed downstream without causing any major errors. However, this is a great reminder the complexity involved in solving differential equations using numerical methods, it is just an approximation, and as a modeler, you need to be aware of its limits.
