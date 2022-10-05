@@ -20,8 +20,6 @@ ICM screen is a link with the following parameters,
 
 -   invert of the screen. I found it a little confusing since it is called crest. It is the elevation
 
--   Width and height of the screen is not actually used for calculation
-
 -   For the angle, it is measured from the vertical line
 
 <img src="./media/image2.png" style="width:7.10209in;height:4.25948in" alt="Diagram Description automatically generated" />
@@ -58,9 +56,9 @@ v1 can be calculated using the Kirschmer formula
 
 Delta h = h1-h2
 
-The opening shown in the profile is the height of the screen\*cos(angle). H1 and H2 are the depth before and after the screen, ICM will computer the head loss.
+The opening shown in the profile is the height of the screen\*cos(angle). h1 and h2 are the depth before and after the screen.
 
-<img src="./media/image7.png" style="width:6.5in;height:1.78611in" alt="Graphical user interface, application, Teams Description automatically generated" />
+<img src="./media/image7.png" style="width:6.92565in;height:2.63961in" alt="Graphical user interface, application Description automatically generated" />
 
 When the screen is drowned, there is an option in the simulation parameter to use Villemonte equation (TODO: not tested yet).
 
