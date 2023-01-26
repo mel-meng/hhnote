@@ -1,0 +1,84 @@
+;; SWMM5 export of network InfoWorks network! from InfoWorks 20.1.3
+;; Entire Network
+[TITLE]
+
+[OPTIONS]
+FLOW_UNITS CFS
+INFILTRATION HORTON
+ALLOW_PONDING NO
+[SUBCATCHMENTS]
+;; Name Raingage Outlet Area %Imperv Width Slope Clength
+[SUBAREAS]
+;; Subcatch Imperv_N Perv_N Imperv_S Perv_S PctZero RouteTo
+[INFILTRATION]
+;; Subcatch MaxRate MinRate DecayRate DryTime MaxInfil
+;; Subcatch Suction Conduct InitDef
+;; Subcatch CurveNo Conduct DryTime
+[LID_CONTROLS]
+;; Name SURFACE  StorHt  VegFrac  Rough  Slope  Xslope
+;; Name SOIL     Thick  Por  FC  WP  Ksat  Kcoeff  Suct
+;; Name PAVEMENT Thick  Vratio  FracImp  Perm  Vclog
+;; Name STORAGE  Height  Vratio  Seepage  Vclog
+;; Name DRAIN    Coeff  Expon  Offset  Delay
+;; Name DRAINMAT Thick  Vratio  Rough
+;; Name REMOVALS PollId  %Remov ...
+[LID_USAGE]
+;; Subcat LID Number Area Width InitSat FromImp ToPerv RptFile DrainTo FromPerv
+[JUNCTIONS]
+;; Name Elev ( Ymax Y0 Ysur Apond )
+node1 0.000000 10.000000 0.000000 0.000000 0.000000
+node2 0.000000 10.000000 0.000000 0.000000 0.000000
+[OUTFALLS]
+;; Name InvertEl FREE FlapGate
+;; Name InvertEl NORMAL FlapGate
+;; Name InvertEl FIXED FixedStage FlapGate
+;; Name InvertEl TIDAL TideTable FlapGate
+;; Name InvertEl TIMESERIES StageSeries FlapGate
+normal_outfall 0.000000 FREE NO
+normal_outfall! 0.000000 FREE NO
+[STORAGE]
+;; Name InvertEl MaxDepth InitDepth TABULAR Atable
+[CONDUITS]
+;; Name Node1 Node2 Length Nvalue Zup Zdown InitFlow
+node2.1 node2 normal_outfall 100.000000 0.010000 0.500000 0.000000 0.000000
+node1.1 node1 normal_outfall! 100.000000 0.010000 2.000000 0.000000 0.000000
+[PUMPS]
+;; Name Node1 Node2 CurveName ( InitStatus )
+[ORIFICES]
+;; Name Node1 Node2 Type Height Cd ( Flap Orate )
+[WEIRS]
+;; Name Node1 Node2 Type Height Cd ( FlapGate EC Cd2 )
+[OUTLETS]
+;; Name Node1 Node2 Height TABULAR Qtable ( FlapGate ) 
+[XSECTIONS]
+;; Link Shape Geom1 Geom2 Geom3 Geom4
+;; Link IRREGULAR Transect
+node2.1 RECT_CLOSED 2.000000 2.000000 0.000000 0.000000
+node1.1 CIRCULAR 2.000000 0.000000 0.000000 0.000000
+[LOSSES]
+;; Conduit EntryLoss ExitLoss AgvLoss ( FlapGate )
+node2.1 0.000000 0.000000 0.000000 NO
+node1.1 0.000000 0.000000 0.000000 NO
+[TRANSECTS]
+;; NC Nleft Nright Nchannel
+;; X1 Name Nsta Xleft Xright 0 0 0 Wfactor Eoffset
+;; GR Station Elevation ...
+[CONTROLS]
+[DWF]
+;; Node Item Value (Pat1 Pat2 Pat3 Pat4)
+[CURVE]
+[COORDINATES]
+;; Node XCoord YCoord
+node1 0.000000 0.000000
+node2 0.000000 50.000000
+normal_outfall 100.000000 50.000000
+normal_outfall! 100.000000 0.000000
+[VERTICES]
+;; Link XCoord YCoord
+[POLYGONS]
+;; Subcatch XCoord YCoord
+[RDII]
+;; Node UHGroup SewerArea
+[HYDROGRAPHS]
+;; Name Raingage
+;; Name Month SHORT/MEDIUM/LONG R T K (Dmax Drec D0)
