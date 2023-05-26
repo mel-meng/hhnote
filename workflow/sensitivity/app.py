@@ -7,34 +7,36 @@ import pandas as pd
 # df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/finance-charts-apple.csv')
 df = px.data.stocks()
 
+def control_panel(boxes):
+    controls = []
+    for box in boxes:
+        controls.append(html.Div(className='controlbox',
+                                 children=[
+            html.Div(box['name']),
+            html.Div(
+                dcc.Slider(min=-50, max=50, step=25, value=0, id='{}-slider'.format(box['name']), vertical=True, verticalHeight=100, className="custom-slider"),
+                className='controlrow controlsection'
+            )]))
+    return controls
+
+boxes = [{'name': 'p{}'.format(x)} for x in range(1, 10)]
 
 app = Dash(__name__)
+
+
 
 app.layout = html.Div([
     html.H1(children='Sensitivity Analysis', style={'textAlign':'center'}),
     html.P('Adjust the parameter sliders to see the calibration Results, adjust the parameters value from -50% to 50%'),
     # dcc.Dropdown(df.country.unique(), 'Canada', id='dropdown-selection'),
-    
-    html.Div(children=[
-        html.Div(children=[
-            html.P("Param 1:"),
-            dcc.Slider(min=-50, max=50, step=25, value=0, id='p1-slider', vertical=True, verticalHeight=100)
+    html.Div(className='controlcol',
+             children=[
+                html.Div('control group title'),
+                html.Div(className='controlrow',
+                    children=control_panel(boxes))
 
-        ],
-        style={'display': 'inline-block'}
-        ), 
-        html.Div(children=[
-            html.P("Param 2:"),
-            dcc.Slider(min=-50, max=50, step=25, value=0, id='p2-slider', vertical=True, verticalHeight=100),
-
-        ],
-        style={'display': 'inline-block'}
-        )
     ]),
-    
 
-    
-    
     dcc.Graph(id='graph-content')
 ])
 
@@ -53,6 +55,9 @@ def update_graph(p1, p2):
               hover_data={"date": "|%B %d, %Y"},
               title='Sim vs Obs')
     return fig
+
+
+
 
 if __name__ == '__main__':
     app.run_server(debug=True)
