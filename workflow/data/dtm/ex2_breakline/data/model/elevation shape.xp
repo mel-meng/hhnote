@@ -1,0 +1,601 @@
+SWMM   0MODE   0   0     2 1                                                                             
+FONT   0LIST   0   0            0        Arial                                                           
+FONT   0FLAG   0   0            0                                                                        
+CATC   0MATR   0   0          32768     65280  255  128     32768    1         0         40     4.000    
+1DWL   0OPT    0   0                          1                                                          
+EXTN   0MATR   0   0              0         0    0    016711680  1    0                 -10     4.000    
+EXTN   0MATR   0   1            255  16777215  255    010025368  1    0                 -10     4.000    
+EXTR   0B1A    0   0        1   0   0   0    1   2   0   02022 102022 11                                 
+RUNF   0B1     0   0                   1    2                        1    1 2022           2022    1     
+EXTR   0B2     0   0        1                                                                            
+SWMM   0LICO   0   0     NDItMjItOTk5OSAoWFBTV01NKQ==                                                    
+SWMM   0MISC   0   0     1                                                                               
+DT     0DTLG   0   0       3         0         0 10 10                                 30                
+DT     0DTTF   0   0     Arial                                                                           
+DT     0DTLT   0   0     DTM                                                                             
+DT     0DTVF   0   0     Arial                                                                           
+2DIN   12DFI   0   0          0.000                                                                      
+ROGH   1LND1   0   0          0.000     0.0000                                        0                  
+ROGH   1LND2   0   0     0                     1                                                         
+ROGH   1LND3   0   0     00     0.000                                                                    
+ROGH   1LNDU   0   0                                                                                     
+ROGH   1ZONE   0   0                                                  0.0601 1                           
+SWMM  25GD     1   0                                                                                     
+2D     0JOB1   0   0          5.000    10.0001110 1     0.002               0.000                    000 
+2D     0JOB7   0   0      0           20.0001         1         2         0                              
+2D     0JOB2   0   0     Pasture                                 0     0.00011 2     1.000     0.500     
+2D     0HDR1   0   0     1    , WindowsLatin1                 300       001 0            1.000  0        
+1D2D   0JOB1   0   0          1.000                                                                      
+2D     0JOB3   0   0          0.050      60.000    60.000     7.000     0.000                            
+2D     0IN2D   0   0     01     0.686     0.500                                                          
+2D     0GPUS   0   0     1                                                                               
+2D     0JOB8   0   0     0                                                                               
+2D    22OUTF   0   0     0                                                                               
+2D    16OUTF   0   0     0                                                                               
+2D    17OUTF   0   0     0                                                                               
+2D    18OUTF   0   0     0                                                                               
+2D    19OUTF   0   0     0                                                                               
+2D    20OUTF   0   0     0                                                                               
+2D    21OUTF   0   0     0                                                                               
+2D    23OUTF   0   0     0                                                                               
+2D     5OUTF   0   0     0                                                                               
+2D     6OUTF   0   0     0                                                                               
+2D     7OUTF   0   0     0                                                                               
+2D     8OUTF   0   0     0                                                                               
+2D     9OUTF   0   0     0                                                                               
+2D    10OUTF   0   0     0                                                                               
+2D    11OUTF   0   0     0                                                                               
+2D    12OUTF   0   0     0                                                                               
+2D    13OUTF   0   0     0                                                                               
+2D    14OUTF   0   0     0                                                                               
+2D    15OUTF   0   0     0                                                                               
+2D    24OUTF   0   0     0                                                                               
+2D    25OUTF   0   0     0                                                                               
+2D    26OUTF   0   0     0                                                                               
+2D     0DIRO   0   0     2D\Output                                                                       
+2D     0DIRD   0   0     2D\Data                                                                         
+2D     0DIRC   0   0     2D\Check                                                                        
+2D     0DIRL   0   0     2D\Log                                                                          
+2D     0DIRF   0   0     1                                                                               
+2D     0ADGN   0   0         1                                                                           
+2D     0ADVN   0   0         1                                                                           
+2D     0HDR2   0   0     NONEARTH units "m"                                                              
+2D     0JOBS   0   0     0010          0.000                                                             
+2D     0EXNT   0   0         4     5.000              1     0.000111     0.00010    218                  
+2D     0EVTX   0   0           292824.062      293697.372      293688.208      292822.932                
+2D     0EVTY   0   0          6178452.729     6178443.351     6177413.783     6177407.877                
+2D     0EXTE   0   0              1Layer 1                                                               
+2DMD   0TMCL   0   0     1.000     0                                                                     
+LAYS   0LAYS   0   0     2D Vectors                                                                      
+LAYE   0LAYE   0   0     0        25                                                                     
+LAYS   0LAYS   0   1     Nodes                                                                           
+LAYE   0LAYE   0   1     0                                                                               
+LAYS   0LAYS   0   2     Background Images                                                               
+LAYE   0LAYE   0   2     0                                                                               
+LAYS   0LAYS   0   3     Velocity                                                                        
+LAYE   0LAYE   0   3     0                                                                               
+LAYS   0LAYS   0   4     DTM                                                                             
+LAYE   0LAYE   0   4     0                                                                               
+LAYS   0LAYS   0   5     Spatial Reports                                                                 
+LAYE   0LAYE   0   5     0                                                                               
+LAYS   0LAYS   0   6     Breaklines                                                                      
+LAYE   0LAYE   0   6     0                                                                               
+LAYS   0LAYS   0   7     Landuse                                                                         
+LAYE   0LAYE   0   7     0                                                                               
+LAYS   0LAYS   0   8     Links                                                                           
+LAYE   0LAYE   0   8     0                                                                               
+LAYS   0LAYS   0   9     2D Model                                                                        
+LAYE   0LAYE   0   9     0                                                                               
+LAYS   0LAYS   0  10     Catchments                                                                      
+LAYE   0LAYE   0  10     0                                                                               
+LAYS   0LAYS   0  11     Engine Results                                                                  
+LAYE   0LAYE   0  11     0                                                                               
+LAYS   0LAYS   0  12     2D Results                                                                      
+LAYE   0LAYE   0  12     0                                                                               
+LAYS   0LAYS   0  13     Dynamic Elevation Shapes                                                        
+LAYE   0LAYE   0  13     0                                                                               
+LAYS   0LAYS   0  14     Sewersheds                                                                      
+LAYE   0LAYE   0  14     0                                                                               
+ZZZN   0NETW   0   0     0                                                                               
+ZIMG   0ATT1   0   0         1                                                                      0.000
+ZIMG   0FILE   0   0     C:\GitHub\hhnote\workflow\data\dtm\ex1_qgis\data\gis\Aerial_Photo_M01.jpg       
+ZIMG   0ATT2   0   0              6178427.879          292809.192         6177398.595          293706.860
+ZIMG   0ATT    0   0         1                                                                           
+LACH   0NAME   0   0     LA County Runoff Curves                     0   10    5    0                    
+QDV    0SET    0   0           1   1   -1   -1   -1 0   -1   -1                                          
+2D     0RMSH   0   0              2         1        59                   4                              
+MESH   0RESI   0   0              0         2         4         3                                        
+MESH   02DSY   0   0              0        12         9         8                                        
+MESH   0RESN   0   0     Layer 1                                                                         
+2D     0RVTX   0   0         293570.51592    292910.51029    293021.10356    292938.52967    292933.65638
+2D     0RVTY   0   0        6177964.24428   6177766.12461   6178420.75136   6178403.21493   6178350.27570
+2D     0RVTX   1   0         293273.32744    293389.13208    292917.62928    292911.35082    292907.06353
+2D     0RVTY   1   0        6178432.15904   6178424.93051   6177767.19722   6177766.33122   6178095.55755
+2D     0RVTX   2   0         292966.95310    292865.58693    292923.04174    293072.06287    292915.33411
+2D     0RVTY   2   0        6177837.54007   6178024.14209   6177711.99006   6177609.74644   6177711.98563
+2D     0RVTX   3   0         292907.64208    293500.26132    293395.15979    292915.01252    292942.75979
+2D     0RVTY   3   0        6177769.04054   6177697.01867   6177685.20108   6177688.21047   6178233.77942
+2D     0RVTX   4   0         292910.51029    293273.32744    292922.60874    292960.04308    292842.54804
+2D     0RVTY   4   0        6177766.12461   6178432.15904   6177688.17521   6177801.83734   6177950.42709
+2D     0RVTX   5   0         292930.08593    293505.44796    293259.52390    293633.20082    293648.60406
+2D     0RVTY   5   0        6177861.73515   6178135.30946   6178431.53916   6177787.68022   6177859.12568
+2D     0RVTX   6   0         293259.52390    293643.84621    292914.17145    293021.38391    293374.71010
+2D     0RVTY   6   0        6178431.53916   6177902.64682   6177735.51084   6177608.59667   6177570.31446
+2D     0RVTX   7   0         293168.44030    292916.33028    293502.22383    293500.83853    293611.86882
+2D     0RVTY   7   0        6178424.59058   6177711.77357   6178284.69905   6178099.01685   6178412.71300
+2D     0RVTX   8   0         293497.96073    292858.67692    293374.71010    292911.35082    292916.11379
+2D     0RVTY   8   0        6178187.70879   6177897.43788   6177570.31446   6177766.33122   6177688.60821
+MESH   02DTY   0   0      0 0 1                                                                          
+MESH   02DVL   0   0         0    8   12                                                                 
+MESH   02DIN   0   0        41    9    4                                                                 
+2D     0RPID   0   0         0    9    4                                                                 
+MESH   02DST   0   0              0         3         2                                                  
+2D     0RIND   0   0           14      32       1      23      10      25      41      24      11       9
+2D     0RIND   1   0           47      19       4       3       2      58      27      21       6      39
+2D     0RIND   2   0           57      37      50      55      40      26      38      56       0      31
+2D     0RIND   3   0           29      28      46      16      17      34      13      33      45      18
+2D     0RIND   4   0           14       8       7      53      12      22      44      36      54       8
+2D     0SMSH   0   0              0                   0                   0                              
+2D     0TMSH   0   0              1         1        14                   3                              
+2D     0PMSH   0   0                                  0         0         0                              
+2DMD   0DATA   0   0         0                                                                           
+TEXT   0CNTL   0   0         0                                                                           
+TINF   0GEN1   0   0         1                                                                           
+TINF   0FIL1   0   0     C:\GitHub\hhnote\workflow\data\dtm\ex1_qgis\data\gis\DEM.xptin                  
+TINF   0FIL2   0   0      0                                                                              
+2D     0DTMP   0   0     11     5.000    0    21     1.000    1    1                                     
+DT     0DTCL   0   0                                       0         0  0               1.0000           
+2D     0PEGC   0   0             16711680        16740608        16769536        11140864         3735296
+2D     0PEGP   0   0                0.000           0.111           0.222           0.333           0.444
+2D     0PEGC   1   0                65336           65450           58111           29183             255
+2D     0PEGP   1   0                0.556           0.667           0.778           0.889           1.000
+2D     0DTMC   0   0     0000    35.914    74.556     8  124                                             
+2D     0ASCG   0   0              0                                                                      
+DT     0DTST   0   0                                                      0                              
+2D     0CMSH   0   0              0                   0                   0                              
+2D     0CATC   0   0     1        1         1                                                            
+SRPT   0VIEW   0   0                   1    1           0 0 3 3     0.000     0.000   10   10            
+SRPT   0FONT   0   0     Arial                                   Arial                                   
+GE     0ENCO   0   0     0                                                                               
+RSFL   0PROP   0   0     0001  16776960    0                                                             
+RFLF   0PROP   0   0     arial                                                                           
+RSPT   0PROP   0   0     01                 16776960    0                                                
+RPTF   0PROP   0   0     arial                                                                           
+RSPT   0PROP   0   1     01                 16776960    0                                                
+RPTF   0PROP   0   1     arial                                                                           
+RSFL   0PROP   0   1     0001  16776960    0                                                             
+RFLF   0PROP   0   1     arial                                                                           
+GRID   0SPEC   0   0        10.0000   10.0000         0.0000         0.0000    0    0    1    1.0000     
+ZZZG   0GRID   0   0                                                                          80AC80FF   
+GIS    0NUMB   0   0              0                                                                      
+CAD    0NUMB   0   0              0                                                                      
+RSFN   0RSNB   0   0            1                                                                        
+RSFN   0RSID   0   0            0                                                                        
+RSFN   0RDFL   0   0                                                                                     
+2D     0RELG   0   0     0        1         0                                                            
+2D     0RELV   0   0     0        0                                                                      
+2D     0RESV   0   0     3                                                                               
+2D     0RESM   0   0      1                                                                              
+RSVF   3FLOW   0   0      0   0.00000   0.00000   0   1 0255 1         3         2 1 1  10.00000         
+RSVF   3FCOL   0   0     0                                                                               
+RSVF   3FPOS   0   0     0.00000                                                                         
+RSVF   3FLO1   0   0      1     1.000                                                                    
+RSVF   3FLBL   0   0      0 0  12648447   0 0     65535                                                  
+RSVF   3FRLF   0   0     Arial                                                                           
+RSVF   3FRCF   0   0     Arial                                                                           
+RSMP   12DRM   0   0      0     0.0008571561743   2 0255 1 10  1 1 00                                    
+RSMP   1MCOL   0   0     255       29183     58111     65450     65336     3735296   11140864  16769536  
+RSMP   1MCOL   1   0     16740608  16711680                                                              
+RSMP   1MPOS   0   0     0.00000   0.11000   0.22000   0.33000   0.44000   0.55000   0.66000   0.77000   
+RSMP   1MPOS   1   0     0.88000   1.00000                                                               
+RSMP   1MCCL   0   0     0                                                                               
+RSMP   1MCPS   0   0     0.00000                                                                         
+RSMP   1MLBL   0   0      0 0  12648447   0 0     65535                                                  
+RSMP   1MRLF   0   0     Arial                                                                           
+RSMP   1MRCF   0   0     Arial                                                                           
+VIEW   0SAV    0   0     0                                                                               
+CUHP   0JOB1   0   0                                        0                                            
+LACH   0CTL    0   0     0   0   50        10        40        35       100                              
+PRNT   0PSTP   0   0       9  1   3.670   9.520   3.670   9.520   2.000   2.000   2.000   2.00001  0     
+PRNT   0AFRM   0   0                                                                                     
+PRNT   0PSP2   0   0     1000.0001000.000  00         00                  0                              
+PRNT   0PSP3   0   0     Arial                                              12  0         0              
+PRNT   0PSP4   0   0     Arial                                              12  0         0              
+SRPT   0CNTL   0   0              1         0    0    0    1    0                                        
+SRPT   1GLOB   0   0    0 0                                                                              
+SRPT   1GLOB   1   0    0 0                                                                              
+SRPT   0GLOB   0   0    0.0047625 0.00687917                                                             
+SRPT   0GLOB   1   0    12.8757 18.5982                                                                  
+ZRPT   0NAME   0   0     RPT Headings                                0   40    5    0                    
+ZSYM   0NAME   0   0     Pollutant                                   0   40    5    0                    
+ZSYM   1NAME   0   0     Buildup/Washoff                             0   40    5    0                    
+ZSYM   2NAME   0   0     Erosion                                     0   40    5    0                    
+ZSYM   3NAME   0   0     Groundwater                                 0   40    5    0                    
+ZSYM   4NAME   0   0     Infiltration                                0   40    5    0                    
+ZSYM   5NAME   0   0     Landuse                                     0   40    5    0                    
+ZSYM   6NAME   0   0     Initial Loads                               0   40    5    0                    
+ZSYM   7NAME   0   0     Rainfall                                    0   40    5    0                    
+ZSYM   8NAME   0   0     Snow Melt                                   0   40    5    0                    
+ZSYM   9NAME   0   0     RDII                                        0   40    5    0                    
+ZSYM  10NAME   0   0     BMP                                         0   40    5    0                    
+ZSYM  11NAME   0   0     DW Sewer Inflows                            0   40    5    0                    
+ZSYM  12NAME   0   0     Sewer infiltration                          0   40    5    0                    
+ZSYM  13NAME   0   0     WS Temperatures                             0   40    5    0                    
+ZSYM  24NAME   0   0     Temporal Variations                         0   40    5    0                    
+ZSYM  14NAME   0   0     Pollutant List                              0   40    5    0                    
+ZSYM  15NAME   0   0     Landuse List                                0   40    5    0                    
+ZSYM  17NAME   0   0     StatPollutants                              0   40    5    0                    
+ZSYM  18NAME   0   0     Gauged Pollutants                           0   40    5    0                    
+ZSYM  19NAME   0   0     Pump Ratings                                0   40    5    0                    
+ZSYM  21NAME   0   0     Pit Rating Curves                           0   40    5    0                    
+ZSYM  22NAME   0   0     Hydraulic Brakes                            0   40    5    0                    
+ZSYM  20NAME   0   0     User Defined File Types                     0   40    5    0                    
+ZSYM  23NAME   0   0     XP Tables                                   0   40    5    0                    
+ZSYM  25NAME   0   0     Pavement Crossfall                          0   40    5    0                    
+ZSYM  26NAME   0   0     HEC 22                                      0   40    5    0                    
+ZSYM  27NAME   0   0     Rational Formula                            0   40    5    0                    
+ZSYM  28NAME   0   0     Natural Section Shape                       0   40    5    0                    
+ZSYM  29NAME   0   0     2D Landuse                                  1   40    5    0                    
+ZSYM  29OBJ    0   0     Pasture                                                                         
+ZSYM  29VAL    0   0         1                                                                           
+ZSYM  30NAME   0   0     WSPG Channel Group                          0   40    5    0                    
+ZSYM  31NAME   0   0     (2D) Soil Type                              0   40    5    0                    
+ZSYM  32NAME   0   0     User Defined Conduit                        0   40    5    0                    
+ZSYM  33NAME   0   0     Bridge Section Shapes                       0   40    5    0                    
+ZSYM  34NAME   0   0     LID/WSUD                                    0   40    5    0                    
+ZSYM  35NAME   0   0     User Hazard Classifications                 0   40    5    0                    
+ZSYM  36NAME   0   0     User Hazard Values                          0   40    5    0                    
+ZSYM   0GLDB   0   0        25                                                                           
+SWMM   0SWMM   0   0         24.100                                                                      
+SWMM   0LICE   0   0     NDItMjItOTk5OSAoWFBTV01NKQ==                                                    
+SWMM   0PVER   0   0     24.1.0.0            2024.1                                                      
+ZZZC   0CNTL   0   0    1    0    0    999   999   2703.5564910    450  swmmxp                           
+ZZZC   0CNTL   1   0    292621.7869         6177941.6575                                                 
+ZZZC   0NAME   0   0    1    Node           2    L              1                                        
+ZZZD   0DIRT   0   0         1    1                                                                      
+MESH   0RESN   1   0     Layer 1                                                                         
+HQBT   42D     0   0     0                                                                               
+HQBS   42D     0   0                    0.010                                                            
+2D     1RGEN   0   0     1                  1                                                            
+2DRN   9OPT    0   0     2                                           371                                 
+2DRN   9OTP1   0   0          0.000     0.080     0.170     0.250     0.330     0.420     0.500     0.580
+2DRN   9OTP1   1   0          0.670     0.750     0.830     0.920     1.000     1.080     1.170     1.250
+2DRN   9OTP1   2   0          1.330     1.420     1.500     1.580     1.670     1.750     1.830     1.920
+2DRN   9OTP1   3   0          2.000     2.080     2.170     2.250     2.330     2.420     2.500     2.580
+2DRN   9OTP1   4   0          2.670     2.750     2.830     2.920     3.000                              
+2DRN   9OTP2   0   0          0.000     0.840     3.310     4.600     7.030    12.390    22.630    58.020
+2DRN   9OTP2   1   0         78.220    87.680    91.130    92.240    91.780    89.300    81.910    73.660
+2DRN   9OTP2   2   0         62.570    51.030    41.160    32.400    28.000    22.630    20.600    18.930
+2DRN   9OTP2   3   0         17.720    15.640    12.760    11.950    10.680     9.870     8.660     7.390
+2DRN   9OTP2   4   0          6.580     5.370     4.050     2.890     2.180                              
+MESH   0RESN   2   0     Layer 1                                                                         
+2D     0RVTX   9   0         292936.72383    293590.97386    292933.54918    292936.38693    292915.33411
+2D     0RVTY   9   0        6177584.98148   6177750.27783   6178157.75489   6178314.42172   6177711.98563
+2D     0RVTX  10   0         293427.69789    293389.13208    293121.12489    292921.74275    292915.50896
+2D     0RVTY  10   0        6178268.34238   6178424.93051   6177603.05813   6177736.02141   6177738.50662
+2D     0RVTX  11   0         293464.55682    293470.31242    293598.51056    293168.44030                
+2D     0RVTY  11   0        6178233.77942   6177971.15287   6178322.88128   6178424.59058                
+2D     0RIND   5   0           35      30       5      51                                                
+DUMY   0DUMY   0   0     0                                                                               
+EXTR   0JCTL   0   0     0                                                                               
+EXTR   0B0     0   0                                                                    0 0 0 0          
+EXTR   0B1     0   0     0           2.0                                                     0000    60.0
+EXTR   0A1B    0   0                                                                                     
+EXTR   0A1C    0   0     0     0.010                                                                     
+WSPG   0RES    0   0                                                        -9999.000                    
+JCTL   0A1     0   0     0                                                                               
+EXTR   0A1     0   0                                                                                     
+SWMM   0MCTL   0 201       1                                                                             
+EXTR   0SP1N   0 201         0                        0                   0 0                     0 0 0  
+EXTR   0D1     0 201                 20.000   0.000         0.0     0.0 0                    1     100.0 
+EXTR   0BMP    0 201     0                                                                               
+NAME   0NODE   0 201     Node1                                                                           
+SWMM   0TMP2   0 201     Node1                                                                           
+ZZZN 201NODE   0 201    0   45  0   Node1          0 0 3.96875  -1  -1  -1  -1  -1  201 134 1   0   0    
+ZZZN 201NODE   1 201    1   2   0   0   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  0    
+ZZZN 201NODE   2 201    -6177238.6513       292932.5155         -6177234.6513       292936.5155          
+QAS    0GLOB   0 201    .014816666 .014816666 292989.296 -6177182.8 1 1 0                              0 
+RUNF   2INT    0   0        1                                                                            
+CONF   0PAR1   0   0         1                                                                           
+MDEL   0RSLV   0   0                             1                                                       
+PEST   0MAIN   0   0                        1                                                            
+EXTR   0NR01   0 201     0         0         1.22      0         0         0         442       1         
+EXTR   0NR02   0 201     0         0         0         0         20        20        1         0         
+EXTR   0NR03   0 201     1         442       0         0         0         0         0         0         
+EXTR   0NR04   0 201     0         0         0         0         0         0         0         0         
+EXTR   0NR05   0 201     0         20        0         0         0         0         20        0         
+EXTR   0NR06   0 201     0         0         0         0                   0         0         0         
+EXTR   0NR07   0 201     0                                                 0                             
+EXTR   0NR08   0 201     0                                                                               
+GE2D 100GELG   0   0       3         0         0 10 10                                 3                 
+GE2D 100GETF   0   0     Arial                                                                           
+GE2D 100GELT   0   0     Max Velocity                                                                    
+GE2D 100GEVF   0   0     Arial                                                                           
+GE2D 107GELG   0   0       3         0         0 10 10                                 3                 
+GE2D 107GETF   0   0     Arial                                                                           
+GE2D 107GELT   0   0     Max Water Elevation                                                             
+GE2D 107GEVF   0   0     Arial                                                                           
+WATR   0MAXW   0   0                             1.74331                                                 
+WATR   0MINW   0   0                             0.00000                                                 
+GE2D 103GELG   0   0       3         0         0 10 10                                 3                 
+GE2D 103GETF   0   0     Arial                                                                           
+GE2D 103GELT   0   0     Water Depth                                                                     
+GE2D 103GEVF   0   0     Arial                                                                           
+GE2D  98GELG   0   0       3         0         0 10 10                                 3                 
+GE2D  98GETF   0   0     Arial                                                                           
+GE2D  98GELT   0   0     Velocity                                                                        
+GE2D  98GEVF   0   0     Arial                                                                           
+GE2D 106GELG   0   0       3         0         0 10 10                                 3                 
+GE2D 106GETF   0   0     Arial                                                                           
+GE2D 106GELT   0   0     Water Elevation                                                                 
+GE2D 106GEVF   0   0     Arial                                                                           
+IDXL   0TPEG   0   0     0                                                                               
+NAME   0TPEG   0   0     Time of Peak h                                                                  
+GE2D  96GELG   0   0       3         0         0 10 10                                 3                 
+GE2D  96GETF   0   0     Arial                                                                           
+GE2D  96GELT   0   0     Time To Peak h  (hr)                                                            
+GE2D  96GEVF   0   0     Arial                                                                           
+GE2D 104GELG   0   0       3         0         0 10 10                                 3                 
+GE2D 104GETF   0   0     Arial                                                                           
+GE2D 104GELT   0   0     Max Water Depth                                                                 
+GE2D 104GEVF   0   0     Arial                                                                           
+GE     9GELG   0   0       3         0         0 10 10                                 3                 
+GE     9GETF   0   0     Arial                                                                           
+GE     9GELT   0   0     Flow                                                                            
+GE     9GEVF   0   0     Arial                                                                           
+GE     8GELG   0   0       3         0         0 10 10                                 3                 
+GE     8GETF   0   0     Arial                                                                           
+GE     8GELT   0   0     Velocity                                                                        
+GE     8GEVF   0   0     Arial                                                                           
+GE     6GELG   0   0       3         0         0 10 10                                 3                 
+GE     6GETF   0   0     Arial                                                                           
+GE     6GELT   0   0     Water Depth                                                                     
+GE     6GEVF   0   0     Arial                                                                           
+GE    10GELG   0   0       3         0         0 10 10                                 3                 
+GE    10GETF   0   0     Arial                                                                           
+GE    10GELT   0   0     Water Elevation                                                                 
+GE    10GEVF   0   0     Arial                                                                           
+GE     7GELG   0   0       3         0         0 10 10                                 3                 
+GE     7GETF   0   0     Arial                                                                           
+GE     7GELT   0   0     Hazard (VxD)                                                                    
+GE     7GEVF   0   0     Arial                                                                           
+GE    30GELG   0   0       3         0         0 10 10                                 3                 
+GE    30GETF   0   0     Arial                                                                           
+GE    30GELT   0   0     Hazard (UK Formula)                                                             
+GE    30GEVF   0   0     Arial                                                                           
+GE    24GELG   0   0       3         0         0 10 10                                 3                 
+GE    24GETF   0   0     Arial                                                                           
+GE    24GELT   0   0     Hazard (Australian NSW Floodplain Manage                                        
+GE    24GEVF   0   0     Arial                                                                           
+GE    25GELG   0   0       3         0         0 10 10                                 3                 
+GE    25GETF   0   0     Arial                                                                           
+GE    25GELT   0   0     Hazard (Herbert River Flood Study)                                              
+GE    25GEVF   0   0     Arial                                                                           
+GE    26GELG   0   0       3         0         0 10 10                                 3                 
+GE    26GETF   0   0     Arial                                                                           
+GE    26GELT   0   0     Hazard (Tweed River Flood Study)                                                
+GE    26GEVF   0   0     Arial                                                                           
+GE    27GELG   0   0       3         0         0 10 10                                 3                 
+GE    27GETF   0   0     Arial                                                                           
+GE    27GELT   0   0     Hazard (Australian Guidelines)                                                  
+GE    27GEVF   0   0     Arial                                                                           
+GE    28GELG   0   0       3         0         0 10 10                                 3                 
+GE    28GETF   0   0     Arial                                                                           
+GE    28GELT   0   0     Hazard (Melbourne Water - Property Safet                                        
+GE    28GEVF   0   0     Arial                                                                           
+GE    29GELG   0   0       3         0         0 10 10                                 3                 
+GE    29GETF   0   0     Arial                                                                           
+GE    29GELT   0   0     Hazard (Melbourne Water - Safety Risk in                                        
+GE    29GEVF   0   0     Arial                                                                           
+GE    31GELG   0   0       3         0         0 10 10                                 3                 
+GE    31GETF   0   0     Arial                                                                           
+GE    31GELT   0   0     Hazard (UK)                                                                     
+GE    31GEVF   0   0     Arial                                                                           
+GE    13GELG   0   0       3         0         0 10 10                                 3                 
+GE    13GETF   0   0     Arial                                                                           
+GE    13GELT   0   0     Bed Shear Stress                                                                
+GE    13GEVF   0   0     Arial                                                                           
+GE    14GELG   0   0       3         0         0 10 10                                 3                 
+GE    14GETF   0   0     Arial                                                                           
+GE    14GELT   0   0     Courant Number                                                                  
+GE    14GEVF   0   0     Arial                                                                           
+GE    15GELG   0   0       3         0         0 10 10                                 3                 
+GE    15GETF   0   0     Arial                                                                           
+GE    15GELT   0   0     Energy                                                                          
+GE    15GEVF   0   0     Arial                                                                           
+GE    16GELG   0   0       3         0         0 10 10                                 3                 
+GE    16GETF   0   0     Arial                                                                           
+GE    16GELT   0   0     Froude Number                                                                   
+GE    16GEVF   0   0     Arial                                                                           
+GE    17GELG   0   0       3         0         0 10 10                                 3                 
+GE    17GETF   0   0     Arial                                                                           
+GE    17GELT   0   0     Mass Balance (Per Output Interval)                                              
+GE    17GEVF   0   0     Arial                                                                           
+GE    18GELG   0   0       3         0         0 10 10                                 3                 
+GE    18GETF   0   0     Arial                                                                           
+GE    18GELT   0   0     Mass Balance (Cumulative)                                                       
+GE    18GEVF   0   0     Arial                                                                           
+GE    19GELG   0   0       3         0         0 10 10                                 3                 
+GE    19GETF   0   0     Arial                                                                           
+GE    19GELT   0   0     Manning's n                                                                     
+GE    19GEVF   0   0     Arial                                                                           
+GE    20GELG   0   0       3         0         0 10 10                                 3                 
+GE    20GETF   0   0     Arial                                                                           
+GE    20GELT   0   0     Flow Regime                                                                     
+GE    20GEVF   0   0     Arial                                                                           
+GE    21GELG   0   0       3         0         0 10 10                                 3                 
+GE    21GETF   0   0     Arial                                                                           
+GE    21GELT   0   0     Stream Power                                                                    
+GE    21GEVF   0   0     Arial                                                                           
+GE    22GELG   0   0       3         0         0 10 10                                 3                 
+GE    22GETF   0   0     Arial                                                                           
+GE    22GELT   0   0     Sink/Source  Inflow                                                             
+GE    22GEVF   0   0     Arial                                                                           
+GE    23GELG   0   0       3         0         0 10 10                                 3                 
+GE    23GETF   0   0     Arial                                                                           
+GE    23GELT   0   0     Viscosity Coefficient                                                           
+GE    23GEVF   0   0     Arial                                                                           
+GE    32GELG   0   0       3         0         0 10 10                                 3                 
+GE    32GETF   0   0     Arial                                                                           
+GE    32GELT   0   0     Bathymetry                                                                      
+GE    32GEVF   0   0     Arial                                                                           
+GE    33GELG   0   0       3         0         0 10 10                                 3                 
+GE    33GETF   0   0     Arial                                                                           
+GE    33GELT   0   0     Time to / Duration of Inundation                                                
+GE    33GEVF   0   0     Arial                                                                           
+GE    34GELG   0   0       3         0         0 10 10                                 3                 
+GE    34GETF   0   0     Arial                                                                           
+GE    34GELT   0   0     Minimum DT                                                                      
+GE    34GEVF   0   0     Arial                                                                           
+DIAG   0CRD3   0   0     1                                                                               
+DIAG   0CRD4   0   0         0                   0    1    51                                            
+DIAG   0FONT   0   0                                                                                75367
+DIAG   0MRK    0   0      0                   0    -0.0001070625127   46                                 
+DIAG   0CRD5   0   0     1                                                                               
+DIAG   0CRD6   0   0     1                                                                               
+DIAG   0CRD7   0   0     1                                                                               
+DIAG   0CRD8   0   0     1                                                                               
+DIAG   0CRD9   0   0     1                                                                               
+LAYS   0LAYS   0  15     Legends                                                                         
+LAYE   0LAYE   0  15     0                                                                               
+LAYS   0LAYS   0  16     Time Series Outputs                                                             
+LAYE   0LAYE   0  16     0                                                                               
+LAYS   0LAYS   0  17     Times                                                                           
+LAYE   0LAYE   0  17     0                                                                               
+LAYS   0LAYS   0  18     Topography                                                                      
+LAYE   0LAYE   0  18     0                                                                               
+LAYS   0LAYS   0  19     Surfaces                                                                        
+LAYE   0LAYE   0  19     0                                                                               
+LAYS   0LAYS   0  20     Reporting                                                                       
+LAYE   0LAYE   0  20     0                                                                               
+LAYS   0LAYS   0  21     2D Maps                                                                         
+LAYE   0LAYE   0  21     0                                                                               
+LAYS   0LAYS   0  22     Water Elevations                                                                
+LAYE   0LAYE   0  22     0                                                                               
+LAYS   0LAYS   0  23     Water Depths                                                                    
+LAYE   0LAYE   0  23     0                                                                               
+1D     0RELV   0   0     0                                                                               
+RSMP   01DRM   0   0      0292897.9326177407.87   2 0255 1                                               
+RSMP   0MCPS   0   0     0.00000                                                                         
+RSMP   02DRM   0   0                                       10  1 1 00                                    
+RSMP   0MLBL   0   0      0 0  12648447   0                                                              
+RSMP   0MRLF   0   0     Arial                                                                           
+RSMP 1032DRM   0   0      0     0.000     5.802   2 0142 1 10  1 1 00     0.000     1.000                
+RSMP 103MCOL   0   0     16711680  16740608  16769536  11140864  3735296   65336     65450     58111     
+RSMP 103MCOL   1   0     29183     255                                                                   
+RSMP 103MPOS   0   0     0.00000   0.11111   0.22222   0.33333   0.44444   0.55556   0.66667   0.77778   
+RSMP 103MPOS   1   0     0.88889   1.00000                                                               
+RSMP 103MLBL   0   0      0 0  12648447   0 0  12648447   2                                              
+RSMP 103MRLF   0   0     Arial                                                                           
+RSMP 103MRCF   0   0     Arial                                                                           
+RSVF 103FLBL   0   0      0                                                                              
+RSVF 103LBLF   0   0     Arial                                                                           
+RSVF 103LBLS   0   0        10                                                                           
+RSVF 103LBLC   0   0       12648447                                                                      
+RSVF 103LBLD   0   0       0                                                                             
+RSMP 103MCCL   0   0     0                                                                               
+RSMP 103MCPS   0   0     0.00000                                                                         
+MESH   0RESN   3   0     Layer 1                                                                         
+2DDS   0DAT1   0   0     0    0.5            0.000                          43.000     0.2500      0.000 
+2DDS   0DATZ   0   0     -99999.000-99999.000-99999.000-99999.000-99999.000-99999.000-99999.000-99999.000
+2DDS   0DATZ   1   0     -99999.000-99999.000-99999.000-99999.000-99999.000-99999.000-99999.000-99999.000
+2DDS   0DATZ   2   0     -99999.000-99999.000-99999.000-99999.000-99999.000-99999.000-99999.000-99999.000
+2DDS   0DATZ   3   0     -99999.000-99999.000-99999.000-99999.000-99999.000-99999.000-99999.000-99999.000
+2DDS   0DATZ   4   0     -99999.000-99999.000-99999.000-99999.000-99999.000-99999.000-99999.000-99999.000
+2DDS   0DAT2   0   0            0.000                                                                    
+2DDS   0DA2    0   0                           2                                                         
+LAYS   0LAYS   0  24     1D Network                                                                      
+LAYE   0LAYE   0  24     0                                                                               
+MESH   0TPSI   0   0              0         2         1                                                  
+MESH   0TPSY   0   0              4         5         2                                                  
+MESH   0TPSN   0   0     Layer 1                                                                         
+2D     0TVTX   0   0         293121.07750    293123.13567    293055.19221    293134.16708    293109.86982
+2D     0TVTY   0   0        6177806.46279   6177628.56802   6177772.97922   6177679.21222   6177722.75666
+2D     0BKLN   1   0         1                                                                           
+2D    10RGEN   4   0     1                  1                                                            
+LAYS   0LAYS   0  25     1D Network                                                                      
+LAYE   0LAYE   0  25     0                                                                               
+MESH   0TPSN   1   0     Layer 1                                                                         
+LACH   0FREQ   0   0      1       2     0.387 1       5     0.584 1      10     0.714 1      25     0.878
+LACH   0FREQ   1   0      1      50     1.000 1     100     1.122 1     500     1.402                    
+LACH   0ZONE   0   0     A03            0.600A04            0.800A05            1.000A06            1.200
+LACH   0ZONE   1   0     A07            1.400A08            1.600A09            1.800A10            2.000
+LACH   0ZONE   2   0     A11            2.200A12            2.400A13            2.600A14            2.800
+LACH   0ZONE   3   0     A15            3.000A16            3.200A17            3.400A18            3.600
+LACH   0ZONE   4   0     A19            3.800A20            4.000A21            4.200A22            4.400
+LACH   0ZONE   5   0     A23            4.600A24            4.800A25            5.000A26            5.200
+LACH   0ZONE   6   0     A27            5.400A28            5.600A29            5.800A30            6.000
+LACH   0ZONE   7   0     A31            6.200A32            6.400A33            6.600A34            6.800
+LACH   0ZONE   8   0     A35            7.000A36            7.200A37            7.400A38            7.600
+LACH   0ZONE   9   0     A39            7.800A40            8.000A41            8.200A42            8.400
+LACH   0ZONE  10   0     A43            8.600A44            8.800A45            9.000A46            9.200
+LACH   0ZONE  11   0     A47            9.400A48            9.600A49            9.800A50           10.000
+LACH   0ZONE  12   0     A51           10.200A52           10.400A53           10.600A54           10.800
+LACH   0ZONE  13   0     A55           11.000A56           11.200A57           11.400A58           11.600
+LACH   0ZONE  14   0     A59           11.800A60           12.000A61           12.200A62           12.400
+LACH   0ZONE  15   0     A63           12.600A64           12.800A65           13.000A66           13.200
+LACH   0ZONE  16   0     A67           13.400A68           13.600A69           13.800A70           14.000
+LACH   0ZONE  17   0     A71           14.200A72           14.400A73           14.600A74           14.800
+LACH   0ZONE  18   0     A75           15.000A76           15.200A77           15.400A78           15.600
+LACH   0ZONE  19   0     A79           15.800A80           16.000A81           16.200A82           16.400
+LACH   0ZONE  20   0     A83           16.600A84           16.800A85           17.000A86           17.200
+LACH   0ZONE  21   0     A87           17.400A88           17.600A89           17.800A90           18.000
+LACH   0ZONE  22   0     A91           18.200A92           18.400A93           18.600A94           18.800
+LACH   0ZONE  23   0     A95           19.000A96           19.200A97           19.400A98           19.600
+LACH   0ZONE  24   0     A99           19.800                                                            
+LACH   0CTL2   0   0              5        50                                                            
+RSFL   0PROP   0  14                         0 0                                                         
+2D     0JOBG   0   0     C:\Users\Mel.Meng\Documents\GitHub\hhnote\workflow\data\dtm\modify_elevation\mod
+2D     0JOBG   1   0     el\grid\DEM.asc                                                                 
+RSMP 1042DRM   0   0      0     0.000     5.802   2 0135 1 10  1 1 00     0.000     1.000                
+RSMP 104MCOL   0   0     16711680  16740608  16769536  11140864  3735296   65336     65450     58111     
+RSMP 104MCOL   1   0     29183     255                                                                   
+RSMP 104MPOS   0   0     0.00000   0.11111   0.22222   0.33333   0.44444   0.55556   0.66667   0.77778   
+RSMP 104MPOS   1   0     0.88889   1.00000                                                               
+RSMP 104MLBL   0   0      0 0  12648447   0 0  12648447   2                                              
+RSMP 104MRLF   0   0     Arial                                                                           
+RSMP 104MRCF   0   0     Arial                                                                           
+RSVF 104FLBL   0   0      0                                                                              
+RSVF 104LBLF   0   0     Arial                                                                           
+RSVF 104LBLS   0   0        10                                                                           
+RSVF 104LBLC   0   0       12648447                                                                      
+RSVF 104LBLD   0   0       0                                                                             
+RSMP 104MCCL   0   0     0                                                                               
+RSMP 104MCPS   0   0     0.00000                                                                         
+2D     0ADVF   0   0     1                                                                               
+2D     0ADVP   0   0     GIS Format                                                                      
+2D     0ADVV   0   0     SHP                                                                             
+2D    13RGEN   2   0     1                  1                                                            
+2D     9RGEN   3   0     1                  1                                                            
+2D     0BKLN   0   0      0  0                                                                           
+2D     0BLEV   0   0     -99999.000                                                                      
+2D     0BLVX   0   0         293033.12938    293055.19221    293081.26645    293113.60854    293127.64852
+2D     0BLVY   0   0        6177776.23850   6177772.97922   6177757.18424   6177729.60571   6177716.06716
+2D     0BLVZ   0   0             51.16476        50.58132        49.94508        49.39443        49.39656
+2D     0BLVX   1   0         293134.91922    293134.16708    293129.40352    293123.13567                
+2D     0BLVY   1   0        6177700.52290   6177679.21222   6177654.39155   6177628.56802                
+2D     0BLVZ   1   0             49.45025        49.59088        49.94641        51.25368                
+2D     0TVTX   1   0         293127.64852    293033.80895    293081.26645    293126.08471    293129.40352
+2D     0TVTY   1   0        6177716.06716   6177818.62316   6177757.18424   6177869.41060   6177654.39155
+MESH   0TPTY   0   0      0 1                                                                            
+MESH   0TPVL   0   0         5    2                                                                      
+MESH   0TPIN   0   0         5    9                                                                      
+2D     0TPID   0   0         1    0                                                                      
+MESH   0TPST   0   0              2         1                                                            
+2D     0TIND   0   0           12       6       0       8      12      10       2       7      13       5
+2D     0ADGF   0   0     1                                                                               
+2D     0ADGP   0   0     Read GIS Z Shape Ridge | THICK                                                  
+2D     0ADGV   0   0     C:\tmp\A\breakline_brkline_L.shp|C:\tmp\A\breakline_brkline_P.shp               
+2D     0ADGT   0   0     3                                                                               
+APPL   0NDOP   0   0     Node                                           0                                
+APPL   0LKOP   0   0     Link                                                                  0         
+ZZZS   0SEL    0   0          0     1                                                                    
+ZZZS   1SEL    0   0          0     1                                                                    
+ZZZS   2SEL    0   0          0     1                                                                    
+2DDS   1DAT1   0   0                                                        40.000          0      0.000 
+2DDS   1DA2    0   0                           0                                                         
+2DDS   1DATZ   0   0     -999999.00-999999.00-999999.00-999999.00                                        
+MESH   0TPSN   2   0     Layer 1                                                                         
+2D     0TVTX   2   0         293033.12938    293134.91922    293035.95489    293113.60854                
+2D     0TVTY   2   0        6177776.23850   6177700.52290   6177877.99439   6177729.60571                
+2D     0TIND   1   0           11       3       9       1                                                
