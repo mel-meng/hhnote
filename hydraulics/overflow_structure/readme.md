@@ -48,21 +48,15 @@ The openings of the overflow structures are commonly modeled as,
 
 The openings of the overflow structures are commonly modeled as weirs, orifices, sluice gates, and other ancillaries. These ancillaries are zero-length links. Unlike gravity pipes, which have a volume and can operate on a wide range of flow conditions, ancillaries operate more like pumps and can only function within a narrow band of curves. As a result, they may experience more instability issues and require careful evaluation of their parameters.
 
-# Ancillaries can be divided into two groups:
+Ancillaries can be divided into two groups:
 
-# 
+- Those that operate based on upstream head, such as weirs and orifices with free flow downstream.
 
-# Those that operate based on upstream head, such as weirs and orifices with free flow downstream.
+- Those that operate based on the difference between upstream and downstream head, such as pumps and vortex user control.
 
-# Those that operate based on the difference between upstream and downstream head, such as pumps and vortex user control.
+When an ancillary operates solely on the upstream head, it can be considered a boundary condition. This simplifies the situation as the downstream condition does not impact the upstream system. However, when an ancillary operates based on the difference of the head, it becomes more complex as the downstream condition can affect upstream areas.
 
-# 
-
-# When an ancillary operates solely on the upstream head, it can be considered a boundary condition. This simplifies the situation as the downstream condition does not impact the upstream system. However, when an ancillary operates based on the difference of the head, it becomes more complex as the downstream condition can affect upstream areas.
-
-# 
-
-# It's important to note that most ancillaries can be drowned, meaning the free flow condition downstream can stop if the water level rises. At this point, the flow will be impacted by the downstream conditions. Additionally, ancillaries are governed by equations derived from experiments, often using parameters that cannot be directly measured.
+It's important to note that most ancillaries can be drowned, meaning the free flow condition downstream can stop if the water level rises. At this point, the flow will be impacted by the downstream conditions. Additionally, ancillaries are governed by equations derived from experiments, often using parameters that cannot be directly measured.
 
 # Conclusion
 
