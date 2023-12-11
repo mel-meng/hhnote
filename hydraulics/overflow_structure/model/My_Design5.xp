@@ -1,0 +1,1472 @@
+SWMM   0MODE   0   0     200101                                                                          
+FONT   0LIST   0   0            0        Arial                                                           
+FONT   0FLAG   0   0            0                                                                        
+CATC   0MATR   0   0       16744576  16448214  255  128  16744576    1         0         40     4.000    
+1DWL   0OPT    0   0                          1                                                          
+EXTN   0MATR   0   0              0         0    0    0  16711680    1         0        -10     4.000    
+EXTN   0MATR   0   1            255  16777215  255    0  10025368    1         0        -10     4.000    
+EXTR   0B2     0   0        0                                                                           0
+EXTR   0A1     0   0         Design Tools                                                                
+EXTR   0B1     0   0     0          60.0                                                     0010    60.0
+EXTR   0B1A    0   0       16   0   0   0   17   0   0   02011 202011 21                                 
+RUNF   0B1     0   0                   2   17    0    0    0    0   16    2 2011    0    0 2011          
+TABL   1GLOB   0   0     2    0    0100000                                                               
+TABL   1VAR1   0   0                                             FD_LINK_NAME             0    0    0    
+TABL   1VAR1   1   0     F_LEN                    0    0    0    F_NKLASS                 0    0    0    
+TABL   1VAR1   2   0     F_AFULL                  0    0    0    F_ROUGH                  0    0    0    
+TABL   1VAR1   3   0     F_WIDE                   0    0    0    F_DEEP                   0    0    0    
+TABL   1VAR1   4   0     F_TTHETA                 0    0    0    F_TPHI                   0    0    0    
+TABL   2GLOB   0   0     2    0    0100000                                                               
+TABL   2VAR1   0   0                                             FD_LINK_NAME             0    0    0    
+TABL   2VAR1   1   0     F_BARREL                 0    0    0    F_PLC                    0    0    0    
+TABL   2VAR1   2   0     F_GEOFF                  0    0    0    F_ECC                    0    0    0    
+TABL   2VAR1   3   0     F_PWD                    0    0    0    F_RRAT                   0    0    0    
+TABL   2VAR1   4   0     F_RDEP                   0    0    0    F_NONLIN                 0    0    0    
+TABL   3GLOB   0   0     2    1    0100000                                                               
+TABL   3VAR1   0   0                                             FD_LINK_NAME             0    0    0    
+TABL   3VAR1   1   0     FD_LINK_US_NODE          0    0    0    FD_LINK_DS_NODE          0    0    0    
+TABL   3VAR1   2   0     F_LEN                    0    0    0    F_ROUGH                  0    0    0    
+TABL   3VAR1   3   0     F_ZP1                    0    0    0    F_ZP2                    0    0    0    
+TABL   3VAR1   4   0     F_NKLASS                 0    0    0    F_DEEP                   0    0    0    
+TABL   4GLOB   0   0     1    0    0000000                                                               
+TABL   4VAR1   0   0                                             FD_NODE_NAME             0    0    3    
+TABL   4VAR1   1   0     F_GRELEV                 0    0    3    F_E_RSRFELV              0    0    3    
+TABL   4VAR1   2   0     F_E_RFREEBD              0    0    3    F_E_RSRFARE              0    0    3    
+TABL   4VAR1   3   0     F_E_RMNDITR              0    0    3    F_E_RTNDITR              0    0    3    
+TABL   5GLOB   0   0     2    0    0100000                                                               
+TABL   5VAR1   0   0                                             FD_LINK_NAME             0    0    0    
+TABL   5VAR1   1   0     F_E_RDSGNFF              0    0    0    F_E_RDSGNVL              0    0    0    
+TABL   5VAR1   2   0     F_DEEP                   0    0    0    F_E_RMAXFLO              0    0    0    
+TABL   5VAR1   3   0     F_E_RTIMEPF              0    0    0    F_E_RMAXVEL              0    0    0    
+TABL   5VAR1   4   0     F_E_RTIMEPV              0    0    0    F_E_RPMXFLO              0    0    0    
+TABL   5VAR1   5   0     F_E_RSRFDTH              0    0    1    F_E_RSRFDTH              0    0    2    
+TABL   6GLOB   0   0     2    0    0100000                                                               
+TABL   6VAR1   0   0                                             FD_LINK_NAME             0    0    0    
+TABL   6VAR1   1   0     F_E_RLENDRT              0    0    0    F_E_RTIMENF              0    0    0    
+TABL   6VAR1   2   0     F_E_RLENTMC              0    0    0    F_E_RHYDRAD              0    0    0    
+TABL   6VAR1   3   0     F_E_RXSECAR              0    0    0    F_E_RMAXVD               0    0    0    
+TABL   7GLOB   0   0     2    0    0100000                                                               
+TABL   7VAR1   0   0                                             FD_LINK_NAME             0    0    0    
+TABL   7VAR1   1   0     F_E_RMAXFLO              0    0    0    F_E_RMINORL              0    0    0    
+TABL   7VAR1   2   0     F_E_RFRICTL              0    0    0    F_E_RSRFELV              0    0    1    
+TABL   7VAR1   3   0     F_E_RSRFELV              0    0    2                                            
+TABL   8GLOB   0   0     2    0    0100000                                                               
+TABL   8VAR1   0   0                                             FD_LINK_NAME             0    0    0    
+TABL   8VAR1   1   0     F_E_RMAXFLO              0    0    0    F_E_RMAXVEL              0    0    0    
+TABL   8VAR1   2   0     FD_NODE_NAME             0    0    1    F_Z                      0    0    1    
+TABL   8VAR1   3   0     F_E_RSRFELV              0    0    1                                            
+TABL   9GLOB   0   0     2    0    0100000                                                               
+TABL   9VAR1   0   0                                             FD_LINK_NAME             0    0    0    
+TABL   9VAR1   1   0     FD_NODE_NAME             0    0    1    FD_NODE_NAME             0    0    2    
+TABL   9VAR1   2   0     F_Z                      0    0    1    F_Z                      0    0    2    
+TABL   9VAR1   3   0     F_E_RSRFELV              0    0    1    F_E_RSRFELV              0    0    2    
+TABL   9VAR1   4   0     F_NKLASS                 0    0    0    F_NKCTL                  0    0    0    
+TABL  10GLOB   0   0     1    0    0000000                                                               
+TABL  10VAR1   0   0                                             FD_NODE_NAME             0    0    3    
+TABL  10VAR1   1   0     F_E_RCONTER              0    0    3                                            
+TABL  11GLOB   0   0     1    0    0000000                                                               
+TABL  11VAR1   0   0                                             FD_NODE_NAME             0    0    3    
+TABL  11VAR1   1   0     F_E_RNDINFL              0    0    3                                            
+TABL  12GLOB   0   0     1    0    0000001                      0                                        
+TABL  12VAR1   0   0                                             FD_NODE_NAME             0    0    3    
+TABL  12VAR1   1   0     F_E_RNSURCH              0    0    3    F_E_RNFLOOD              0    0    3    
+TABL  12VAR1   2   0     F_E_RFLDLSS              0    0    3    F_E_RVOLUME              0    0    3    
+FLD    1DEF    0   0     F_NKLASS            1                   F_DEEP              1                   
+SWMM   0MISC   0   0     1                                                                               
+SWMM   0MCTL   0 201     1 1                                                                             
+SWMM   0MCTL   0 202     1 1                                                                             
+SWMM   0MCTL   0 203     1 1                                                                             
+SWMM   0MCTL   0 204     0 1                                                                             
+SWMM   0MCTL   0 205     1 1                                                                             
+SWMM   0MCTL   0 206     1 1                                                                             
+SWMM   0MCTL   0 207     1 1                                                                             
+SWMM   0MCTL   0 208     1 1                                                                             
+SWMM   0MCTL   0 209     1 1                                                                             
+SWMM   0MCTL   0 210     1 1                                                                             
+SWMM   0MCTL   0 211     0 1                                                                             
+SWMM   0MCTL   0 212     0 1                                                                             
+SWMM   0MCTL   0 213       1                                                                             
+EXTR   0C1     0 213                 1           1                 175.11   1285.090 1276.890            
+SWMM   0MCTL   0 214       1                                                                             
+EXTR   0C1     0 214                 1           1.5               73.37    1272.500 1271.000            
+SWMM   0MCTL   0 215       1                                                                             
+EXTR   0C1     0 215                 1           1.25              106.74   1276.000 1272.500            
+SWMM   0MCTL   0 216       1                                                                             
+EXTR   0C1     0 216                 1           1                 108.32   1281.000 1276.000            
+SWMM   0MCTL   0 217       1                                                                             
+EXTR   0C1     0 217                 1           1.25              113.84   1285.52  1281.496      0.014 
+SWMM   0MCTL   0 218       1                                                                             
+EXTR   0C1     0 218                 1           1                 199.74   1293.740 1285.520            
+SWMM   0MCTL   0 219       1                                                                             
+EXTR   0C1     0 219                 1           1                 168.33   1297.490 1293.740            
+SWMM   0MCTL   0 220       1                                                                             
+EXTR   0C1     0 220                 1           1.25              296.97   1281.496 1271                
+SWMM   0MCTL   0 221       1                                                                             
+EXTR   0C1     0 221                 1           1                 292.65   1301.180 1297.490            
+SWMM   0MCTL   0 222       1                                                                             
+EXTR   0C1     0 222             0.0  1          2                 71.05    1270.500 1270.000            
+SWMM   0MCTL   0 223       1                                                                             
+EXTR   0C1     0 223                 1           2                 18.63    1271.000 1270.500            
+ZZZN   0NETW   0   0     0                                                                               
+ZIMG   0ATT    0   0         0                                                                           
+LACH   0NAME   0   0     LA County Runoff Curves                     0   10    5    0                    
+QDV    0SET    0   0           1   1   -1   -1   -1 0   -1   -1                                          
+2D     0RMSH   0   0              0         0         0                   0                              
+2D     0SMSH   0   0              0                   0                   0                              
+2D     0TMSH   0   0              0         0         0                   0                              
+2D     0PMSH   0   0                                  0         0         0                              
+2D     0EXTE   0   0              1Layer 1                                                               
+2DMD   0TMCL   0   0                              0                                                      
+2D     0EXNT   0   0                                             111           0      0                  
+LINK   0LKLB   0 213      4133.4365 3928.1734                                                            
+LINK   0LKLB   0 214      3967.1794 4054.6211                                                            
+LINK   0LKLB   0 215      4053.3820 4026.4076                                                            
+LINK   0LKLB   0 216      4155.7625 3993.5566                                                            
+LINK   0LKLB   0 217      4080.9790 3761.0476                                                            
+LINK   0LKLB   0 218      4222.5894 3693.7508                                                            
+LINK   0LKLB   0 219      4388.7584 3614.6531                                                            
+LINK   0LKLB   0 220      3981.2129 3926.4064                                                            
+ZZZE   0VRTX   0 221     4749.856300     -3035.732200    4578.074785     -3046.378395    4538.277431     
+LINK   0LKLB   0 221      4603.8118 3544.7833                                                            
+LINK   0LKLB   0 222      3881.6817 4085.5521                                                            
+LINK   0LKLB   0 223      3923.4546 4068.7656                                                            
+TEXT   0CNTL   0   0         0                                                                           
+TINF   0GEN1   0   0         0                                                                           
+2D     0CMSH   0   0              0                   0                   0                              
+2D     0CATC   0   0     1        1         1                                                            
+SRPT   0VIEW   0   0                   1    1           0 0 3 3     0.000     0.000   10   10            
+SRPT   0FONT   0   0     Arial                                   Arial                                   
+GE     0ENCO   0   0     0                                                                               
+RSFL   0PROP   0   0     0001  16776960    0                                                             
+RFLF   0PROP   0   0     arial                                                                           
+RSPT   0PROP   0   0     01                 16776960    0                                                
+RPTF   0PROP   0   0     arial                                                                           
+GRID   0SPEC   0   0        10.0000   10.0000         0.0000         0.0000    0    0    1    1.0000     
+GIS    0NUMB   0   0              0                                                                      
+CAD    0NUMB   0   0              1                                                                      
+CAD    0FILE   0   0     C:\Users\mengm\OneDrive - Autodesk\Desktop\workshop\M11-Adv Hydraulics\YARRA_Are
+CAD    0VIEW   0   0     0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE                                                
+RSFN   0RSNB   0   0            1                                                                        
+RSFN   0RSID   0   0            0                                                                        
+RSFN   0RDFL   0   0                                                                                     
+2D     0RELG   0   0     0        1         0                                                            
+2D     0RELV   0   0     0        0                                                                      
+2D     0RESV   0   0     3                                                                               
+2D     0RESM   0   0      1                                                                              
+RSVF   3FLOW   0   0      0   0.00000   0.00000   0   1 0255 1         3         2 1 1  10.00000         
+RSVF   3FCOL   0   0     0                                                                               
+RSVF   3FPOS   0   0     0.00000                                                                         
+RSVF   3FLO1   0   0      1     1.000                                                                    
+RSVF   3FLBL   0   0      0 0  12648447   0 0     65535                                                  
+RSVF   3FRLF   0   0     Arial                                                                           
+RSVF   3FRCF   0   0     Arial                                                                           
+RSMP   12DRM   0   0      0     0.0008571561743   2 0255 1 10  1 1 00                                    
+RSMP   1MCOL   0   0     255       29183     58111     65450     65336     3735296   11140864  16769536  
+RSMP   1MCOL   1   0     16740608  16711680                                                              
+RSMP   1MPOS   0   0     0.00000   0.11000   0.22000   0.33000   0.44000   0.55000   0.66000   0.77000   
+RSMP   1MPOS   1   0     0.88000   1.00000                                                               
+RSMP   1MCCL   0   0     0                                                                               
+RSMP   1MCPS   0   0     0.00000                                                                         
+RSMP   1MLBL   0   0      0 0  12648447   0 0     65535                                                  
+RSMP   1MRLF   0   0     Arial                                                                           
+RSMP   1MRCF   0   0     Arial                                                                           
+VIEW   0SAV    0   0     0                                                                               
+CUHP   0JOB1   0   0                                        0                                            
+LACH   0CTL    0   0     0   0   50        10        40        35       100                              
+PRNT   0PSTP   0   0       9  1   3.670   9.520   3.670   9.520   2.000   2.000   2.000   2.00001  0     
+PRNT   0AFRM   0   0                                                                                     
+PRNT   0PSP2   0   0     1000.0001000.000  00         00                  0                              
+PRNT   0PSP3   0   0     Arial                                              12  0         0              
+PRNT   0PSP4   0   0     Arial                                              12  0         0              
+SRPT   0CNTL   0   0              1         0    0    0    1    0                                        
+SRPT   1GLOB   0   0    0.0047625 0.00687917                                                             
+SRPT   1GLOB   1   0    3.85915 5.57433                                                                  
+SRPT   0GLOB   0   0    0.0047625 0.00687917                                                             
+SRPT   0GLOB   1   0    3.85915 5.57433                                                                  
+ZRPT   0NAME   0   0     RPT Headings                                0   40    5    0                    
+ZSYM   0NAME   0   0     Pollutant                                   0   40    5   -1                    
+ZSYM   1NAME   0   0     Buildup/Washoff                             0   40    5   -1                    
+ZSYM   2NAME   0   0     Erosion                                     0   40    5    0                    
+ZSYM   3NAME   0   0     Groundwater                                 0   40    5    0                    
+ZSYM   4NAME   0   0     Infiltration                                1   40    5    0                    
+ZSYM   5NAME   0   0     Landuse                                     0   40    5    0                    
+ZSYM   6NAME   0   0     Initial Loads                               0   40    5    0                    
+ZSYM   7NAME   0   0     Rainfall                                    1   40    5    0                    
+ZSYM   8NAME   0   0     Snow Melt                                   0   40    5    0                    
+ZSYM   9NAME   0   0     RDII                                        0   40    5    0                    
+ZSYM  10NAME   0   0     BMP                                         0   40    5    0                    
+ZSYM  11NAME   0   0     DW Sewer Inflows                            0   40    5    0                    
+ZSYM  12NAME   0   0     Sewer infiltration                          0   40    5    0                    
+ZSYM  13NAME   0   0     WS Temperatures                             0   40    5    0                    
+ZSYM  24NAME   0   0     Temporal Variations                         0   40    5    0                    
+ZSYM  14NAME   0   0     Pollutant List                              0   40    5    0                    
+ZSYM  15NAME   0   0     Landuse List                                0   40    5    0                    
+ZSYM  17NAME   0   0     StatPollutants                              0   40    5    0                    
+ZSYM  18NAME   0   0     Gauged Pollutants                           0   40    5    0                    
+ZSYM  19NAME   0   0     Pump Ratings                                0   40    5    0                    
+ZSYM  21NAME   0   0     Pit Rating Curves                           2   40    5    0                    
+ZSYM  22NAME   0   0     Hydraulic Brakes                            0   40    5    0                    
+ZSYM  20NAME   0   0     User Defined File Types                     0   40    5    0                    
+ZSYM  23NAME   0   0     XP Tables                                  13   40    5    0                    
+ZSYM  23OBJ    0   0     Table E1                                Table E2                                
+ZSYM  23OBJ    1   0     Table E4                                Table E8/E9                             
+ZSYM  23OBJ    2   0     Table E10                               Table E11                               
+ZSYM  23OBJ    3   0     Table E13                               Table E15                               
+ZSYM  23OBJ    4   0     Table E16                               Table E18                               
+ZSYM  23OBJ    5   0     Table E19                               Table E20                               
+ZSYM  23VAL    0   0         1    2    3    4    5    6    7    8    9   10   11   12   13               
+ZSYM  25NAME   0   0     Pavement Crossfall                          0   40    5    0                    
+ZSYM  26NAME   0   0     HEC 22                                      0   40    5    0                    
+ZSYM  27NAME   0   0     Rational Formula                            2   40    5    0                    
+ZSYM  28NAME   0   0     Natural Section Shape                       1   40    5    0                    
+ZSYM  29NAME   0   0     2D Landuse                                  0   40    5    0                    
+ZSYM  30NAME   0   0     WSPG Channel Group                          0   40    5    0                    
+ZSYM   0GLDB   0   0        17                                                                           
+SWMM   0SWMM   0   0         24.100                                                                      
+ZZZC   0CNTL   0   0    12   11   0    999   999   246.985849 0    450  swmmxp                           
+ZZZC   0CNTL   1   0    3766.4120           4145.0523                                                    
+ZZZC   0NAME   0   0    1    Node           13   Link           13                                       
+ZZZD   0DIRT   0   0         1    1                                                                      
+ZZZN 201NODE   0 201    0   45  0   4/1            0 0 3.81     213 -1  -1  -1  -1  201 134 1   0   0    
+ZZZN 201NODE   1 201    1   2   117 0   1   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  0    
+ZZZN 201NODE   2 201    -3347.4723          4159.7664           -3343.6623          4163.5764            
+QAS    0GLOB   0 201    .014816666 .014816666 4743.85746 -2758.5018 1 1 0                              0 
+ZZZN 202NODE   0 202    0   45  0   Pond           0 0 3.81     214 220 223 -1  -1  202 133 1   0   0    
+ZZZN 202NODE   1 202    1   2   79  0   0   0   1   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  0    
+ZZZN 202NODE   2 202    -3569.1115          3930.8915           -3565.3015          3934.7015            
+QAS    0GLOB   0 202    .014816666 .014816666 4509.91931 -2975.7301 1 1 0                              0 
+ZZZN 203NODE   0 203    0   45  0   3/1            0 0 3.81     214 215 -1  -1  -1  203 134 1   0   0    
+ZZZN 203NODE   1 203    1   2   79  0   1   0   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  0    
+ZZZN 203NODE   2 203    -3543.9408          3999.6573           -3540.1308          4003.4673            
+QAS    0GLOB   0 203    .014816666 .014816666 4585.11372 -2950.6653 1 1 0                              0 
+ZZZN 204NODE   0 204    0   45  0   Junction       0 0 3.81     213 215 216 -1  -1  204 133 1   0   0    
+ZZZN 204NODE   1 204    1   2   79  0   0   1   0   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  0    
+ZZZN 204NODE   2 204    -3512.6845          4103.2967           -3508.8745          4107.1067            
+QAS    0GLOB   0 204    .014816666 .014816666 4685.37293 -2925.6005 1 1 0                              0 
+ZZZN 205NODE   0 205    0   45  0   3/2            0 0 3.81     216 -1  -1  -1  -1  205 134 1   0   0    
+ZZZN 205NODE   1 205    1   2   79  0   1   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  0    
+ZZZN 205NODE   2 205    -3478.2387          4204.4183           -3474.4287          4208.2283            
+QAS    0GLOB   0 205    .014816666 .014816666 4785.63213 -2883.8259 1 1 0                              0 
+ZZZN 206NODE   0 206    0   45  0   5/1            0 0 3.81     217 220 -1  -1  -1  206 134 1   0   0    
+ZZZN 206NODE   1 206    1   2   79  0   0   1   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  0    
+ZZZN 206NODE   2 206    -3287.5112          4027.7243           -3283.7012          4031.5343            
+QAS    0GLOB   0 206    .014816666 .014816666 4610.17852 -2700.0173 1 1 0                              0 
+ZZZN 207NODE   0 207    0   45  0   5/2            0 0 3.81     217 218 -1  -1  -1  207 134 1   0   0    
+ZZZN 207NODE   1 207    1   2   79  0   1   0   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  0    
+ZZZN 207NODE   2 207    -3238.3941          4130.4237           -3234.5841          4134.2337            
+QAS    0GLOB   0 207    .014816666 .014816666 4710.43773 -2649.8877 1 1 0                              0 
+ZZZN 208NODE   0 208    0   45  0   5/3            0 0 3.81     218 219 -1  -1  -1  208 134 1   0   0    
+ZZZN 208NODE   1 208    1   2   79  0   1   0   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  0    
+ZZZN 208NODE   2 208    -3152.9175          4310.9451           -3149.1075          4314.7551            
+QAS    0GLOB   0 208    .014816666 .014816666 4894.24627 -2557.9834 1 1 0                              0 
+ZZZN 209NODE   0 209    0   45  0   5/4            0 0 3.81     219 221 -1  -1  -1  209 134 1   0   0    
+ZZZN 209NODE   1 209    1   2   79  0   1   0   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  0    
+ZZZN 209NODE   2 209    -3080.1987          4462.7616           -3076.3887          4466.5716            
+QAS    0GLOB   0 209    .014816666 .014816666 5044.63508 -2491.144 1 1 0                               0 
+ZZZN 210NODE   0 210    0   45  0   5/5            0 0 3.81     221 -1  -1  -1  -1  210 134 1   0   0    
+ZZZN 210NODE   1 210    1   2   168 0   1   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  0    
+ZZZN 210NODE   2 210    -3037.6372          4747.9513           -3033.8272          4751.7613            
+QAS    0GLOB   0 210    .014816666 .014816666 5328.70284 -2449.3693 1 1 0                              0 
+ZZZN 211NODE   0 211    0   45  0   3/375          0 0 3.81     222 -1  -1  -1  -1  211 134 1   0   0    
+ZZZN 211NODE   1 211    1   2   79  0   0   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  0    
+ZZZN 211NODE   2 211    -3593.8515          3844.5241           -3590.0415          3848.3341            
+QAS    0GLOB   0 211    .014816666 .014816666 4426.36997 -3000.7949 1 1 0                              0 
+ZZZN 212NODE   0 212    0   45  0   Riser          0 0 3.81     222 223 -1  -1  -1  212 134 1   0   0    
+ZZZN 212NODE   1 212    1   2   79  0   1   0   -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  0    
+ZZZN 212NODE   2 212    -3572.2297          3912.2076           -3568.4197          3916.0176            
+QAS    0GLOB   0 212    .014816666 .014816666 4493.20945 -2984.0851 1 1 0                              0 
+ZZZE 213EDGE   0 213    201 Link0          0           204 213 136 1   0   0   0   0                     
+ZZZE 213EDGE   1 213    2   0   0   1   0 3.81      0 0.762                                              
+QAS    0GLOB   0 213    -.00402165 .001270000 3966.84861 -3376.767 1 1 0                               0 
+ZZZE 214EDGE   0 214    203 Link1          0           202 214 136 1   0   0   0   0                     
+ZZZE 214EDGE   1 214    2   0   223 1   0 3.81      0 0.762                                              
+QAS    0GLOB   0 214    .001270000 -.00402165 4016.97821 -3710.9643 1 1 0                              0 
+ZZZE 215EDGE   0 215    204 Link2          0           203 215 136 1   0   0   0   0                     
+ZZZE 215EDGE   1 215    2   0   223 1   0 3.81      0 0.762                                              
+QAS    0GLOB   0 215    .001270000 -.00423333 4100.52755 -3685.8995 1 1 0                              0 
+ZZZE 216EDGE   0 216    205 Link3          0           204 216 136 1   0   0   0   0                     
+ZZZE 216EDGE   1 216    2   0   223 1   0 3.81      0 0.762                                              
+QAS    0GLOB   0 216    .001270000 -.00402165 4200.78676 -3644.1248 1 1 0                              0 
+ZZZE 217EDGE   0 217    207 Link5          0           206 217 136 1   0   0   0   0                     
+ZZZE 217EDGE   1 217    2   0   223 1   0 3.81      0 0.762                                              
+QAS    0GLOB   0 217    .001904999 -.00380997 4150.65716 -3410.1867 1 1 0                              0 
+ZZZE 218EDGE   0 218    208 Link6          0           207 218 138 1   0   0   0   0                     
+ZZZE 218EDGE   1 218    2   0   223 1   0 3.81      0 0.762                                              
+QAS    0GLOB   0 218    .001693333 -.00380997 4284.3361 -3343.3472 1 1 0                               0 
+ZZZE 219EDGE   0 219    209 Link7          0           208 219 138 1   0   0   0   0                     
+ZZZE 219EDGE   1 219    2   0   223 1   0 3.81      0 0.762                                              
+QAS    0GLOB   0 219    .001904999 -.00380997 4459.78971 -3259.7979 1 1 0                              0 
+ZZZE 220EDGE   0 220    206 Link9          0           202 220 136 1   0   0   0   0                     
+ZZZE 220EDGE   1 220    2   0   223 1   0 3.81      0 0.762                                              
+QAS    0GLOB   0 220    -.00402165 .001270000 3816.4598 -3368.412 1 1 0                                0 
+ZZZE 221EDGE   0 221    210 Link8          0           209 221 138 1   0   0   0   0                     
+ZZZE 221EDGE   1 221    2   0   223 1   0 3.81      0 0.762         5                                    
+QAS    0GLOB   0 221    6.35000E-4 -.00423333 4626.88839 -3218.0232 1 1 0                              0 
+ZZZE 222EDGE   0 222    212 Culvert        0           211 222 136 1   0   0   0   0                     
+ZZZE 222EDGE   1 222    2   0   0   1   0 3.81      0 0.762                                              
+QAS    0GLOB   0 222    .001270000 -.00423333 3925.07394 -3744.384 1 1 0                               0 
+ZZZE 223EDGE   0 223    202 Link11         0           212 223 138 1   0   0   0   0                     
+ZZZE 223EDGE   1 223    2   0   223 1   0 3.81      0 0.762                                              
+QAS    0GLOB   0 223    8.46665E-4 -.00423333 3950.13874 -3727.6742 1 1 0                              0 
+ADO    0FILE   0   0     C:\XPS\xpswmm2010\Training\Module 13\Design_Dbase.xls                           
+ADO    0TABL   0   0     Nodes$                                                                          
+ADO    0ND     0   0     Name                                                                            
+ADO    0NDX    0   0                                                                                     
+ADO    0NDY    0   0                                                                                     
+ADO    0LK     0   0                                                                                     
+ADO    0LKUS   0   0                                                                                     
+ADO    0LKDS   0   0                                                                                     
+ADO    0GDB    0   0                                                                                     
+ADO    0GDT    0   0                                                                                     
+ADO    0GEN    0   0         1    0         2         0                   0                              
+ADO    0MLNK   0   0                                                                                     
+ADO    0MLOB   0   0      -1                                                                             
+ADO    0MAPD   0   0     Rim                                                                             
+ADO    0MAP    0   0     F_GRELEV                     0         0F_Z                          0         0
+ADO    0MAPD   1   0     Invert                                                                          
+EXTR   0D1     0 201                 1293.090 1285.090     0.05           1                              
+EXTR   0D1     0 202                 1279.000 1271.000     0.05      0. 0 1                  1     100.0 
+EXTR   0D1     0 203                 1280.500 1272.500     0.05           1                              
+EXTR   0D1     0 204                 1280.000    1276.     0.05     0.0 1 1                  1     100.0 
+EXTR   0D1     0 205                 1289.000 1281.000     0.05           1                              
+EXTR   0D1     0 206                 1285.150 1281.496     0.05           1                              
+EXTR   0D1     0 207                 1291.520 1285.520     0.05     0.0 0 1                  1     100.0 
+EXTR   0D1     0 208                 1301.740 1293.740     0.05     0.0 0 1                  1     100.0 
+EXTR   0D1     0 209                 1305.490 1297.490     0.05     0.0 0 1                  1     100.0 
+EXTR   0D1     0 210                 1309.180 1301.180     0.05     0.0 0 1                  1     100.0 
+EXTR   0D1     0 211                 1278.000 1270.000     0.05     0.0 0 1                  1     100.0 
+EXTR   0D1     0 212                 1278.500 1270.500     0.05           1                              
+ADO    1FILE   0   0     C:\XPS\xpswmm2010\Training\Module 13\Design_Dbase.xls                           
+ADO    1TABL   0   0     Links$                                                                          
+ADO    1ND     0   0                                                                                     
+ADO    1NDX    0   0                                                                                     
+ADO    1NDY    0   0                                                                                     
+ADO    1LK     0   0     Name                                                                            
+ADO    1LKUS   0   0                                                                                     
+ADO    1LKDS   0   0                                                                                     
+ADO    1GDB    0   0                                                                                     
+ADO    1GDT    0   0                                                                                     
+ADO    1GEN    0   0         2    0         2         0                   0                              
+ADO    1MLNK   0   0                                                                                     
+ADO    1MLOB   0   0      -1                                                                             
+ADO    1MAPD   0   0     Downstream Invert Elevation ft                                                  
+ADO    1MAP    0   0     F_ZP2                        0         0F_ZP1                        0         0
+ADO    1MAPD   1   0     Upstream Invert Elevation ft                                                    
+ADO    0DEF    0   0     0         1         2                                                           
+ZZUT   0CINV   0   0            2       2.000     2.000          0.000                                   
+EXTR   0SP1N   0 204         0                        1                   0 0                     0 0 00 
+EXTR   0BMP    0 204     0                                                                               
+EXTR   0C1A    0 217                               3.53                                                  
+EXTR   0C1C    0 217     000                                                                             
+EXTR   0C1A    0 220                               3.53                                                  
+EXTR   0C1A    0 213                               4.68                                                  
+EXTR   0C1A    0 214                               2.04                                                  
+EXTR   0C1A    0 215                               3.28                                                  
+EXTR   0C1A    0 216                               4.62                                                  
+EXTR   0C1A    0 218                               4.12                                                  
+EXTR   0C1A    0 219                               2.23                                                  
+EXTR   0C1A    0 221                               1.26                                                  
+EXTR   0C1A    0 222                               0.70                                                  
+EXTR   0C1A    0 223                               2.68                                                  
+EXTR   0SP1N   0 210         0                        0                   0 0                     0 1 0  
+EXTR   0BMP    0 210     0                                                                               
+EXTR   0B0     0   0                                                                    0 0 0 0          
+JCTL   0A1     0   0     0                                                                               
+EXTR   0JCTL   0   0     0                                                                               
+2D     0JOB1   0   0                                                                                   0 
+RUNF   2INT    0   0        1                                                                            
+CONF   0PAR1   0   0         1    1                                                                      
+EXTR   0I1     0 211                 1 0                                                      0          
+EXTR   0J2A    0 211            0.0                                                                      
+EXTR   0SP1N   0 211         0                        0                   1 0                     0 0 0  
+EXTR   0BMP    0 211     0                                                                               
+PEST   0MAIN   0   0                        1                                                            
+EXTR   0RSLT   0 213                                                       4.371782300                   
+EXTR   0LR01   0 213                         8.020423730         8.139031430         8.13903143.545112957
+EXTR   0LR02   0 213     .279705066.89978    .0028580794.365235857.159105339.11525616.610660424.25       
+EXTR   0LR03   0 213     843.6394235.700000005.68333333596.3952081.587368271124.112382.18781957135.115567
+EXTR   0DR01   0 213                                                                 15.9790012          
+EXTR   0CRS1   0 213     -9E99     1285.715901280.24891-9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS2   0 213     -9E99     1285.715901280.573943.683947823.6839478257.1846010.78539815 4.27183E-5
+EXTR   0ENCR   0 213               -1        -1                                                          
+EXTR   0CRS3   0 213     .140789102          1.58736827.104983871.014000000.999949441.877034519.564528232
+EXTR   0CRS4   0 213     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS5   0 213     -9E99     -9E99     -9E99     -9E99     1440      0         0         0         
+EXTR   0CRS6   0 213     0         0         0         0         -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS7   0 213     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS8   0 213     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS9   0 213     -9E99     -9E99     -9E99     -9E99     -9E99     .0231516471277.016371285.14861
+EXTR   0CRSA   0 213     .0420054382.159673564.05408491.482162523.25745623822244.219057.1846010-9E99     
+EXTR   0CRSB   0 213     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     .049999999
+EXTR   0RSLT   0 214                                                       15.48482180                   
+EXTR   0LR01   0 214                         8.699342150         1.822557350         1.822557351.82985296
+EXTR   0LR02   0 214     .4479141841.39349189.0028580794.3652358513.94666497.892198041.110299270         
+EXTR   0LR03   0 214     0         5.600000005.600000001416.10897.28547537311.93181815.697726491212.14285
+EXTR   0DR01   0 214                                                                 37.8371311          
+EXTR   0CRS1   0 214     -9E99     1275.742501273.91698-9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS2   0 214     -9E99     1278.077561277.505476.505475064.33698337132.4098471.767145834.75363E-4
+EXTR   0ENCR   0 214               -1        -1                                                          
+EXTR   0CRS3   0 214     1.62046542          .285475373.349164559.014000000.9999494411.409777281.5       
+EXTR   0CRS4   0 214     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS5   0 214     -9E99     -9E99     -9E99     -9E99     227       0         0         99        
+EXTR   0CRS6   0 214     0         0         16        1098      -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS7   0 214     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS8   0 214     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS9   0 214     -9E99     -9E99     -9E99     -9E99     -9E99     1.790890231277.015581277.01595
+EXTR   0CRSA   0 214     .375      .112011259131.397616.0075     1.60973778139081.344132.409847-9E99     
+EXTR   0CRSB   0 214     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     .200599871
+EXTR   0RSLT   0 215                                                       13.01567890                   
+EXTR   0LR01   0 215                         10.46693770         4.894542170         4.894542171.28285702
+EXTR   0LR02   0 215     .3733468461.24450698.0028580794.3652358510.86186568.851044561.198322920         
+EXTR   0LR03   0 215     0         5.450000005.450000001392.08754.633604836397.8173655.506018291118.58333
+EXTR   0DR01   0 215                                                                 38.0406266          
+EXTR   0CRS1   0 215     -9E99     1280.002851275.09566-9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS2   0 215     -9E99     1280.573941278.077645.577649764.46211980133.8763261.227184604.13897E-4
+EXTR   0ENCR   0 215               -1        -1                                                          
+EXTR   0CRS3   0 215     .834864063          .633604836.241693859.014000000.9999494411.543631031.25      
+EXTR   0CRS4   0 215     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS5   0 215     -9E99     -9E99     -9E99     -9E99     869       207       0         45        
+EXTR   0CRS6   0 215     0         0         0         319       -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS7   0 215     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS8   0 215     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS9   0 215     -9E99     -9E99     -9E99     -9E99     -9E99     1.086096961277.015951277.01637
+EXTR   0CRSA   0 215     .373346977.138653615115.929989.8760092431.41345426122122.448133.876326-9E99     
+EXTR   0CRSB   0 215     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     .150591270
+EXTR   0RSLT   0 216                                                       10.82981480                   
+EXTR   0LR01   0 216                         13.24720580         10.71378370         10.7137837.821327396
+EXTR   0LR02   0 216     .304013622.996472624.0028580794.365235857.107845459.049990061.531374540         
+EXTR   0LR03   0 216     0         5.383333335.383333331317.528621.202874981021.384257.10038800598.440384
+EXTR   0DR01   0 216                                                                 73.4730165          
+EXTR   0CRS1   0 216     -9E99     1289      1278.19531-9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS2   0 216     -9E99     1289      1280.573948         8         79.7372142.78539815 3.01275E-4
+EXTR   0ENCR   0 216               -1        -1                                                          
+EXTR   0CRS3   0 216     .329966829          1.20287498.133199997.014000000.9999494411.868798311         
+EXTR   0CRS4   0 216     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS5   0 216     -9E99     -9E99     -9E99     -9E99     1440      0         0         0         
+EXTR   0CRS6   0 216     0         0         0         0         -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS7   0 216     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS8   0 216     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS9   0 216     -9E99     -9E99     -9E99     -9E99     -9E99     .0966342831277.016371281.05882
+EXTR   0CRSA   0 216     .059210107.51741471210.4674255.4555569511.1082301895751.088179.7372142-9E99     
+EXTR   0CRSB   0 216     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     .049999999
+EXTR   0RSLT   0 217                                                       14.48153310                   
+EXTR   0LR01   0 217                         11.53533970         6.340240650         6.340240651.27621181
+EXTR   0LR02   0 217     .3734720541.24767559.0028580794.3652358511.27757049.189791261.284100440         
+EXTR   0LR03   0 217     0         5.566666665.566666661392.966661.632126651403.166665.5301990581.8666666
+EXTR   0DR01   0 217                                                                 55.6810851          
+EXTR   0CRS1   0 217     -9E99     1291.52   1285.15   -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS2   0 217     -9E99     1291.52   1285.15   6         4.8       128.6694421.227184602.08676E-4
+EXTR   0ENCR   0 217               -1        -1                                                          
+EXTR   0CRS3   0 217     .399245625          1.63212665.160236956.014000000.9999494411.750061721.25      
+EXTR   0CRS4   0 217     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS5   0 217     -9E99     -9E99     -9E99     -9E99     1440      0         0         0         
+EXTR   0CRS6   0 217     0         0         0         0         -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS7   0 217     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS8   0 217     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS9   0 217     -9E99     -9E99     -9E99     -9E99     -9E99     .0582212991281.623991285.63512
+EXTR   0CRSA   0 217     .0740120873.435168946.62791273.7222701041.0860331893833.2674128.669442-9E99     
+EXTR   0CRSB   0 217     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     .200000000
+EXTR   0RSLT   0 218                                                       8.574148920                   
+EXTR   0LR01   0 218                         10.59804300         12.64412980         12.6441298.818690499
+EXTR   0LR02   0 218     .304208588.9992     .0028580793.452028486.711362338.545172061.296916980         
+EXTR   0LR03   0 218     0         5.449999995.449999991346.384611.793233051372.783335.9820919770.1833333
+EXTR   0DR01   0 218                                                                 63.6320617          
+EXTR   0CRS1   0 218     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS2   0 218     -9E99     1301.74   1290.104748         8         89.7018937.78539815 8.11060E-5
+EXTR   0ENCR   0 218               -1        -1                                                          
+EXTR   0CRS3   0 218     .232055380          1.79323305.126702347.014      .9999599905.637380641         
+EXTR   0CRS4   0 218     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS5   0 218     -9E99     -9E99     -9E99     -9E99     1440      0         0         0         
+EXTR   0CRS6   0 218     0         0         0         0         -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS7   0 218     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS8   0 218     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS9   0 218     -9E99     -9E99     -9E99     -9E99     -9E99     .0438144511285.635121293.84280
+EXTR   0CRSA   0 218     .0657807073.423527998.75149847.607072196.77120221966631.871789.7018937-9E99     
+EXTR   0CRSB   0 218     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     .150000000
+EXTR   0RSLT   0 219                                                       6.540005680                   
+EXTR   0LR01   0 219                         7.983121970         6.046290230         6.04629023.82039815 
+EXTR   0LR02   0 219     .304126092.9992     .0028580793.452028484.937898656.287127941.324451170         
+EXTR   0LR03   0 219     0         5.449999995.449999991220.172231.279242591369.166666.3526136472.4666666
+EXTR   0DR01   0 219                                                                 54.4307368          
+EXTR   0CRS1   0 219     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS2   0 219     -9E99     1305.49   1301.74   8         8         138.097620.78539815 6.39225E-5
+EXTR   0ENCR   0 219               -1        -1                                                          
+EXTR   0CRS3   0 219     .231292779          1.27924259.124864348.014      .9999599907.999107141         
+EXTR   0CRS4   0 219     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS5   0 219     -9E99     -9E99     -9E99     -9E99     1379      0         0         1         
+EXTR   0CRS6   0 219     1         1         33        25        -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS7   0 219     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS8   0 219     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS9   0 219     -9E99     -9E99     -9E99     -9E99     -9E99     .0405044301293.842801297.58805
+EXTR   0CRSA   0 219     .0624614842.468865736.81811074.592294077.53712550046407.6432138.097620-9E99     
+EXTR   0CRSB   0 219     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     .100000000
+EXTR   0RSLT   0 220                                                       12.06511870                   
+EXTR   0LR01   0 220                         9.718875870         11.74064440         11.74064441.28281414
+EXTR   0LR02   0 220     .3734162591.124725  .0028580794.3622023311.27689739.189242791.070403200         
+EXTR   0LR03   0 220     0         5.450000005.450000001413.06666.840904654210.1813514.314727821327.85714
+EXTR   0DR01   0 220                                                                 39.2099304          
+EXTR   0CRS1   0 220     -9E99     1285.15   1273.38248-9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS2   0 220     -9E99     1285.15   1277.505476.505475065.20438005217.6336391.227184602.02778E-4
+EXTR   0ENCR   0 220               -1        -1                                                          
+EXTR   0CRS3   0 220     .512212988          .840904654.181254820.014000000.9999494411.405470451.14027986
+EXTR   0CRS4   0 220     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS5   0 220     -9E99     -9E99     -9E99     -9E99     1440      0         0         0         
+EXTR   0CRS6   0 220     0         0         0         0         -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS7   0 220     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS8   0 220     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS9   0 220     -9E99     -9E99     -9E99     -9E99     -9E99     .1859296721277.015581281.62399
+EXTR   0CRSA   0 220     .1041451391.3445944255.2155347.6786473931.1235985297078.9122217.633639-9E99     
+EXTR   0CRSB   0 220     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     .250000000
+EXTR   0RSLT   0 221                                                       4.023189910                   
+EXTR   0LR01   0 221                         5.231656140         4.118423190         4.11842319.82039815 
+EXTR   0LR02   0 221     .303358268.998387604.002858079.5377290543.714892224.729947761.141342430         
+EXTR   0LR03   0 221     0         5.4333333315.18333331367.70384.926529041384.3405895.0714466471.0333333
+EXTR   0DR01   0 221                                                                 38.9955389          
+EXTR   0CRS1   0 221     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS2   0 221     -9E99     1309.18   1305.49   8         8         240.089518.78539815 3.86731E-5
+EXTR   0ENCR   0 221               -1        -1                                                          
+EXTR   0CRS3   0 221     .214013913          .926529041.117153037.014      .999959990.8486650261         
+EXTR   0CRS4   0 221     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS5   0 221     -9E99     -9E99     -9E99     -9E99     1384      0         0         3         
+EXTR   0CRS6   0 221     0         0         43        10        -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS7   0 221     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS8   0 221     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS9   0 221     -9E99     -9E99     -9E99     -9E99     -9E99     .0311125841297.588051301.26120
+EXTR   0CRSA   0 221     .0530435271.607066759.10509783.550362676.34088996329452.8928240.089518-9E99     
+EXTR   0CRSB   0 221     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     .049999999
+EXTR   0RSLT   0 222                                                       2.510153780                   
+EXTR   0LR01   0 222                         3.129118690         .641689496.206268633.435420863.802202269
+EXTR   0LR02   0 222     .3434980041.83387635.0028580794.3652358517.62207015.60927924.1424469330         
+EXTR   0LR03   0 222     0         16.5      16.51666660         .7798082280         .2028825770         
+EXTR   0DR01   0 222                                                                 1.75850349          
+EXTR   0CRS1   0 222     -9E99     1271.115221270.50875-9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS2   0 222     -9E99     1271.115221270.50876.615225502.30761275151.41198663.1415926 1.66926E-5
+EXTR   0ENCR   0 222               -1        -1                                                          
+EXTR   0CRS3   0 222     .305461054          .779808228.166002884.014000000.999949441.550824845.508756074
+EXTR   0CRS4   0 222     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS5   0 222     -9E99     -9E99     -9E99     -9E99     937       0         0         125       
+EXTR   0CRS6   0 222     155       223       0         0         -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS7   0 222     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS8   0 222     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS9   0 222     -9E99     -9E99     -9E99     -9E99     -9E99     .5398607581270.397421270.96249
+EXTR   0CRSA   0 222     .2705863472.8234987738.35710681.67578030.81164975370126.538751.4119866-9E99     
+EXTR   0CRSB   0 222     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     1.52429619
+EXTR   0RSLT   0 223                                                       27.34448540                   
+EXTR   0LR01   0 223                         8.334037860         .4219680080         .4219680083.28153998
+EXTR   0LR02   0 223     .6049979991.99407547.0028580792.2423061934.413792810.9542506.7945931740         
+EXTR   0LR03   0 223     0         15.816666615.83333331440.000001.460817591380.396963.43151266104.765987
+EXTR   0DR01   0 223                                                                 19.8659885          
+EXTR   0CRS1   0 223     -9E99     1273.281911272.98257-9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS2   0 223     -9E99     1273.283621272.983992.483999361.2419996861.06222653.1415926 1.27259E-4
+EXTR   0ENCR   0 223               -1        -1                                                          
+EXTR   0CRS3   0 223     .870099471          1.46081759.241197771.014000000.9999740291.811927541.34648830
+EXTR   0CRS4   0 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS5   0 223     -9E99     -9E99     -9E99     -9E99     1182      63        0         195       
+EXTR   0CRS6   0 223     0         0         0         0         -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS7   0 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS8   0 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   0CRS9   0 223     -9E99     -9E99     -9E99     -9E99     -9E99     .1361769171270.742361271.16808
+EXTR   0CRSA   0 223     .1119394523.671694212.536975971.126663723.47454430300200.62861.0622265-9E99     
+EXTR   0CRSB   0 223     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     .500000000
+EXTR   0NR01   0 201     .6259395811285.7159312.566    7.86555677.0063803720         29642     1.49866019
+EXTR   0NR02   0 201     22274.08720         0         1285.715937.374060417.37406041380       0         
+EXTR   0NR03   0 201     1.4986601929642     0         0         0         .2578019350         0         
+EXTR   0NR04   0 201     4320      0         17943.30370         0         0         0         0         
+EXTR   0NR05   0 201     5.683333331286.09   .058619584.0586195841285.148610         7.941380417.86555677
+EXTR   0NR06   0 201     24.6626271.006380372.0553963783.96256258          28.625189644518.30620         
+EXTR   0NR07   0 201     0                                                 0                             
+EXTR   0NR01   0 202     6.505419191277.5054169033.4736258682.653.0481493310         46026     2.32701349
+EXTR   0NR02   0 202     56075.16410         1212.142851278.06778.9322138081.49458080338       0         
+EXTR   0NR03   0 202     2.3270134946026     0         0         0         .6490181030         0         
+EXTR   0NR04   0 202     4320      0         51728.17880         0         0         0         5.00547506
+EXTR   0NR05   0 202     16.4      1272.5    6.015581036.043728311277.015580         1.98441896258682.653
+EXTR   0NR06   0 202     186.115944.048149331.039501117226198.247          226384.363358067.1490         
+EXTR   0NR07   0 202     0                                                 0                             
+EXTR   0NR01   0 203     5.577016321278.0770112.566    70.0876401.0130641750         80541     4.07204610
+EXTR   0NR02   0 203     17118.42390         1118.249991278.944301.555699772.42298367389       0         
+EXTR   0NR03   0 203     4.0720461080541     0         0         0         .1981299070         0         
+EXTR   0NR04   0 203     4320      0         12795.05180         0         0         0         4.07764976
+EXTR   0NR05   0 203     16.26666661274      4.515956444.516240891277.015950         3.4840435570.0876401
+EXTR   0NR06   0 203     -50.498132.013064175-.01813775184.345088          133.846955278322.2160         
+EXTR   0NR07   0 203     0                                                 0                             
+EXTR   0NR01   0 204     4.573887221280.5738829436.28687797.67993.0200320090         63218     3.19621821
+EXTR   0NR02   0 204     4320      124.162500135.1155671282.69305-2.6930564-.57388722501       2         
+EXTR   0NR03   0 204     3.1962182163218     0         0         0         .05       0         0         
+EXTR   0NR04   0 204     4320      0         0         0         0         0         0         2.68394777
+EXTR   0NR05   0 204     16.03333331280      1.016377741.088798011277.016379215.467102.983622257797.67993
+EXTR   0NR06   0 204     77.4315301.020032009.031670445107.385223          184.816753244437.7550         
+EXTR   0NR07   0 204     9215.46710                                        0                             
+EXTR   0NR01   0 205     8         1289      12.566    100.528   .00279158664027.602829777     1.50548561
+EXTR   0NR02   0 205     159787.10099.9708333119.1175071289      0         0         417       0         
+EXTR   0NR03   0 205     1.5054856129777     0         0         64027.60281.84938773.7410602180         
+EXTR   0NR04   0 205     4320      0         155388.3550         0         0         0         7         
+EXTR   0NR05   0 205     5.35      1282      .058822678.0588226781281.058820         7.94117732100.528   
+EXTR   0NR06   0 205     -10.790569.002791586-.0042225317.6209979          64034.4333255538.1880         
+EXTR   0NR07   0 205     0                                                 0                             
+EXTR   0NR01   0 206     3.654     1285.15   12.566    45.916164 .01251703517978.598332275     1.63178118
+EXTR   0NR02   0 206     21264.362767.016666681.86666661287.21621-2.06621210         34        0         
+EXTR   0NR03   0 206     1.6317811832275     0         0         17978.5983.246115310.2080856290         
+EXTR   0NR04   0 206     4320      0         16938.31290         0         0         0         2.404     
+EXTR   0NR05   0 206     5.416666661282.746  .127999334.3112351361281.623990         3.5260006645.916164 
+EXTR   0NR06   0 206     -48.383224.012517035-.0227987185.0206931          18015.2358212176.5420         
+EXTR   0NR07   0 206     0                                                 0                             
+EXTR   0NR01   0 207     6         1291.52   12.566    75.396    .0047134132891.6099639850     2.01476313
+EXTR   0NR02   0 207     21507.742015.68333330         1292.73340-1.21340230         501       2         
+EXTR   0NR03   0 207     2.0147631339850     0         0         2891.60996.248932200.0334677070         
+EXTR   0NR04   0 207     4320      0         17183.26570         0         0         0         0         
+EXTR   0NR05   0 207     5.516666661291.52   .1151224115.002855571285.635120         5.8848775875.396    
+EXTR   0NR06   0 207     18.2191810.004713413.00955951210.0140160          2919.84316190581.9190         
+EXTR   0NR07   0 207     0                                                 0                             
+EXTR   0NR01   0 208     .1843608491300.9243612.566    2.31696723.0255656710         43148     2.18150563
+EXTR   0NR02   0 208     20747.21970         0         1301.13715.602848384.815639150501       3         
+EXTR   0NR03   0 208     2.1815056343148     0         0         0         .2401298580         0         
+EXTR   0NR04   0 208     4320      0         16421.44210         0         0         0         0         
+EXTR   0NR05   0 208     5.683333331301.74   .004746137.0047461371300.744740         .9952538622.31696723
+EXTR   0NR06   0 208     -98.821290.025565671-.17531378.676572421          -98.14471756367.89850         
+EXTR   0NR07   0 208     0                                                 0                             
+EXTR   0NR01   0 209     .1883894321304.6783812.566    2.36729849.0111958390         38542     1.94863238
+EXTR   0NR02   0 209     21247.95280         0         1304.78008.709918706.8116105678         0         
+EXTR   0NR03   0 209     1.9486323838542     0         0         0         .2459253800         0         
+EXTR   0NR04   0 209     4320      0         16916.75000         0         0         0         0         
+EXTR   0NR05   0 209     5.683333331305.49   0         0         1304.49   0         1         2.36729849
+EXTR   0NR06   0 209     -43.276288.011195839-.083630381.61691370          -41.65937451746.28120         
+EXTR   0NR07   0 209     0                                                 0                             
+EXTR   0NR01   0 210     .1678043311308.3478012.566    2.10862922.0047458140         28763     1.45421912
+EXTR   0NR02   0 210     33556.95070         0         1308.34780.832195668.8321956688         0         
+EXTR   0NR03   0 210     1.4542191228763     0         0         0         .3883906340         0         
+EXTR   0NR04   0 210     4320      0         29217.67380         0         0         0         0         
+EXTR   0NR05   0 210     5.683333331309.18   .017587143.0175871431308.197580         .9824128562.10862922
+EXTR   0NR06   0 210     -18.344423.004745814-.027333861.61726421          -16.72715967111.63070         
+EXTR   0NR07   0 210     0                                                 0                             
+EXTR   0NR01   0 211     .5087550881270.5087512.566    6.39309907.0061579440         27655     1.39820011
+EXTR   0NR02   0 211     4320      0         0         1270.660797.339208087.491244918         0         
+EXTR   0NR03   0 211     1.3982001127655     -3        0         74447.4470.05       .8616602670         
+EXTR   0NR04   0 211     4320      0         0         0         0         0         0         0         
+EXTR   0NR05   0 211     16.48333331272      .397429525.5212222661270.397420         7.602570476.39309907
+EXTR   0NR06   0 211     -23.802856.006157944-.0159852322.6105739          -1.1922822148893.9850         
+EXTR   0NR07   0 211     0                                                 0                             
+EXTR   0NR01   0 212     .6152224431271.1152212.566    7.73092366.0598090370         24737     1.25066990
+EXTR   0NR02   0 212     4320      0         0         1277.241071.258928337.384777558         0         
+EXTR   0NR03   0 212     1.2506699024737     0         0         0         .05       0         0         
+EXTR   0NR04   0 212     4320      0         0         0         0         0         0         0         
+EXTR   0NR05   0 212     16.48333331272.5    .4624924786.401124701270.962490         7.537507527.73092366
+EXTR   0NR06   0 212     -231.18525.059809037-.16465469255.689231          24.5039741140278.2660         
+EXTR   0NR07   0 212     0                                                 0                             
+ZZZS   0MERG   0   0     010                                                                             
+ZSYM   0NAME   0   1     Pollutant                                   0   40    5   -1                    
+ZSYM   1NAME   0   1     Buildup/Washoff                             0   40    5   -1                    
+ZSYM   2NAME   0   1     Erosion                                     0   40    5    0                    
+ZSYM   3NAME   0   1     Groundwater                                 0   40    5   -1                    
+ZSYM   4NAME   0   1     Infiltration                                1   40    5    0                    
+ZSYM   5NAME   0   1     Landuse                                     0   40    5    0                    
+ZSYM   6NAME   0   1     Initial Loads                               0   40    5    0                    
+ZSYM   7NAME   0   1     Rainfall                                    1   40    5    0                    
+ZSYM   8NAME   0   1     Snow Melt                                   0   40    5    0                    
+ZSYM  10NAME   0   1     BMP                                         0   40    5    0                    
+ZSYM  11NAME   0   1     DW Sewer Inflows                            0   40    5    0                    
+ZSYM  12NAME   0   1     Sewer infiltration                          0   40    5    0                    
+ZSYM  13NAME   0   1     WS Temperatures                             0   40    5    0                    
+ZSYM  24NAME   0   1     Temporal Variations                         0   40    5    0                    
+ZSYM  14NAME   0   1     Pollutant List                              0   40    5    0                    
+ZSYM  15NAME   0   1     Landuse List                                0   40    5    0                    
+ZSYM  17NAME   0   1     StatPollutants                              0   40    5    0                    
+ZSYM  18NAME   0   1     Gauged Pollutants                           0   40    5    0                    
+ZSYM  19NAME   0   1     Pump Ratings                                0   40    5    0                    
+ZSYM  21NAME   0   1     Pit Rating Curves                           0   40    5    0                    
+ZSYM  22NAME   0   1     Hydraulic Brakes                            0   40    5    0                    
+ZSYM  20NAME   0   1     User Defined File Types                     0   40    5    0                    
+ZSYM  23NAME   0   1     XP Tables                                   1   40    5   -1                    
+ZSYM  25NAME   0   1     Pavement Crossfall                          0   40    5    0                    
+ZSYM  26NAME   0   1     HEC 22                                      0   40    5    0                    
+ZSYM  27NAME   0   1     Rational Formula                            1   40    5    0                    
+ZSYM  27OBJ    0   1     IDF Curve                                                                       
+ZSYM  27VAL    0   1         1                                                                           
+ZSYM  28NAME   0   1     Natural Section Shape                       0   40    5    0                    
+ZSYM   0GLDB   0   1         3                                                                           
+ZSYM   4OBJ    0   1     Infiltration                                                                    
+ZSYM   4VAL    0   1         2                                                                           
+ZSYM   9NAME   0   1     RDII                                        0   40    5    0                    
+ZSYM  29NAME   0   1     2D Landuse                                  0   40    5    0                    
+ZSYM  30NAME   0   1     WSPG Channel Group                          0   40    5    0                    
+RATG   1CDAT   0   0                              0.900  1990 999                                        
+RATG   1IFDR   0   0     2         5         10        25        50        100       200                 
+RATG   1IFDD   0   0     5.000     6.000     7.000     8.000     9.000     10.000    11.000    12.000    
+RATG   1IFDD   1   0     13.000    14.000    15.000    16.000    17.000    18.000    20.000    25.000    
+RATG   1IFDI   0   0     2.350     3.520     4.290     5.280     5.980     6.730     7.440     2.170     
+RATG   1IFDI   1   0     3.250     3.980     4.840     5.510     6.180     6.850     2.020     3.020     
+RATG   1IFDI   2   0     3.680     4.530     5.120     5.750     6.380     1.900     2.830     3.450     
+RATG   1IFDI   3   0     4.210     4.800     5.390     5.940     1.790     2.670     3.250     3.980     
+RATG   1IFDI   4   0     4.530     5.080     5.590     1.700     2.530     3.070     3.770     4.290     
+RATG   1IFDI   5   0     4.800     5.310     1.610     2.400     2.930     3.580     4.060     4.570     
+RATG   1IFDI   6   0     5.040     1.540     2.300     2.790     3.420     3.890     4.330     4.800     
+RATG   1IFDI   7   0     1.480     2.200     2.670     3.270     3.720     4.170     4.610     1.420     
+RATG   1IFDD   2   0     30.000    40.000    50.000    60.000    90.000    120.000   240.000   360.000   
+RATG   1IFDI   8   0     2.110     2.560     3.140     3.570     3.980     4.410     1.370     2.030     
+RATG   1IFDI   9   0     2.470     3.020     3.430     3.840     4.250     1.320     1.960     2.380     
+RATG   1IFDI  10   0     2.910     3.310     3.700     4.090     1.280     1.890     2.300     2.810     
+RATG   1IFDI  11   0     3.200     3.570     3.940     1.200     1.780     2.160     2.640     3.000     
+RATG   1IFDI  12   0     3.350     3.710     1.050     1.550     1.880     2.300     2.610     2.920     
+RATG   1IFDI  13   0     3.230     0.940     1.380     1.680     2.050     2.330     2.610     2.880     
+RATG   1IFDI  14   0     0.780     1.150     1.400     1.710     1.940     2.170     2.400     0.680     
+RATG   1IFDI  15   0     1.000     1.220     1.480     1.690     1.880     2.080     0.610     0.890     
+RATG   1IFDI  16   0     1.080     1.320     1.500     1.670     1.850     0.470     0.690     0.830     
+RATG   1IFDI  17   0     1.020     1.150     1.290     1.420     0.390     0.570     0.690     0.840     
+RATG   1IFDI  18   0     0.960     1.070     1.180     0.250     0.370     0.440     0.540     0.610     
+RATG   1IFDI  19   0     0.680     0.750     0.190     0.280     0.340     0.410     0.460     0.520     
+RATG   1IFDI  20   0     0.570     0.160     0.230     0.280     0.340     0.390     0.430     0.470     
+RATG   1IFDD   3   0     480.000   600.000   1440.000                                                    
+RATG   1IFDI  21   0     0.140     0.200     0.240     0.290     0.330     0.370     0.410     0.080     
+RATG   1IFDI  22   0     0.110     0.140     0.170     0.190     0.210     0.230     2.010     2.890     
+RATG   1IFDI  23   0     3.470     4.200     4.740     5.290     5.830                                   
+ZSYM   4OBJ    0   0     Infiltration                                                                    
+ZSYM   4VAL    0   0         1                                                                           
+ZSYM  27OBJ    0   0     IDF Curve                               IDF Curve.1                             
+ZSYM  27VAL    0   0         1    2                                                                      
+ADO    2FILE   0   0     C:\XPS\xpswmm2010\Training\Module 13\Design_Dbase.xls                           
+ADO    2TABL   0   0     Hydrology$                                                                      
+ADO    2ND     0   0     Name                                                                            
+ADO    2NDX    0   0                                                                                     
+ADO    2NDY    0   0                                                                                     
+ADO    2LK     0   0                                                                                     
+ADO    2LKUS   0   0                                                                                     
+ADO    2LKDS   0   0                                                                                     
+ADO    2GDB    0   0                                                                                     
+ADO    2GDT    0   0                                                                                     
+ADO    2GEN    0   0         1    0        15         0                   0                              
+ADO    2MLNK   0   0                                                                                     
+ADO    2MLOB   0   0      -1                                                                             
+ADO    2MAPD   0   0     Impervious Flow Path Slope                                                      
+ADO    2MAP    0   0     F_NRATI_FPSLOPE              0         0F_R_WIDTH                    0         0
+ADO    2MAPD   1   0     Width (feet)                                                                    
+ADO    2MAPD   2   0     Impervious Flow Path Length                                                     
+ADO    2MAP    1   0     F_NRATI_FPLEN                0         0F_NRATI_TC                   0         0
+ADO    2MAPD   3   0     Impervious Tc Method                                                            
+ADO    2MAPD   4   0     Pervious Flow Path Length                                                       
+ADO    2MAP    2   0     F_NRATP_FPLEN                0         0F_NRATP_FPSLOPE              0         0
+ADO    2MAPD   5   0     Pervious Flow Path Slope                                                        
+ADO    2MAPD   6   0     Impervious Catchment Roughness                                                  
+ADO    2MAP    3   0     F_NRATI_ROUGH                0         0F_R_WAREA                    0         0
+ADO    2MAPD   7   0     Area (acres)                                                                    
+ADO    2MAPD   8   0     Runoff Method                                                                   
+ADO    2MAP    4   0     F_R_FSCS                     0         0F_NRATP_RC                   0         0
+ADO    2MAPD   9   0     Pervious Runoff C                                                               
+ADO    2MAPD  10   0     Tc Method Pervious                                                              
+ADO    2MAP    5   0     F_NRATP_TC                   0         0F_R_WSLOPE                   0         0
+ADO    2MAPD  11   0     Slope  (ft/ft)                                                                  
+ADO    2MAPD  12   0     Impervious (%)                                                                  
+ADO    2MAP    6   0     F_R_WIMP                     0         0F_NRATP_ROUGH                0         0
+ADO    2MAPD  13   0     Pervious Catchment Roughness                                                    
+ADO    2MAPD  14   0     Sub Catchment Flag                                                              
+ADO    2MAP    7   0     F_R_RFCMNT                   0         0                                        
+RUNF   0H1A    0 201     00010000                                                                        
+RUNF   0H1     0 201          1.310      25.0  1150.000    0.0100                                        
+RUNF   0H1C    0 201     000                                                   00    0                   
+RATN   0NPER   0 201         45.000     0.0002         0.000   300.000     1.000     0.150     0.000     
+RATN   0NIMP   0 201       1440.000     0.0002         0.000   300.000     1.000     0.014     0.0004    
+RUNF   0H1A    0 202        1                                                                            
+RUNF   0H1     0 202          3.330      60.0   750.000    0.0100                                        
+RUNF   0H1C    0 202                                                           0                         
+RATN   0NPER   0 202         55.000          2                 300.000     1.000     0.150               
+RATN   0NIMP   0 202                         2                 300.000     1.000     0.014               
+RUNF   0H1A    0 203        1                                                                            
+RUNF   0H1     0 203          1.020       5.0   900.000    0.0100                                        
+RUNF   0H1C    0 203                                                           0                         
+RATN   0NPER   0 203         40.000          2                 500.000     1.000     0.150               
+RATN   0NIMP   0 203                         2                 500.000     1.000     0.014               
+RUNF   0H1A    0 209        1                                                                            
+RUNF   0H1     0 209          1.210      30.0  1050.000    0.0100                                        
+RUNF   0H1C    0 209                                                           0                         
+RATN   0NPER   0 209         65.000          2                 400.000     1.000     0.150               
+RATN   0NIMP   0 209                         2                 400.000     1.000     0.014               
+RUNF   0H1A    0 210        1                                                                            
+RUNF   0H1     0 210          2.090      30.0  1800.000    0.0100                                        
+RUNF   0H1C    0 210                                                           0                         
+RATN   0NPER   0 210         65.000          2                 400.000     1.000     0.150               
+RATN   0NIMP   0 210                         2                 400.000     1.000     0.014               
+RUNF   0H1A    0 207        1                                                                            
+RUNF   0H1     0 207          1.370       5.0  1200.000    0.0100                                        
+RUNF   0H1C    0 207                                                           0                         
+RATN   0NPER   0 207         45.000          2                 500.000     1.000     0.150               
+RATN   0NIMP   0 207                         2                 500.000     1.000     0.014               
+RUNF   0H1A    0 208        1                                                                            
+RUNF   0H1     0 208          1.280      10.0  1100.000    0.0100                                        
+RUNF   0H1C    0 208                                                           0                         
+RATN   0NPER   0 208         50.000          2                 300.000     1.000     0.150               
+RATN   0NIMP   0 208                         2                 300.000     1.000     0.014               
+RUNF   0H1A    0 206        1                                                                            
+RUNF   0H1     0 206          1.320      10.0  1150.000    0.0100                                        
+RUNF   0H1C    0 206                                                           0                         
+RATN   0NPER   0 206         40.000          2                 300.000     1.000     0.150               
+RATN   0NIMP   0 206                         2                 300.000     1.000     0.014               
+RUNF   0H1A    0 205     00010000                                                                        
+RUNF   0H1     0 205         10.770      40.0  4100.000    0.0100                                        
+RUNF   0H1C    0 205     000                                                   00    0                   
+RATN   0NPER   0 205         75.000     0.0002         0.000  1500.000     1.000     0.150     0.000     
+RATN   0NIMP   0 205       1440.000     0.0002         0.000  1500.000     1.000     0.014     0.0004    
+RATJ   0JOB    0   0      0IDF Curve                0.0000      10.000                                   
+RUNF   0A1     0   0      0    0 01           0.01                        0 5                            
+RATN   0OVFL   0 205          0.000     0.000                                                            
+RUNF   0H1D    0 205     0                      1                                                        
+RUNF   0RDII   0 205      0                                                                              
+SWMM   0TEMP   0   0                                                                                    1
+RUNF   0LR01   0 201     4.32373396                                                                      
+RUNF   0NR03   0 201     0         0         0         0         0         0         0         0         
+RUNF   0NR01   0 201     3.774766803.774766804.989999991.150981531.37583333.0258333330         .046510161
+RUNF   0NR02   0 201     0         0         0         0         0         0         0         0         
+RUNF   0NR04   0 201     0                                                                               
+RUNF   0LR01   0 205     35.1805729                                                                      
+RUNF   0NR03   0 205     0         0         0         0         0         0         0         0         
+RUNF   0NR01   0 205     3.975978903.975978904.98999999.9292018211.37583333.0258333330         .054339502
+RUNF   0NR02   0 205     0         0         0         0         0         0         0         0         
+RUNF   0NR04   0 205     0                                                                               
+RUNF   0LR01   0 203     3.26056802                                                                      
+RUNF   0NR03   0 203     0         0         0         0         0         0         0         0         
+RUNF   0NR01   0 203     3.456421363.456421364.989999991.491003271.37583333.0187980170         .039103230
+RUNF   0NR02   0 203     0         0         0         0         0         0         0         0         
+RUNF   0NR04   0 203     0                                                                               
+RUNF   0LR01   0 210     6.94286102                                                                      
+RUNF   0NR03   0 210     0         0         0         0         0         0         0         0         
+RUNF   0NR01   0 210     3.852762893.852762894.989999991.067194181.37583333.0258333330         .048554417
+RUNF   0NR02   0 210     0         0         0         0         0         0         0         0         
+RUNF   0NR04   0 210     0                                                                               
+RUNF   0LR01   0 209     4.02018603                                                                      
+RUNF   0NR03   0 209     0         0         0         0         0         0         0         0         
+RUNF   0NR01   0 209     3.853053553.853053554.989999991.066915261.37583333.0225227650         .048550182
+RUNF   0NR02   0 209     0         0         0         0         0         0         0         0         
+RUNF   0NR04   0 209     0                                                                               
+RUNF   0LR01   0 208     4.12255662                                                                      
+RUNF   0NR03   0 208     0         0         0         0         0         0         0         0         
+RUNF   0NR01   0 208     3.535121043.535121044.989999991.407043291.37583333.0258333330         .040914579
+RUNF   0NR02   0 208     0         0         0         0         0         0         0         0         
+RUNF   0NR04   0 208     0                                                                               
+RUNF   0LR01   0 207     4.37751905                                                                      
+RUNF   0NR03   0 207     0         0         0         0         0         0         0         0         
+RUNF   0NR01   0 207     3.455963733.455963734.989999991.491461181.37583333.0258333330         .039103368
+RUNF   0NR02   0 207     0         0         0         0         0         0         0         0         
+RUNF   0NR04   0 207     0                                                                               
+RUNF   0LR01   0 206     4.25432275                                                                      
+RUNF   0NR03   0 206     0         0         0         0         0         0         0         0         
+RUNF   0NR01   0 206     3.535904353.535904354.989999991.406262431.37583333.0258333330         .040913109
+RUNF   0NR02   0 206     0         0         0         0         0         0         0         0         
+RUNF   0NR04   0 206     0                                                                               
+RUNF   0LR01   0 202     11.1401525                                                                      
+RUNF   0NR03   0 202     0         0         0         0         0         0         0         0         
+RUNF   0NR01   0 202     4.280838844.280838844.98999999.5946921571.375833330         0         .065305600
+RUNF   0NR02   0 202     0         0         0         0         0         0         0         0         
+RUNF   0NR04   0 202     0                                                                               
+RATN   0OVFL   0 201          0.000     0.000                                                            
+RUNF   0H1D    0 201     0                      1                                                        
+RUNF   0RDII   0 201      0                                                                              
+LACH   0FREQ   0   0      1       2     0.387 1       5     0.584 1      10     0.714 1      25     0.878
+LACH   0FREQ   1   0      1      50     1.000 1     100     1.122 1     500     1.402                    
+LACH   0ZONE   0   0     A03            0.600A04            0.800A05            1.000A06            1.200
+LACH   0ZONE   1   0     A07            1.400A08            1.600A09            1.800A10            2.000
+LACH   0ZONE   2   0     A11            2.200A12            2.400A13            2.600A14            2.800
+LACH   0ZONE   3   0     A15            3.000A16            3.200A17            3.400A18            3.600
+LACH   0ZONE   4   0     A19            3.800A20            4.000A21            4.200A22            4.400
+LACH   0ZONE   5   0     A23            4.600A24            4.800A25            5.000A26            5.200
+LACH   0ZONE   6   0     A27            5.400A28            5.600A29            5.800A30            6.000
+LACH   0ZONE   7   0     A31            6.200A32            6.400A33            6.600A34            6.800
+LACH   0ZONE   8   0     A35            7.000A36            7.200A37            7.400A38            7.600
+LACH   0ZONE   9   0     A39            7.800A40            8.000A41            8.200A42            8.400
+LACH   0ZONE  10   0     A43            8.600A44            8.800A45            9.000A46            9.200
+LACH   0ZONE  11   0     A47            9.400A48            9.600A49            9.800A50           10.000
+LACH   0ZONE  12   0     A51           10.200A52           10.400A53           10.600A54           10.800
+LACH   0ZONE  13   0     A55           11.000A56           11.200A57           11.400A58           11.600
+LACH   0ZONE  14   0     A59           11.800A60           12.000A61           12.200A62           12.400
+LACH   0ZONE  15   0     A63           12.600A64           12.800A65           13.000A66           13.200
+LACH   0ZONE  16   0     A67           13.400A68           13.600A69           13.800A70           14.000
+LACH   0ZONE  17   0     A71           14.200A72           14.400A73           14.600A74           14.800
+LACH   0ZONE  18   0     A75           15.000A76           15.200A77           15.400A78           15.600
+LACH   0ZONE  19   0     A79           15.800A80           16.000A81           16.200A82           16.400
+LACH   0ZONE  20   0     A83           16.600A84           16.800A85           17.000A86           17.200
+LACH   0ZONE  21   0     A87           17.400A88           17.600A89           17.800A90           18.000
+LACH   0ZONE  22   0     A91           18.200A92           18.400A93           18.600A94           18.800
+LACH   0ZONE  23   0     A95           19.000A96           19.200A97           19.400A98           19.600
+LACH   0ZONE  24   0     A99           19.800                                                            
+LACH   0CTL2   0   0              5        50                                                            
+PIPE   0DESN   0   0     4.000   0 6.000   0 9.000   0 12.000  0 15.000  1 18.000  1 21.000  0 24.000  1 
+PIPE   0DESN   1   0     27.000  0 30.000  1 33.000  0 36.000  1 42.000  1 48.000  1 54.000  1 60.000  1 
+PIPE   0DESN   2   0     66.000  1 72.000  1 78.000  1 84.000  1                                         
+EXTR   0DESN   0   0     0      0.300   100.0000      0.600                                              
+PLOT   0MANH   0   0                            HORIZONTAL                                               
+PLOT   0TITL   0   0     Untitled                                                                        
+SWMM   3TEMP   3   0                                                                                    1
+ZSYM   7OBJ    0   1     Rainfall Event                                                                  
+ZSYM   7VAL    0   1         1                                                                           
+ZSYM  23OBJ    0   1     Hydrology                                                                       
+ZSYM  23VAL    0   1         2                                                                           
+RATG   2CDAT   0   0                              0.900  1990 999                                        
+RATG   2IFDR   0   0     2         5         10        25        50        100       200                 
+RATG   2IFDD   0   0     5.000     6.000     7.000     8.000     9.000     10.000    11.000    12.000    
+RATG   2IFDD   1   0     13.000    14.000    15.000    16.000    17.000    18.000    20.000    25.000    
+RATG   2IFDI   0   0     2.350     3.520     4.290     5.280     5.980     6.730     7.440     2.170     
+RATG   2IFDI   1   0     3.250     3.980     4.840     5.510     6.180     6.850     2.020     3.020     
+RATG   2IFDI   2   0     3.680     4.530     5.120     5.750     6.380     1.900     2.830     3.450     
+RATG   2IFDI   3   0     4.210     4.800     5.390     5.940     1.790     2.670     3.250     3.980     
+RATG   2IFDI   4   0     4.530     5.080     5.590     1.700     2.530     3.070     3.770     4.290     
+RATG   2IFDI   5   0     4.800     5.310     1.610     2.400     2.930     3.580     4.060     4.570     
+RATG   2IFDI   6   0     5.040     1.540     2.300     2.790     3.420     3.890     4.330     4.800     
+RATG   2IFDI   7   0     1.480     2.200     2.670     3.270     3.720     4.170     4.610     1.420     
+RATG   2IFDD   2   0     30.000    40.000    50.000    60.000    90.000    120.000   240.000   360.000   
+RATG   2IFDI   8   0     2.110     2.560     3.140     3.570     3.980     4.410     1.370     2.030     
+RATG   2IFDI   9   0     2.470     3.020     3.430     3.840     4.250     1.320     1.960     2.380     
+RATG   2IFDI  10   0     2.910     3.310     3.700     4.090     1.280     1.890     2.300     2.810     
+RATG   2IFDI  11   0     3.200     3.570     3.940     1.200     1.780     2.160     2.640     3.000     
+RATG   2IFDI  12   0     3.350     3.710     1.050     1.550     1.880     2.300     2.610     2.920     
+RATG   2IFDI  13   0     3.230     0.940     1.380     1.680     2.050     2.330     2.610     2.880     
+RATG   2IFDI  14   0     0.780     1.150     1.400     1.710     1.940     2.170     2.400     0.680     
+RATG   2IFDI  15   0     1.000     1.220     1.480     1.690     1.880     2.080     0.610     0.890     
+RATG   2IFDI  16   0     1.080     1.320     1.500     1.670     1.850     0.470     0.690     0.830     
+RATG   2IFDI  17   0     1.020     1.150     1.290     1.420     0.390     0.570     0.690     0.840     
+RATG   2IFDI  18   0     0.960     1.070     1.180     0.250     0.370     0.440     0.540     0.610     
+RATG   2IFDI  19   0     0.680     0.750     0.190     0.280     0.340     0.410     0.460     0.520     
+RATG   2IFDI  20   0     0.570     0.160     0.230     0.280     0.340     0.390     0.430     0.470     
+RATG   2IFDD   3   0     480.000   600.000   1440.000                                                    
+RATG   2IFDI  21   0     0.140     0.200     0.240     0.290     0.330     0.370     0.410     0.080     
+RATG   2IFDI  22   0     0.110     0.140     0.170     0.190     0.210     0.230     2.010     2.890     
+RATG   2IFDI  23   0     3.470     4.200     4.740     5.290     5.830                                   
+GRUN   1IN1    0   0     1                              6.6       .17       .1                           
+GRUN   1IN2    0   0     25        .015      .15       .02       .1                                      
+GRUN   1TIME   0   0     2001 9 1 0 0 0                                                                  
+GRUN   1E1     0   0       20000                                                    20.000     1.000     
+GRUN   1E3A    0   0     .01       .03       .05       .07       .08       .08       .08       .08       
+GRUN   1E3A    1   0     .08       .08       .08       .08       .08       .08       .09       .55       
+GRUN   1E3A    2   0     1.73      2.24      2.28      2.31      2.32      2.32      2.32      2.32      
+GRUN   1E3A    3   0     2.32      2.32      2.32      2.32      2.32      2.32      2.32      2.32      
+GRUN   1E3A    4   0     2.32      2.32      2.32      2.32      2.32      2.32      2.32      2.32      
+GRUN   1E3A    5   0     2.32      2.32      2.38      2.56      2.87      3.49      4.37      4.69      
+GRUN   1E3A    6   0     4.72      4.74      4.74      4.82      4.94      4.99                          
+SWMM   3TEMP   1   0                                                                                    1
+SWMM  22TEMP   1   0                                                                                    1
+SWMM  22TEMP  13   0                                                                                    1
+SWMM  22TEMP   0   0                                                                                    1
+SWMM   6TEMP   1   0                                                                                    1
+SWMM   7TEMP   1   0                                                                                    1
+ZSYM   7OBJ    0   0     Rainfall Event                                                                  
+ZSYM   7VAL    0   0         1                                                                           
+TABL  13GLOB   0   0         1     0000001                 0    0                                        
+TABL  13VAR1   0   0     F_R_FSCS                     0    0    3F_R_INFILSEL                 0    0    3
+TABL  13VAR2   0   0       0Arial                         0 9         00   0.000   3.00012          1  0 
+TABL  13VAR3   0   0                                    16                                               
+TABL  13VTTL   0   0     Routing Method                                                                  
+TABL  13VAR2   1   0       0Arial                         0 9         00   0.000   3.00012          1  0 
+TABL  13VAR3   1   0                                    16                                               
+TABL  13VTTL   1   0     Infiltration Reference                                                          
+TABL  13VAR1   1   0     F_R_RAINSEL                  0    0    3                                        
+TABL  13VAR2   2   0       0Arial                         0 9         00   0.000   3.00012          1  0 
+TABL  13VAR3   2   0                                    16                                               
+TABL  13VTTL   2   0     Rainfall Reference                                                              
+TABL   0GLOB   0   0              2                       0                                              
+RUNF   0H1C    0 204                                                           0                         
+RUNF   0H1B    0 201     Rainfall Event      Infiltration                                                
+RUNF   0H1B    0 202     Rainfall Event      Infiltration                                                
+RUNF   0H1B    0 203     Rainfall Event      Infiltration                                                
+RUNF   0H1B    0 204     Rainfall Event      Infiltration                                                
+RUNF   0H1B    0 205     Rainfall Event      Infiltration                                                
+RUNF   0H1B    0 206     Rainfall Event      Infiltration                                                
+RUNF   0H1B    0 207     Rainfall Event      Infiltration                                                
+RUNF   0H1B    0 208     Rainfall Event      Infiltration                                                
+RUNF   0H1B    0 209     Rainfall Event      Infiltration                                                
+RUNF   0H1B    0 210     Rainfall Event      Infiltration                                                
+RUNF   0H1B    0 211                                                                                     
+RUNF   0H1B    0 212                                                                                     
+ZSYM  23OBJ    6   0     Hydrology                                                                       
+TABL  12VAR2   0   0                                                                    12             0 
+TABL  12VAR2   1   0                                                                    12             0 
+TABL  12VAR2   2   0                                                                    12             0 
+TABL  12VAR2   3   0                                                                    12             0 
+TABL  12VAR2   4   0                                                                    12             0 
+TABL  12VAR3   0   0                                    19                                               
+TABL  12VAR3   1   0                                    16                                               
+TABL  12VAR3   2   0                                    16                                               
+TABL  12VAR3   3   0                                    16                                               
+TABL  12VAR3   4   0                                    16                                               
+EXTR   0SP1N   0 202         0                        1                   0 0                     0 0 00 
+EXTR   0E2E    0 202     0.0001  0       0.67    2       1.33    4       1.33    5       1.5     6       
+EXTR   0E2E    1 202     1.67    7       1.92    8                                                       
+EXTR   0E1     0 202                   0.000   0.000                                          3          
+EXTR   0E2F    0 202          0.000  0.000                                                               
+EXTR   0E1A    0 202     0    1                                                                          
+EXTR   0BMP    0 202     0                                                                               
+2DMD   0DATA   0   0         0                                                                           
+EXTR   0E2E    0 204     0.01    0       0.1     0.1     0.6     0.5     1.2     1       2.8     2       
+EXTR   0E1     0 204                     0.0     0.0                                          3          
+EXTR   0E2F    0 204            0.0    0.0                                                               
+EXTR   0E1A    0 204         1    1                                                                      
+EXTR   0SPDV   0 218     11000000000000000000000000001         0000000                                   
+EXTR   0SPDN   0 218     SewerL6   StreetL6                                                              
+EXTR   0SPDV   0 219     11000000000000000000000000001         0000000                                   
+EXTR   0SPDN   0 219     SewerL7   StreetL7                                                              
+EXTR   0SPDV   0 221     11000000000000000000000000001         0000000                                   
+EXTR   0SPDN   0 221     SewerL8   StreetI8                                                              
+EXTR   2C1     0 221             0.0  8               0.           292.65    1308.18  1304.49      0.014 
+EXTR   0C4     0   0     1       -30     0.8     -20     0       -19.9   0.5     0       0       19.9    
+EXTR   0C4     1   0     0.8     20      1       30                                                      
+GLDB   0NAT1   0   0     -20.000 20.000      0.012      0.012      0.012                                 
+EXTR   2C1C    0 221     000    0.0  0.001        0P0     0.0                                            
+EXTR   2C3     0 221                                                         0.0               0.0 0     
+EXTR   2C2     0 221                                                   0.0       0.0                     
+EXTR   2ENCR   0 221               -30.0001  30.0001             Street                                  
+EXTR   2C1A    0 221                               1.26                                                  
+EXTR   2SPSC   0 221                                                                               0     
+EXTR   1C1     0 221             0.0  1               1.             292.65 1301.180 1297.490      0.014 
+EXTR   1C1C    0 221     000    0.0  0.001        0P0     0.0                                            
+EXTR   1SPSC   0 221                                                                               0     
+EXTR   1C1A    0 221                                   1.26                                              
+EXTR   1C3     0 221                                                         0.0               0.0 0     
+EXTR   1C2     0 221                                                   0.0       0.0                     
+EXTR   1ENCR   0 221               -1        -1                  Street                                  
+EXTR   1C1     0 219             0.0  1               1.           168.33   1297.490 1293.740      0.014 
+EXTR   1C1A    0 219                               2.23                                                  
+EXTR   1C1C    0 219     000                      0P0     0.0                                            
+EXTR   1SPSC   0 219                                                                               0     
+EXTR   2C1     0 219             0.0  8               0.           168.33    1304.49  1300.74      0.014 
+EXTR   2C1A    0 219                               2.23                                                  
+EXTR   2C1C    0 219     000    0.0  0.001        0P0     0.0                                            
+EXTR   2C3     0 219                                                         0.0               0.0 0     
+EXTR   2C2     0 219                                                   0.0       0.0                     
+EXTR   2ENCR   0 219               -30.0001  30.0001             Street                                  
+EXTR   2SPSC   0 219                                                                               0     
+EXTR   1C1     0 218             0.0  1               1.           199.74   1293.740 1285.520      0.014 
+EXTR   1C1A    0 218                               4.12                                                  
+EXTR   1C1C    0 218     000                      0P0     0.0                                            
+EXTR   1SPSC   0 218                                                                               0     
+EXTR   2C1     0 218             0.0  8               0.           199.74    1300.74  1290.52      0.014 
+EXTR   2C1C    0 218     000    0.0  0.001        0P0     0.0                                            
+EXTR   2C3     0 218                                                         0.0               0.0 0     
+EXTR   2C2     0 218                                                   0.0       0.0                     
+EXTR   2ENCR   0 218               -30.0001  30.0001             Street                                  
+EXTR   2C1A    0 218                               5.12                                                  
+EXTR   2SPSC   0 218                                                                               0     
+ZSYM  28OBJ    0   0     Street                                                                          
+ZSYM  28VAL    0   0         0                                                                           
+SWMM  23TEMP   1   0                                                                                    1
+HYDA   0IRCG   0   0     0.        1.        2.        3.        4.        5.        6.        10.       
+HYDA   0IRCC   0   0     0.        1.        1.8       2.5       3.        3.5       3.75      4.5       
+SWMM  17TEMP  17   0                                                                                    1
+ZSYM  21OBJ    0   0     Grate                                   Rated                                   
+ZSYM  21VAL    0   0         0    1                                                                      
+EXTR   0SP1N   0 209         0                        0                   0 0                     0 1 0  
+HYDA   0ICAP   0 209     1         Grate                    1.000                         0.000     1.800
+EXTR   0IRCD   0 209                                             1    0                                  
+EXTR   0BMP    0 209     0                                                                               
+EXTR   1RSLT   0 218                                                       7.430089050                   
+EXTR   1LR01   0 218                         9.593987380         9.603367060         9.60336706.819824896
+EXTR   1LR02   0 218     .302626502.998360668.0028580794.365235856.711362338.545172061.117053050         
+EXTR   1LR03   0 218     0         15.76666665.416666661391.616661.705413981388.833335.3970513872.9      
+EXTR   1DR01   0 218                                                                 55.6712091          
+EXTR   1CRS1   0 218     -9E99     1298.691911289.04413-9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS2   0 218     -9E99     1300.336391291.52   6.596399696.59639969118.188662.78539815 1.67033E-4
+EXTR   1ENCR   0 218               -1        -1                                                          
+EXTR   1CRS3   0 218     .261446184          1.70541398.135606786.014000000.9999494411.230597771         
+EXTR   1CRS4   0 218     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS5   0 218     -9E99     -9E99     -9E99     -9E99     1440      0         0         0         
+EXTR   1CRS6   0 218     0         0         0         0         -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS7   0 218     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS8   0 218     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS9   0 218     -9E99     -9E99     -9E99     -9E99     -9E99     .0433582311285.635121293.84195
+EXTR   1CRSA   0 218     .0653232193.401000628.66037311.605035329.68542968759221.1249118.188662-9E99     
+EXTR   1CRSB   0 218     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     .147461371
+EXTR   2RSLT   0 218                                                       7.728365960                   
+EXTR   2LR01   0 218                         4.382954210         10.06949690         10.06949694.43199529
+EXTR   2LR02   0 218     .13318647319.2490924.002099813.330653723579.40982118.1235477.0133426045.35      
+EXTR   2LR03   0 218     1400.516665.700000005.4833333339.55882352.041115471407.33333.0449136980         
+EXTR   2DR01   0 218                                                                 1.03260379          
+EXTR   2CRS1   0 218     -9E99     1300.924361291.52   -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   2CRS2   0 218     -9E99     1300.924381291.52   1         1         260.36969931.97     5.98663E-5
+EXTR   2CRS3   0 218     .418355304          2.04111547.022937401.012000000.998685474.296439875.183395972
+EXTR   2CRS4   0 218     13.32221040         0         7.730835930         0         .5802967850         
+EXTR   2CRS5   0 218     0         1562.218190         0         1440      0         0         0         
+EXTR   2CRS6   0 218     0         0         0         0         0         0         0         0         
+EXTR   2CRS7   0 218     779.8661920         0         779.8661920         -19.972957-1        19.9729573
+EXTR   2CRS8   0 218     0         0         -19.97295719.972957339.945914739.8729573.07295737539.8729573
+EXTR   2CRS9   0 218     .07295737539.9      .10000000019.9      39.9459147.0069464571290.520781300.74474
+EXTR   2CRSA   0 218     .002127143.3654565071.38748551.347322899.18541417916019.7851260.369699-9E99     
+EXTR   2CRSB   0 218     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     .002538628
+EXTR   1RSLT   0 219                                                       6.340757220                   
+EXTR   1LR01   0 219                         7.785456870         5.750267560         5.75026756.816041516
+EXTR   1LR02   0 219     .303782710.9992     .0028580794.365235854.937898656.287127941.286999020         
+EXTR   1LR03   0 219     0         15.766666615.76666661188.416221.278214081384.499996.4447680164        
+EXTR   1DR01   0 219                                                                 47.2159619          
+EXTR   1CRS1   0 219     -9E99     1304.504701298.69182-9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS2   0 219     -9E99     1304.678151300.336397.188157527.18815752136.915396.78539815 1.10557E-4
+EXTR   1ENCR   0 219               -1        -1                                                          
+EXTR   1CRS3   0 219     .267204508          1.27821408.134902417.014000000.9999494411.006598451         
+EXTR   1CRS4   0 219     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS5   0 219     -9E99     -9E99     -9E99     -9E99     1383      0         0         2         
+EXTR   1CRS6   0 219     0         0         54        1         -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS7   0 219     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS8   0 219     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS9   0 219     -9E99     -9E99     -9E99     -9E99     -9E99     .0404537391293.841951297.58805
+EXTR   1CRSA   0 219     .0624106522.471959386.80957790.592067759.54434795247031.6630136.915396-9E99     
+EXTR   1CRSB   0 219     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     .099999999
+EXTR   2RSLT   0 219                                                       5.272707370                   
+EXTR   2LR01   0 219                         3.701870820         3.727164750         3.727164751.42432998
+EXTR   2LR02   0 219     .09193162615.0107268.002099813.136508418382.32068811.9587328.013796436893.979713
+EXTR   2LR03   0 219     0         5.700000005.700000001135.34761.48089618481.1333333.1133161620         
+EXTR   2DR01   0 219                                                                 .689936433          
+EXTR   2CRS1   0 219     -9E99     1304.678381300.92436-9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   2CRS2   0 219     -9E99     1304.678381300.92438.188389432.18838943211.439339531.97     5.76169E-5
+EXTR   2CRS3   0 219     .130704138          .480896184.013799166.012000000.498710753.254156684.185861153
+EXTR   2CRS4   0 219     1.386875510         0         5.274663270         0         3.803270890         
+EXTR   2CRS5   0 219     0         11.47721280         0         1440      0         0         0         
+EXTR   2CRS6   0 219     0         0         0         0         0         0         0         0         
+EXTR   2CRS7   0 219     34.78281670         0         34.78281670         -19.923297-1        19.9232973
+EXTR   2CRS8   0 219     0         0         -19.92329719.923297339.846594639.8232973.02329733739.8232973
+EXTR   2CRS9   0 219     .02329733739.9      .10000000019.9      39.84659467.59308E-41300.744741304.49   
+EXTR   2CRSA   0 219     2.33451E-40         .127814333.037897905.0855926237395.2026811.4393395-9E99     
+EXTR   2CRSB   0 219     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     0         
+EXTR   1RSLT   0 221                                                       4.020735580                   
+EXTR   1LR01   0 221                         5.259890510         4.036264140         4.03626414.817583981
+EXTR   1LR02   0 221     .302263914.998836140.002858079.6704080083.714892224.729947761.090944660         
+EXTR   1LR03   0 221     0         5.8333333315.21666661439.29999.894824303378.6124545.1223426064        
+EXTR   1DR01   0 221                                                                 33.5528165          
+EXTR   1CRS1   0 221     -9E99     1307.679421303.75315-9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS2   0 221     -9E99     1308.287151304.677887.187883727.18788372238.900922.78539815 7.12995E-5
+EXTR   1CRS3   0 221     .247055437          .894824303.125177215.014000000.999949441.8484652851         
+EXTR   1CRS4   0 221     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS5   0 221     -9E99     -9E99     -9E99     -9E99     1389      2         0         1         
+EXTR   1CRS6   0 221     0         0         47        1         -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS7   0 221     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS8   0 221     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS9   0 221     -9E99     -9E99     -9E99     -9E99     -9E99     .0269259401297.588051301.25167
+EXTR   1CRSA   0 221     .0476837161.447758017.87987641.519200391.33113574028610.1280238.900922-9E99     
+EXTR   1CRSB   0 221     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     .038982245
+EXTR   2RSLT   0 221                                                       2.978370140                   
+EXTR   2LR01   0 221                         2.559095940         3.522850810         3.522850811.16383682
+EXTR   2LR02   0 221     .08306849513.5635459.0020998130         287.6284538.99682369.0103549490         
+EXTR   2LR03   0 221     0         5.700000005.70000000410.041071.850050466152.678671.0334057450         
+EXTR   2DR01   0 221                                                                 .455766691          
+EXTR   2CRS1   0 221     -9E99     1308.347801304.67838-9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   2CRS2   0 221     -9E99     1308.347801304.67838.188389184.18838918418.804500831.97     1.51164E-5
+EXTR   2CRS3   0 221     .114000325          .850050466.015161772.012000000.999949441.202723166.167159775
+EXTR   2CRS4   0 221     1.263537310         0         2.978378160         0         2.357174680         
+EXTR   2CRS5   0 221     0         18.87846890         0         1440      0         0         0         
+EXTR   2CRS6   0 221     0         0         0         0         0         0         0         0         
+EXTR   2CRS7   0 221     30.72077740         0         30.72077740         -19.922237-1        19.9222372
+EXTR   2CRS8   0 221     0         0         -19.92223719.922237239.844474539.8222372.02223727539.8222372
+EXTR   2CRS9   0 221     .02223727539.9      .10000000019.9      39.8444745.0252781501304.49   1308.19758
+EXTR   2CRSA   0 221     .007740776.4358607697.397650821.26390003.0547904604733.8957918.8045008-9E99     
+EXTR   2CRSB   0 221     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     .011017754
+EXTR   0NR011249 209                                                                           7.18806125
+EXTR   0NR011428 209                                             1304.67806                              
+EXTR   0NR011666 209                                                       12.566                        
+EXTR   0NR011999 209                                                                           90.3229468
+EXTR   0NR021999 209                                                                           1305.01559
+EXTR   0NR022499 209                                                                           -.52559666
+EXTR   0NR023333 209                                                       -.18806125                    
+EXTR   0NR029999 209                                                                 491       0         
+EXTR   0NR039999 209     1.8901865637386     0         0         0         0         0         0         
+EXTR   0NR012499 209                                                                           .012140937
+EXTR   0NR013333 209                                                       0                             
+EXTR   0NR014999 209                                                                           37386     
+EXTR   0NR019999 209                                                                           1.89018656
+EXTR   0NR049999 209     0         0         0         0         0         0         0         .178157522
+EXTR   0NR021249 209                                                                           0         
+EXTR   0NR021428 209                                             41.3333333                              
+EXTR   0NR021666 209                                                       40.9666666                    
+EXTR   0NR059999 209     5.683333331304.5    .098050054.1305966881297.588051367.850146.9019499490.3229468
+EXTR   0NR069999 209     46.9294577.012140937.0499165859.47887007          56.408327794011.02090         
+EXTR   0NR079999 209     1367.85014                                                                      
+EXTR   1MANW   0 221                   0.0       0.0                                                     
+RTCS   0NAME   0   0     RTC Elements                                0   40    5    0                    
+2D     0ADVP   0   0     Defaults                                                                        
+2D     0ADVV   0   0     PRE 2012                                                                        
+2D     0ADVF   0   0     1                                                                               
+RSPT   0PROP   0   1     01                 16776960    0                                                
+RPTF   0PROP   0   1     arial                                                                           
+RSFL   0PROP   0   1     0001  16776960    0                                                             
+RFLF   0PROP   0   1     arial                                                                           
+ZSYM  31NAME   0   0     (2D) Soil Type                              0   40    5    0                    
+CONF   0PAR    0   0     MINLEN=18                                                                       
+NAME   0NODE   0 201     4/1                                                                             
+SWMM   0TMP2   0 201     4/1                                                                             
+NAME   0NODE   0 202     Pond                                                                            
+SWMM   0TMP2   0 202     Pond                                                                            
+NAME   0NODE   0 203     3/1                                                                             
+SWMM   0TMP2   0 203     3/1                                                                             
+NAME   0NODE   0 204     Junction                                                                        
+SWMM   0TMP2   0 204     Junction                                                                        
+NAME   0NODE   0 205     3/2                                                                             
+SWMM   0TMP2   0 205     3/2                                                                             
+NAME   0NODE   0 206     5/1                                                                             
+SWMM   0TMP2   0 206     5/1                                                                             
+NAME   0NODE   0 207     5/2                                                                             
+SWMM   0TMP2   0 207     5/2                                                                             
+NAME   0NODE   0 208     5/3                                                                             
+SWMM   0TMP2   0 208     5/3                                                                             
+NAME   0NODE   0 209     5/4                                                                             
+SWMM   0TMP2   0 209     5/4                                                                             
+NAME   0NODE   0 210     5/5                                                                             
+SWMM   0TMP2   0 210     5/5                                                                             
+NAME   0NODE   0 211     3/375                                                                           
+SWMM   0TMP2   0 211     3/375                                                                           
+NAME   0NODE   0 212     Riser                                                                           
+SWMM   0TMP2   0 212     Riser                                                                           
+EXT1   0SPD1   0 218     SewerL6                                                                         
+EXT2   0SPD2   0 218     StreetL6                                                                        
+EXT1   0SPD1   0 219     SewerL7                                                                         
+EXT2   0SPD2   0 219     StreetL7                                                                        
+EXT1   0SPD1   0 221     SewerL8                                                                         
+EXT2   0SPD2   0 221     StreetI8                                                                        
+RUNF   0H1C1   0 201                                                                                     
+RUNF   0H1C1   0 202                                                                                     
+RUNF   0H1C1   0 203                                                                                     
+RUNF   0H1C1   0 204                                                                                     
+RUNF   0H1C1   0 205                                                                                     
+RUNF   0H1C1   0 206                                                                                     
+RUNF   0H1C1   0 207                                                                                     
+RUNF   0H1C1   0 208                                                                                     
+RUNF   0H1C1   0 209                                                                                     
+RUNF   0H1C1   0 210                                                                                     
+LAYS   0LAYS   0   0     Nodes                                                                           
+LAYE   0LAYE   0   0     0        12                                                                     
+LAYS   0LAYS   0   1     DTM                                                                             
+LAYE   0LAYE   0   1     0                                                                               
+LAYS   0LAYS   0   2     Spatial Reports                                                                 
+LAYE   0LAYE   0   2     0                                                                               
+LAYS   0LAYS   0   3     Links                                                                           
+LAYE   0LAYE   0   3     0                                                                               
+LAYS   0LAYS   0   4     2D Model                                                                        
+LAYE   0LAYE   0   4     0                                                                               
+LAYS   0LAYS   0   5     Catchments                                                                      
+LAYE   0LAYE   0   5     0                                                                               
+LAYS   0LAYS   0   6     Sewersheds                                                                      
+LAYE   0LAYE   0   6     0                                                                               
+LAYS   0LAYS   0   7     Time Series Outputs                                                             
+LAYE   0LAYE   0   7     0                                                                               
+LAYS   0LAYS   0   8     Topography                                                                      
+LAYE   0LAYE   0   8     0                                                                               
+LAYS   0LAYS   0   9     CAD Files                                                                       
+LAYE   0LAYE   0   9     0                                                                               
+LAYS   0LAYS   0  10     Reporting                                                                       
+LAYE   0LAYE   0  10     0                                                                               
+LAYS   0LAYS   0  11     1D Network                                                                      
+LAYE   0LAYE   0  11     0                                                                               
+2DMG   0EXTE   0   0              0                                                                      
+2D     0ASCG   0   0              0                                                                      
+DT     0DTST   0   0                                                      0                              
+ZZZG   0GRID   0   0                                                                          000000FF   
+ZSYM  32NAME   0   0     User Defined Conduit                        0   40    5    0                    
+ZSYM  33NAME   0   0     Bridge Section Shapes                       0   40    5    0                    
+ZSYM  34NAME   0   0     LID/WSUD                                    0   40    5    0                    
+ZSYM  35NAME   0   0     User Hazard Classifications                 0   40    5    0                    
+ZSYM  36NAME   0   0     User Hazard Values                          0   40    5    0                    
+SWMM   0LICE   0   0     NDItMjItOTk5OSAoWFBTV01NKQ==                                                    
+SWMM   0PVER   0   0     24.1.0.0            2024.1                                                      
+NAME   0LINK   0 213     Link0                                                                           
+SWMM   0TMP1   0 213     Link0                                                                           
+NAME   0LINK   0 214     Link1                                                                           
+SWMM   0TMP1   0 214     Link1                                                                           
+NAME   0LINK   0 215     Link2                                                                           
+SWMM   0TMP1   0 215     Link2                                                                           
+NAME   0LINK   0 216     Link3                                                                           
+SWMM   0TMP1   0 216     Link3                                                                           
+NAME   0LINK   0 217     Link5                                                                           
+SWMM   0TMP1   0 217     Link5                                                                           
+NAME   0LINK   0 218     Link6                                                                           
+SWMM   0TMP1   0 218     Link6                                                                           
+NAME   0LINK   0 219     Link7                                                                           
+SWMM   0TMP1   0 219     Link7                                                                           
+NAME   0LINK   0 220     Link9                                                                           
+SWMM   0TMP1   0 220     Link9                                                                           
+NAME   0LINK   0 221     Link8                                                                           
+SWMM   0TMP1   0 221     Link8                                                                           
+NAME   0LINK   0 222     Culvert                                                                         
+SWMM   0TMP1   0 222     Culvert                                                                         
+NAME   0LINK   0 223     Link11                                                                          
+SWMM   0TMP1   0 223     Link11                                                                          
+2D     0IN2D   0   0      1                                                                              
+EXTR   0E3     0 202     0                                                                               
+DUMY   0DUMY   0   0     0                                                                               
+EXTR   0A1B    0   0                                                                                     
+EXTR   0A1C    0   0     0     0.010                                                                     
+WSPG   0RES    0   0                                                        -9999.000                    
+EXTR   0NR08   0 201     0                                                                               
+EXTR   0NR08   0 202     0                                                                               
+EXTR   0NR08   0 203     0                                                                               
+EXTR   0NR08   0 204     0                                                                               
+EXTR   0NR08   0 205     0                                                                               
+EXTR   0NR08   0 206     0                                                                               
+EXTR   0NR08   0 207     0                                                                               
+EXTR   0NR08   0 208     0                                                                               
+EXTR   0NR08   0 209     0                                                                               
+EXTR   0NR089999 209     0                                                                               
+EXTR   0NR073333 209                                                       0                             
+EXTR   0NR08   0 210     0                                                                               
+EXTR   0NR08   0 211     0                                                                               
+EXTR   0NR08   0 212     0                                                                               
+REVS   0REVD   0   0                                1                                                    
+HYDA   0ICAP   0 210     0                                  2.000                         0.000     2.000
+EXTR   0IRCD   0 210                                             1    0                                  
+EXTR   0SP1N   0 208         0                        0                   0 0                     0 1 0  
+HYDA   1IRCG   0   0     0.        0.1       0.2       0.3       0.4       0.5       0.6       1         
+HYDA   1IRCC   0   0     0.        1.        1.8       2.5       3.        3.5       3.75      4.5       
+HYDA   0ICAP   0 208     3                                  1.000                         0.000     0.050
+EXTR   0IRCD   0 208                         Rated               0    0                                  
+EXTR   0BMP    0 208     0                                                                               
+EXTR   0SP1N   0 207         0                        0                   0 0                     0 0 0  
+EXTR   0BMP    0 207     0                                                                               
+EXTR   0NR011249 208                                                                           6.59547914
+EXTR   0NR011428 208                                             1300.33547                              
+EXTR   0NR011666 208                                                       12.566                        
+EXTR   0NR011999 208                                                                           82.8903585
+EXTR   0NR021999 208                                                                           1301.04449
+EXTR   0NR022499 208                                                                           -.30449243
+EXTR   0NR023333 208                                                       .404520856                    
+EXTR   0NR029999 208                                                                 429       0         
+EXTR   0NR039999 208     1.9301784738177     0         0         0         0         0         0         
+EXTR   0NR012499 208                                                                           .002135287
+EXTR   0NR013333 208                                                       0                             
+EXTR   0NR014999 208                                                                           38177     
+EXTR   0NR019999 208                                                                           1.93017847
+EXTR   0NR049999 208     0         0         0         0         0         0         0         0         
+EXTR   0NR021249 208                                                                           0         
+EXTR   0NR021428 208                                             0                                       
+EXTR   0NR021666 208                                                       0                             
+EXTR   0NR059999 208     5.683333331300.75   .101958679.1968435111293.841950         6.8980413282.8903585
+EXTR   0NR069999 208     8.25372035.002135287.0069673299.40513240          17.6588527118458.4790         
+EXTR   0NR079999 208     0                                                                               
+EXTR   0NR089999 208     0                                                                               
+EXTR   0NR073333 208                                                       0                             
+EXTR   0NR011249 210                                                                           7.10705424
+EXTR   0NR011428 210                                             1308.28705                              
+EXTR   0NR011666 210                                                       12.566                        
+EXTR   0NR011999 210                                                                           89.3072436
+EXTR   0NR021999 210                                                                           1308.28705
+EXTR   0NR022499 210                                                                           -.10705424
+EXTR   0NR023333 210                                                       -.10705424                    
+EXTR   0NR029999 210                                                                 20        0         
+EXTR   0NR039999 210     1.6344607932328     0         0         0         0         0         0         
+EXTR   0NR012499 210                                                                           .053550247
+EXTR   0NR013333 210                                                       0                             
+EXTR   0NR014999 210                                                                           32328     
+EXTR   0NR019999 210                                                                           1.63446079
+EXTR   0NR049999 210     0         0         0         0         0         0         0         .097152319
+EXTR   0NR021249 210                                                                           0         
+EXTR   0NR021428 210                                             40.4                                    
+EXTR   0NR021666 210                                                       38.9166666                    
+EXTR   0NR059999 210     15.7      1308.19   .071671006.0716710061301.25167381.3463266.9283289989.3072436
+EXTR   0NR069999 210     206.992593.053550247.3604024015.66400750          212.65660057430.91210         
+EXTR   0NR079999 210     381.346326                                                                      
+EXTR   0NR089999 210     0                                                                               
+EXTR   0NR073333 210                                                       0                             
+FONT   0LIST   1   0            1        CityBlueprint                                                   
+FONT   0FLAG   1   0            0                                                                        
+2D     0JOB7   0   0                                                      0                              
+CAD    0FILE   1   0     a.dwg                                                                           
+SWMM   1MCTL   0 223       1                                                                             
+EXTR   1C1     0 223                 1           2                 18.63    1271.000 1270.500            
+LINK   1LKLB   0 223      3923.4546 4068.7656                                                            
+QAS    1GLOB   0 223    8.46665E-4 -.00423333 3950.13874 -3727.6742 1 1 0                              0 
+EXTR   1C1A    0 223                               2.68                                                  
+EXTR   1RSLT   0 223                                                       27.34448540                   
+EXTR   1LR01   0 223                         8.334037860         .4219680080         .4219680083.28153998
+EXTR   1LR02   0 223     .6049979991.99407547.0028580792.2423061934.413792810.9542506.7945931740         
+EXTR   1LR03   0 223     0         15.816666615.83333331440.000001.460817591380.396963.43151266104.765987
+EXTR   1DR01   0 223                                                                 19.8659885          
+EXTR   1CRS1   0 223     -9E99     1273.281911272.98257-9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS2   0 223     -9E99     1273.283621272.983992.483999361.2419996861.06222653.1415926 1.27259E-4
+EXTR   1ENCR   0 223               -1        -1                                                          
+EXTR   1CRS3   0 223     .870099471          1.46081759.241197771.014000000.9999740291.811927541.34648830
+EXTR   1CRS4   0 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS5   0 223     -9E99     -9E99     -9E99     -9E99     1182      63        0         195       
+EXTR   1CRS6   0 223     0         0         0         0         -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS7   0 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS8   0 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS9   0 223     -9E99     -9E99     -9E99     -9E99     -9E99     .1361769171270.742361271.16808
+EXTR   1CRSA   0 223     .1119394523.671694212.536975971.126663723.47454430300200.62861.0622265-9E99     
+EXTR   1CRSB   0 223     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     .500000000
+NAME   1LINK   0 223     Link11                                                                          
+SWMM   1TMP1   0 223     Link11                                                                          
+EXTR   0SPDV   0 223     0000000000000011000000011000          0000000                                   
+EXTR   1F1     0 223                           1   0.05  0.7   1275.        0.0 0             0 0        
+EXT1   1F1     0 223     Bleeder                                                                         
+EXTR   2C1     0 223                 1           1                                                       
+EXTR   2F1     0 223                           1    0.5  0.7  1276.5        0.5 1             0 0        
+EXT1   2F1     0 223     Rectangle                                                                       
+EXTR   3C1     0 223                 1           1                                                       
+EXTR   3G1     0 223                          1   1277.5    1279.       2.    3.1             0          
+EXT1   3G1     0 223     Notch                                                                           
+EXTR   4C1     0 223                 1           1                                                       
+EXTR   4G1     0 223                          1    1278.    1279.      10.    3.1             0          
+EXT1   4G1     0 223     Rim                                                                             
+EXTR   0C6     0 222                      1.0      0.0      0.0      0.5      0.0       1.      1.0 0  0 
+EXTR   0C6A    0 222         0        0.        0.       0.0    0       0.0       0.0      100.        1.
+EXTR   0C6B    0 222             2.         0                                                            
+EXTR   0C1C    0 222                              1P0                                                    
+EXTR   0SPSC   0 222                                                                               0     
+EXTR   1RSLT   2 223                                                       .4392194680                   
+EXTR   1LR01   2 223                         8.357034490         2.213147830         2.21314783.052558199
+EXTR   1LR02   2 223     .075774899.2490227352.56216E-5.673441528.141085083.5617523963.11317625362.433333
+EXTR   1LR03   2 223     1077.5666616.483333316.48333330         1.47434434612.1000003.529190711021.49999
+EXTR   1DR01   2 223                                                                 11.5195221          
+EXTR   1CRS1   2 223     -9E99     1277.504231275.24231-9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS2   2 223     -9E99     1277.505471275.242312.505475069.9300135451.4146736-9E99     2.29596E-6
+EXTR   1ENCR   2 223               -1        -1                                                          
+EXTR   1CRS3   2 223     .038563455          1.47434434.048469875.001325543.763385408.595298702.252313358
+EXTR   1CRS4   2 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS5   2 223     -9E99     -9E99     -9E99     -9E99     362       0         0         722       
+EXTR   1CRS6   2 223     291       65        0         0         -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS7   2 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS8   2 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   1CRS9   2 223     -9E99     -9E99     -9E99     -9E99     -9E99     .0520020441275.242311277.01558
+EXTR   1CRSA   2 223     .0630783397.4184905252.0020445.011023570.19215225416601.954751.4146736-9E99     
+EXTR   1CRSB   2 223     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     .385776674
+EXTR   2RSLT   2 223                                                       2.019640610                   
+EXTR   2LR01   2 223                         4.021070850         .5123816980         .512381698.502274386
+EXTR   2LR02   2 223     .2280469691         9.35909E-50         1.98607653.5617505951.01692171927.216666
+EXTR   2LR03   2 223     512.78333316.516666616.51666660         .3265139828.138461531.52698279494.483333
+EXTR   2DR01   2 223                                                                 3.02327369          
+EXTR   2CRS1   2 223     -9E99     1277.503201276.99   -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   2CRS2   2 223     -9E99     1277.505471276.99   1.005475062.01095013501.263017-9E99     1.11595E-5
+EXTR   2ENCR   2 223               -1        -1                                                          
+EXTR   2CRS3   2 223     .184732087          .326513982.067077214.002533423.401536983.502123564.5        
+EXTR   2CRS4   2 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   2CRS5   2 223     -9E99     -9E99     -9E99     -9E99     927       0         0         276       
+EXTR   2CRS6   2 223     15        222       0         0         -9E99     -9E99     -9E99     -9E99     
+EXTR   2CRS7   2 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   2CRS8   2 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   2CRS9   2 223     -9E99     -9E99     -9E99     -9E99     -9E99     .4833136191276.822431277.01558
+EXTR   2CRSA   2 223     .1699676082.25110562483.313619.1045     .56978111849229.0886501.263017-9E99     
+EXTR   2CRSB   2 223     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     1.08799000
+EXTR   3RSLT   3 223                                                       .0024594270                   
+EXTR   3LR01   3 223                         0         0         0         0         0         1E-5      
+EXTR   3LR02   3 223     1E-5      0         0         0         0         0         0         0         
+EXTR   3LR03   3 223     0         16.43333330         0         0         0         0         0         
+EXTR   3DR01   3 223                                                                 0                   
+EXTR   3CRS1   3 223     -9E99     0         0         -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   3CRS2   3 223     -9E99     -9E99     -9E99     -9E99     0         0         -9E99     -9E99     
+EXTR   3ENCR   3 223               -1        -1                                                          
+EXTR   3CRS3   3 223     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   3CRS4   3 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   3CRS5   3 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   3CRS6   3 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   3CRS7   3 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   3CRS8   3 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   3CRS9   3 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   3CRSA   3 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     0         -9E99     
+EXTR   3CRSB   3 223     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   4RSLT   3 223                                                       0         0                   
+EXTR   4LR01   3 223                         0         0         0         0         0         1E-5      
+EXTR   4LR02   3 223     1E-5      0         0         0         0         0         0         0         
+EXTR   4LR03   3 223     0         0         0         0         0         0         0         0         
+EXTR   4DR01   3 223                                                                 0                   
+EXTR   4CRS1   3 223     -9E99     0         0         -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   4CRS2   3 223     -9E99     -9E99     -9E99     -9E99     0         0         -9E99     -9E99     
+EXTR   4ENCR   3 223               -1        -1                                                          
+EXTR   4CRS3   3 223     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   4CRS4   3 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   4CRS5   3 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   4CRS6   3 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   4CRS7   3 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   4CRS8   3 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   4CRS9   3 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+EXTR   4CRSA   3 223     -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     0         -9E99     
+EXTR   4CRSB   3 223     -9E99               -9E99     -9E99     -9E99     -9E99     -9E99     -9E99     
+ZXPX   0XPXO   0   0     1121212121 1 1                                                                  
+ZZZE   0VRTX   1 221     -3047.683226    4495.217999     -3058.774292    4464.666600     -3078.293700    
+ZZZS   0SEL    0   0          0     1                                                                    
+ZZZS   1SEL    0   0          0     1                                                                    
+ZZZS   2SEL    0   0          0     1                                                                    
