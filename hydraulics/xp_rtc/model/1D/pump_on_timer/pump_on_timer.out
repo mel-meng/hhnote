@@ -1,0 +1,993 @@
+  Current Directory:   C:\PROGRA~1\Innovyze\XPSWMM~2.1_X
+  Engine Name: C:\PROGRA~1\Innovyze\XPSWMM~2.1_X\engine\SWMMEN~2.EXE
+  Input File: C:\GitHub\hhnote\hydraulics\xp_rtc\model\1D\pump_on_timer\pump_on_timer.XP
+
+          *===============================================*
+          |                   xpswmm                      |
+          |     Storm and Wastewater Management Model     |
+          |            Developed by Innovyze.             |
+          |===============================================|
+          |                                               |
+          | Last Update      : Nov 22 2022                |
+          | Interface Version: 2021.4                     |
+          | Engine Version   : 12.0                       |
+          | Data File Version: 12.62                      |
+          |                                               |
+          |                                               |
+          *===============================================*
+
+Engine Name: C:\PROGRA~1\Innovyze\XPSWMM~2.1_X\engine\SWMMEN~2.EXE
+
+
+*====================================================*
+|       Input and Output file names by Layer         |
+*====================================================*
+
+ Input File  to Layer #     1 JOT.US
+ Output File to Layer #     1 JOT.US
+
+*===========================================================*
+|                Configuration Parameters                   |
+|  Configuration Parameters, both those that are hardwired  |
+|  and those added to the simulation are listed below.      |
+|  Configuration Parameters that start with a $ are set in  |
+|  the engine as defaults.  The remaining in UPPERCASE      |
+|  have been added to the simulation in the Configuration-> |
+|  Configuration Parameters dialog or as Engine Defaults in |
+|  the SWMXP.INI file.                                      |
+|                                                           |
+|  Consult the Help File for the specific meaning/purpose   |
+|  of any particular parameter.                             |
+|                                                           |
+|  Note:                                                    |
+|  The second column denotes the value of the parameter.    |
+*===========================================================*
+
+ $powerstation                        0.0000         1         2
+ $perv                                0.0000         0         4
+ $oldegg                              0.0000         0         7
+ $as                                  0.0000         0        11
+ $noflat                              0.0000         0        21
+ $oldomega                            0.0000         0        24
+ $oldvol                              0.0000         1        28
+ $implicit                            0.0000         1        29
+ $oldhot                              0.0000         1        31
+ $oldscs                              0.0000         0        33
+ $flood                               0.0000         1        40
+ $nokeys                              0.0000         0        42
+ $pzero                               0.0000         0        55
+ $oldvol2                             0.0000         2        59
+ $storage2                            0.0000         3        62
+ $oldhot1                             0.0000         1        63
+ $pumpwt                              0.0000         1        70
+ $ecloss                              0.0000         1        77
+ $exout                               0.0000         0        97
+ $spatial = 0.90                      0.9000         5       124
+ $djref = -1.0                       -0.1000         3       143
+ $weirlen = 50                       50.0000         1       153
+ $oldbnd                              0.0000         1       154
+ $nogrelev                            0.0000         1       161
+ $ncmid                               0.0000         0       164
+ $new_nl_97                           0.0000         2       290
+ SCSIADEPTH=ON                        0.0000         1       293
+ $best97                              0.0000         1       294
+ $newbound                            0.0000         1       295
+ $q_tol = 0.01                        0.0001         1       316
+ $new_storage                         0.0000         1       322
+ $old_iteration                       0.0000         1       333
+ $minlen=30.0                        30.0000         1       346
+ $review_elevation                    0.0000         1       383
+ $use_half_volume                     0.0000         1       385
+ VERT_WALLS=ON                        0.0000         1       389
+ $min_ts = 1.0                        1.0000         1       407
+ $design_restart = on                 0.0000         1       412
+ $zero_value=1.e-05                   0.0000         1       415
+ SUBCATCHMENT_RES=ON                  0.0000         1       419
+ $relax_depth = on                    0.0000         1       427
+ $saveallpts = on                     0.0000         1       434
+ PUMP_NEGHD=ON                        0.0000         1       437
+ $channel_geometry=1                  0.0000         1       456
+ PROJUNITS == US                      0.0000         1       462
+
+ *===========================================================* 
+ |   The XPSWMM/XPSTORM engine internally uses object IDs    | 
+ |     instead of full object names to represent objects.    |
+ |   Included below is a table of these IDs along with the   |
+ |         name of the object that ID corresponds to.        |
+ *===========================================================* 
+        Object ID         Object          
+           Number          Name         
+ ================  ====================    
+              201  Node1                                                                           
+              202  Node2                                                                           
+              204  Node3                                                                           
+              205  Link2                                                                           
+         P{203.1}  pump                                                                            
+
+ *==========================================================*
+ | Parameter Values on the Tapes Common Block.These are the |
+ | values read from the data file and dynamically allocated |
+ | by the model for this simulation.                        |
+ *==========================================================*
+
+  Number of Subcatchments in the Runoff Block (NW)....     0
+  Number of Channel/Pipes in the Runoff Block (NG)....     0
+  Runoff Water quality constituents (NRQ).............     0
+  Runoff Land Uses per Subcatchment (NLU).............     0
+  Number of Elements in the Transport Block (NET).....     0
+  Number of Storage Junctions in Transport (NTSE).....     0
+  Number of Input Hydrographs in Transport (NTH)......     0
+  Number of Elements in the Extran Block (NEE)........     3
+  Number of Groundwater Subcatchments in Runoff (NGW).     0
+  Number of Interface locations for all Blocks (NIE)..     3
+  Number of Pumps in Extran (NEP).....................     1
+  Number of Orifices in Extran (NEO)..................     0
+  Number of Tide Gates/Free Outfalls in Extran (NTG)..     1
+  Number of Extran Weirs (NEW)........................     0
+  Number of scs hydrograph points.....................     1
+  Number of Extran printout locations (NPO)...........     0
+  Number of Tide elements in Extran (NTE).............     1
+  Number of Natural channels (NNC)....................     0
+  Number of Storage junctions in Extran (NVSE)........     1
+  Number of Time history data points in Extran(NTVAL).     0
+  Number of Variable storage elements in Extran (NVST)     0
+  Number of Input Hydrographs in Extran (NEH).........     0
+  Number of Particle sizes in Transport Block (NPS)...     0
+  Number of User defined conduits (NHW)...............     3
+  Number of Connecting conduits in Extran (NECC)......    20
+  Number of Upstream elements in Transport (NTCC).....    10
+  Number of Storage/treatment plants (NSTU)...........     1
+  Number of Values for R1 lines in Transport (NR1)....     0
+  Number of Nodes to be allowed for (NNOD)............     3
+  Number of Plugs in a Storage Treatment Unit.........     1
+
+ XXX End of Header Section XXX
+
+ #######################################################
+ #    Entry made to the HYDRAULIC Layer of XP-SWMM     #
+ #    Last Updated in June, 2014 by Innovyze           #
+ #######################################################
+
+                                                                                     
+                                                                                     
+
+
+ *===========================================================*
+ |        HYDRAULICS TABLES IN THE OUTPUT FILE               |
+ |  These are the more important tables in the output file.  |
+ |  You can use your editor to find the table numbers,       |
+ |  for example: search for Table E20 to check continuity.   |
+ |  This output file can be imported into a Word Processor   |
+ |  and printed on US letter or A4 paper using portrait      |
+ |  mode, courier font, a size of 8 pt. and margins of 0.75  |
+ |                                                           |
+ | Table E1   - Basic Conduit Data                           |
+ | Table E2   - Conduit Factor Data                          |
+ | Table E3a  - Junction Data                                |
+ | Table E3b  - Junction Data                                |
+ | Table E4   - Conduit Connectivity Data                    |
+ | Table E4a  - Dry Weather Flow Data                        |
+ | Table E4b  - Real Time Control Data                       |
+ | Table E5   - Junction Time Step Limitation Summary        |
+ | Table E5a  - Conduit Explicit Condition Summary           |
+ | Table E6   - Final Model Condition                        |
+ | Table E7   - Iteration Summary                            |
+ | Table E8   - Junction Time Step Limitation Summary        |
+ | Table E9   - Junction  Summary  Statistics                |
+ | Table E10  - Conduit   Summary  Statistics                |
+ | Table E11  - Area assumptions used in the analysis        |
+ | Table E12  - Mean conduit information                     |
+ | Table E13  - Channel losses(H) and culvert info           |
+ | Table E13a - Culvert Analysis Classification              |
+ | Table E14  - Natural Channel Overbank Flow Information    |
+ | Table E14a - Natural Channel Encroachment Information     |
+ | Table E14b - Floodplain Mapping                           |
+ | Table E15  - Spreadsheet Info List                        |
+ | Table E15a - Spreadsheet Reach List                       |
+ | Table E16  - New Conduit Output Section                   |
+ | Table E17  - Pump Operation                               |
+ | Table E18  - Junction Continuity Error                    |
+ | Table E19  - Junction Inflow & Outflow Listing            |
+ | Table E20  - Junction Flooding and Volume List            |
+ | Table E21  - Continuity balance at simulation end         |
+ | Table E22  - Model Judgement Section                      |
+ *==========================================================*
+
+ Time Control from Hydraulics Job Control 
+ Year.........    2023 Month.......       1
+ Day..........       1 Hour........       0
+ Minute.......       0 Second......       0
+
+
+ Control information for simulation
+ ----------------------------------
+
+ Integration cycles.................      4320
+ Length of integration step is......      5.00 seconds
+ Simulation length..................      6.00 hours
+ Do not create equiv. pipes(NEQUAL).         0
+ Use U.S. customary units for I/O...         0
+ Printing starts in cycle...........         1
+ Intermediate printout intervals of.       500 cycles
+ Intermediate printout intervals of.     41.67 minutes
+ Summary printout intervals of......       500 cycles
+ Summary printout time interval of..     41.67 minutes
+ Hot start file parameter (REDO)....         0
+ Initial time.......................      0.00 hours
+
+ Iteration variables: Flow Tolerance.   0.00010
+                      Head Tolerance.   0.00050 
+     Minimum depth (m or ft).........   0.00001
+     Underrelaxation parameter.......   0.85000
+     Time weighting parameter........   0.85000
+     Conduit roughness factor........   1.00000
+     Flow adjustment factor..........   1.00000
+     Initial Condition Smoothing.....         0
+     Courant Time Step Factor........   1.00000
+     Default Expansion/Contraction K.   0.00000
+     Default Entrance/Exit K.........   0.00000
+     Routing Method..................   Dynamic Wave                            
+ Default surface area of junctions...     12.57 square feet.
+ Minimum Junction/Conduit Depth......   0.00001 feet.
+ Ponding Area Coefficient............   5000.00 
+ Ponding Area Exponent...............    1.0000 
+ Minimum Orifice Length..............   1000.00 feet.
+ NJSW input hydrograph junctions.....     0
+      or user defined hydrographs....
+
+ *==================================================*
+ |          Table E1 - Conduit Data                 |
+ *==================================================*
+
+                                                                                             Trapezoid  Hazen
+  Inp              Conduit     Length    Conduit      Area    Manning  Max Width      Depth       Side  Williams
+  Num                 Name       (ft)      Class    (ft^2)      Coef.    (ft)         (ft)      Slopes  c-factor
+ ---- -------------------- ---------- ----------   -------    -------  ---------      -----    -------  -------
+    1                Link2   100.0000   Circular    3.1416     0.0140     2.0000     2.0000
+ Total length of all conduits ....       100.0000 feet 
+
+ *===================================================*
+ | If there are messages about (sqrt(g*d)*dt/dx), or |
+ | the sqrt(wave celerity)*time step/conduit length  |
+ | in the output file all it means is that the       |
+ | program will lower the internal time step to      |
+ | satisfy this condition (explicit condition).      |
+ | You control the actual internal time step by      |
+ | using the minimum courant time step factor in the |
+ | HYDRAULICS job control.  The message put in words |
+ | states that the smallest conduit with the fastest |
+ | velocity will control the time step selection.    |
+ | You have further control by using the modify      |
+ | conduit option in the HYDRAULICS Job Control.     |
+ *===================================================*
+
+  
+              Conduit     Courant
+                 Name       Ratio
+ --------------------   ---------
+               Link2        0.40
+
+ *==================*
+ |  Conduit Volume  |
+ *==================*
+
+ Full pipe or full open conduit volume
+ Input full depth volume............    3.1416E+02 cubic feet
+
+
+ *===================================================*
+ |           Table E3a - Junction Data               |
+ *===================================================*
+
+  Inp             Junction      Ground     Crown    Invert    Qinst  Initial  Interface
+  Num                 Name   Elevation Elevation Elevation      cfs Depth-ft   Flow (%)
+  --- --------------------   --------- --------- --------- -------- --------  ---------
+    1               Node1     10.0000   -5.0000   -5.0000  50.0000   0.0000    100.0000
+    2               Node2     10.0000    3.0000    1.0000   0.0000   0.0000    100.0000
+    3               Node3     10.0000    2.0000    0.0000   0.0000   0.0000    100.0000
+
+
+ *===================================================*
+ |           Table E3b - Junction Data               |
+ *===================================================*
+
+  Inp             Junction           X             Y       Type of      Type of  Maximum       Pavement  
+  Num                 Name         Coord.        Coord.    Manhole        Inlet  Capacity    Shape   Slope
+ ---- --------------------    -----------   ----------- ---------- ------------  --------  -------- -------
+    1                Node1         0.0000        0.0000 No Ponding       Normal                  0     0.00
+    2                Node2         0.0000        0.0000 No Ponding       Normal                  0     0.00
+    3                Node3         0.0000        0.0000 No Ponding       Normal                  0     0.00
+
+
+ *===================================================*
+ |           Table E4 - Conduit Connectivity         |
+ *===================================================*
+
+ Input              Conduit               Upstream            Downstream     Upstream  Downstream
+Number                 Name                   Node                  Node    Elevation   Elevation
+====== ====================   ====================  ====================    =========   =========
+     1                Link2                  Node2                 Node3       1.0000      0.0000   No Design
+
+
+ *==========================================*
+ |          Storage Junction Data           |
+ *==========================================*
+
+                                       MAXIMUM OR          PEAK OR        CROWN      DEPTH
+       STORAGE JUNCTION  JUNCTION   CONSTANT SURFACE   CONSTANT VOLUME  ELEVATION   STARTS
+         NUMBER OR NAME      TYPE      AREA (FT2)        (CUBIC FEET)      (FT)       FROM
+   --------------------  --------   ----------------   ---------------  --------- -----------
+   Node1                 Constant         100.0             1500.      10.00     Node Invert
+
+ *====================================================*
+ |            Ordered Pump Data Fields                |
+ |        Pump Name/Upstream Node/Dnstream Node       |
+ |                DataPt/Depth/Flow                   |
+ *====================================================*
+ Pump pump                Node1               Node2               
+   1     0.000     0.000
+   2     0.100   100.000
+
+
+
+ *===========================================*
+ |             In-Line Pump Data             |
+ *===========================================*
+
+                      JUNCTIONS                          PUMP RATES                STAGES
+                FROM                TO          = 1 CFS   = 2 CFS   = 3 CFS    = 1 FT    = 2 FT
+             ------------        ------------   -------   -------   -------   -------   -------
+   1. Node1     Node2              0.000     0.000   100.000     0.000     0.000
+
+
+ *===========================================*
+ |   Special Force Main Conduits             |
+ *===========================================*
+
+             Conduit  Diameter    Length     Rough  Entrance      Exit     Valve      Bend      Loss           Preissman
+                Name   ft or m   ft or m     -ness    Loss K    Loss K    Loss K     Loss K    Coefft      Sf*L SlotWidth
+          ==========   =======   =======    ======    ======    ======    ======    ======    ======    ======    ======
+
+ Pump Name            Upstream Node        Dnstream Node        Minor Loss
+ ========================================================================= 
+ pump                 Node1                Node2                   0.0000
+
+  Pt.  Flow Rate,   Original Head,   Modified Head  Force Main
+    1     0.000          0.000          0.000          0.000
+    2   100.000          0.100          0.100          0.100
+
+             Conduit        Maximum # of   Pump Underrelaxation
+                Name     Pump Iterations   Parameter(0.25-0.85)
+          ==========     ===============   ====================
+
+
+ *================================================*
+ |          FREE OUTFALL DATA (DATA GROUP I1)     |
+ |         BOUNDARY CONDITION ON DATA GROUP J1    |
+ *================================================*
+
+ Outfall at Junction....Node3 has boundary condition number...         1
+
+
+ *================================================*
+ |        INTERNAL CONNECTIVITY INFORMATION       |
+ *================================================*
+
+              CONDUIT             JUNCTION             JUNCTION
+ -------------------- -------------------- --------------------
+                 pump                Node1                Node2
+              FREE# 1                Node3             BOUNDARY
+
+ *===================================================*
+ |        Boundary Condition Information             |
+ |                 Data Groups J1-J4                 |
+ *===================================================*
+
+
+ BC NUMBER..         1 has no control water surface.
+
+
+ *===================================================*
+ |           Table E4b - Real Time Control Data      |
+ *===================================================*
+
+ RTC Element Control: hour1_10cfs     
+ =================== 
+                                                   Time (hrs)        Time (mins)  
+    Type          Object Name RTC Type            Start      End   Ramp Up Ramp Down    Min Value      Max Value   # Sensors  
+ ======= ==================== ================== ====== ======== ========= =========  ============   ============  =========  
+   Pump                  pump          Pump Flow  0.000  1.0E+18    0.0000    0.0000    10.0000         0.0000            2
+
+   Sensor Name     Type   Object Name         Control Type         Value   Type    Object Name          Control Type       Value 
+   --------------- ------ ------------------- ------------    -----------  ------- -------------------  ------------    --------- 
+   end1hr          Time                        Simulatio  <=       1.000
+   AND
+   start0          Time                        Simulatio   >       0.000
+
+ *===================================================*
+ |             XP Note Field Summary                 |
+ *===================================================*
+
+
+
+
+ *=================================*
+ |   Conduit Convergence Criteria  |
+ *=================================*
+
+              Conduit        Full     Conduit 
+                 Name        Flow       Slope 
+ --------------------  ----------  ---------- 
+                Link2      21.0065      0.0100
+
+ *=================================*
+ |    Initial Model Condition      |
+ | Initial Time =      0.00 hours  |
+ *=================================*
+
+           Junction / Depth  / Elevation    ===>  "*" Junction is Surcharged.
+               Node1/   0.00 /    -5.00                Node2/   0.00 /     1.00                Node3/   0.00 /     0.00
+
+             Conduit/       FLOW   ===> "*" Conduit uses the normal flow option.
+               Link2/       0.00                 pump/       0.00              FREE# 1/       0.00 
+
+             Conduit/   Velocity
+               Link2/       0.00
+
+             Conduit/ Cross Sectional Area
+               Link2/       0.00
+
+             Conduit/ Hydraulic Radius
+               Link2/       0.00
+
+             Conduit/ Upstream/ Downstream Elevation
+               Link2/     0.00/     0.00
+
+ Cycle        500      Time          0 Hrs - 41.67 Min
+
+           Junction / Depth  / Elevation    ===>  "*" Junction is Surcharged.
+               Node1/  15.00*/    10.00                Node2/   0.97 /     1.97                Node3/   0.97 /     0.97
+
+             Conduit/       FLOW   ===> "*" Conduit uses the normal flow option.
+               Link2/      10.00                 pump/      10.00              FREE# 1/      10.00 
+
+ Cycle       1000      Time          1 Hrs - 23.33 Min
+
+           Junction / Depth  / Elevation    ===>  "*" Junction is Surcharged.
+               Node1/   0.17 /    -4.83                Node2/   5.99*/     6.99                Node3/   2.00 /     2.00
+
+             Conduit/       FLOW   ===> "*" Conduit uses the normal flow option.
+               Link2/      50.49                 pump/      50.66              FREE# 1/      50.49 
+
+ Cycle       1500      Time          2 Hrs -  5.00 Min
+
+           Junction / Depth  / Elevation    ===>  "*" Junction is Surcharged.
+               Node1/   0.00 /    -5.00                Node2/   7.26*/     8.26                Node3/   2.00 /     2.00
+
+             Conduit/       FLOW   ===> "*" Conduit uses the normal flow option.
+               Link2/      52.37                 pump/      54.17              FREE# 1/      52.37 
+
+ Cycle       2000      Time          2 Hrs - 46.67 Min
+
+           Junction / Depth  / Elevation    ===>  "*" Junction is Surcharged.
+               Node1/   0.00 /    -5.00                Node2/   7.41*/     8.41                Node3/   2.00 /     2.00
+
+             Conduit/       FLOW   ===> "*" Conduit uses the normal flow option.
+               Link2/      50.75                 pump/      57.69              FREE# 1/      50.35 
+
+ Cycle       2500      Time          3 Hrs - 28.33 Min
+
+           Junction / Depth  / Elevation    ===>  "*" Junction is Surcharged.
+               Node1/   0.16 /    -4.84                Node2/   6.49*/     7.49                Node3/   2.00 /     2.00
+
+             Conduit/       FLOW   ===> "*" Conduit uses the normal flow option.
+               Link2/      54.75                 pump/      42.81              FREE# 1/      55.45 
+
+ Cycle       3000      Time          4 Hrs - 10.00 Min
+
+           Junction / Depth  / Elevation    ===>  "*" Junction is Surcharged.
+               Node1/   0.08 /    -4.92                Node2/   6.69*/     7.69                Node3/   2.00 /     2.00
+
+             Conduit/       FLOW   ===> "*" Conduit uses the normal flow option.
+               Link2/      51.29                 pump/      40.39              FREE# 1/      51.29 
+
+ Cycle       3500      Time          4 Hrs - 51.67 Min
+
+           Junction / Depth  / Elevation    ===>  "*" Junction is Surcharged.
+               Node1/   0.00 /    -5.00                Node2/   8.39*/     9.39                Node3/   2.00 /     2.00
+
+             Conduit/       FLOW   ===> "*" Conduit uses the normal flow option.
+               Link2/      53.23                 pump/      63.55              FREE# 1/      53.23 
+
+ Cycle       4000      Time          5 Hrs - 33.33 Min
+
+           Junction / Depth  / Elevation    ===>  "*" Junction is Surcharged.
+               Node1/   0.14 /    -4.86                Node2/   5.94*/     6.94                Node3/   2.00 /     2.00
+
+             Conduit/       FLOW   ===> "*" Conduit uses the normal flow option.
+               Link2/      49.32                 pump/      53.70              FREE# 1/      49.08 
+
+
+ *===================================================*
+ | Table E5 - Junction Time Limitation Summary       |
+ |              (0.10 or 0.25)* Depth * Area         |
+ | Time step = ------------------------------        |
+ |                  Sum of Flow                      |
+ *===================================================*
+ |  The time this junction was the limiting junction |
+ |                is listed in the third column.     |
+ *===================================================*
+
+             Junction     Time(.10)  Time(.25)  Time(sec)
+ --------------------     ---------  ---------  ---------
+                Node1          0.20       0.50     3600.0
+                Node2          0.02       0.05    18000.0
+                Node3         50.00      50.00        0.0
+ The junction requiring the smallest time step was...Node2
+
+
+ *==========================================================*
+ |       Table E5a - Conduit Explicit Condition Summary     |
+ |       Courant   =         Conduit Length                 |
+ |       Time step = --------------------------------       |
+ |                      Velocity + sqrt(g*depth)            |
+ |                                                          |
+ |                  Conduit Implicit Condition Summary      |
+ |       Courant   =         Conduit Length                 |
+ |       Time step = --------------------------------       |
+ |                             Velocity                     |
+ *==========================================================*
+ |  The 3rd column is the Explicit time step times the      |
+ |      minimum courant time step factor                    |
+ |                                                          |
+ |  Minimum Conduit Time Step in seconds in the 4th column  |
+ |  in the list. Maximum possible is 10 * maximum time step |
+ |                                                          |
+ |  The 5th column is the maximum change at any time step   |
+ |  during the simulation. The 6th column is the wobble     |
+ |  value which is an indicator of the flow stability.      |
+ |                                                          |
+ |  You should use this section to find those conduits that |
+ |  are slowing your model down.  Use modify conduits to    |
+ |  alter the length of the slow conduits to make your      |
+ |  simulation faster, or change the conduit name to        |
+ |  "CHME?????" where ????? are any characters, this will   |
+ |  lengthen the conduit based on the model time step,      |
+ |  not the value listed in modify conduits.                |
+ *==========================================================*
+
+              Conduit  Time(exp)  Expl*Cmin  Time(imp) Time(min)  Max Qchange   Wobble  Type of Soln
+       --------------  ---------  ---------  --------- ---------  -----------  -------  ------------
+                Link2      2.79      2.79      5.31     360.0          5.289   525.015   PBSJ Solutn
+The conduit with the smallest time step limitation was..Link2
+The conduit with the largest wobble was.................Link2
+The conduit with the largest flow change in any
+consecutive time step...................................Link2
+
+ *==================================================*
+ |  Table E6. Final Model Condition                 |
+ |            This table is used for steady state   |
+ |            flow comparison and is the information|
+ |            saved to the hot-restart file.        |
+ |            Final Time =     6.000 hours          |
+ *==================================================*
+
+           Junction / Depth  / Elevation    ===>  "*" Junction is Surcharged.
+               Node1/   0.16 /    -4.84/               Node2/   6.49*/     7.49/               Node3/   2.00 /     2.00/
+
+           Conduit/       Flow   ===> "*" Conduit uses the normal flow option.
+               Link2/      54.75 /                pump/      42.81 /             FREE# 1/      55.45 /
+
+              Conduit/   Velocity
+               Link2/      17.21 /
+
+         Conduit/      Width
+               Link2/       0.09 /
+
+        Junction/        EGL
+               Node1/       0.16 /               Node2/       6.49 /               Node3/       6.60 /
+
+        Junction/  Freeboard
+               Node1/      14.84 /               Node2/       2.51 /               Node3/       8.00 /
+
+        Junction/ Max Volume
+               Node1/    1500.00 /               Node2/     113.09 /               Node3/      25.13 /
+
+        Junction/Total Fldng
+               Node1/       0.00 /               Node2/       0.00 /               Node3/       0.00 /
+
+         Conduit/ Cross Sectional Area
+               Link2/       3.18 /
+
+         Conduit/  Final Volume 
+               Link2/     318.20 /
+
+         Conduit/ Hydraulic Radius
+               Link2/       0.50 /
+
+         Conduit/ Upstream/ Downstream Elevation
+               Link2/     7.49/     2.00
+
+
+ *=========================================================*
+ |         Table E7 -  Iteration Summary                   |
+ *=========================================================*
+
+ Total number of time steps simulated............       4320
+ Total number of passes in the simulation........      46674
+ Total number of time steps during simulation....      20069
+ Ratio of actual # of time steps / NTCYC.........      4.646
+ Average number of iterations per time step......      2.326
+ Average  time step size(seconds)................      1.076
+ Smallest time step size(seconds)................      1.000
+ Largest  time step size(seconds)................      2.500
+ Average minimum Conduit Courant time step (sec).      1.279
+ Average minimum implicit time step (sec)........      0.429
+ Average minimum junction time step (sec)........      0.429
+ Average Courant Factor Tf.......................      0.429
+ Number of times omega reduced...................       4622
+
+
+ *=========================================================*
+ |     Table E8 - Junction Time Step Limitation Summary    |
+ *=========================================================*
+ |   Not Convr = Number of times this junction did not     |
+ |               converge during the simulation.           |
+ |   Avg Convr = Average junction iterations.              |
+ |   Conv err  = Mean convergence error.                   |
+ |   Omega Cng = Change of omega during iterations         |
+ |   Max Itern = Maximum number of iterations              |
+ *=========================================================*
+             Junction Not Convr Avg Convr Total Itt Omega Cng  Max Itern  Ittrn >10  Ittrn >25  Ittrn >40
+ -------------------- --------- --------- ---------  --------  ---------  ---------  ---------  ---------
+                Node1         0      1.41     28246         0         7         0         0         0
+                Node2         0      6.95    139401      4599        56      5118         2         1
+                Node3         0      3.99     80062        23       448        21        18        18
+ Total number of iterations for all junctions..    247709
+ Minimum number of possible iterations.........     60207
+ Efficiency of the simulation..................      4.11
+                                                   Fair Efficiency
+
+ *==========================================================*
+ | Extran Efficiency is an indicator of the efficiency of   |
+ | the simulation.  Ideal efficiency is one iteration per   |
+ | time step.  Altering the underrelaxation parameter,      |
+ | lowering the time step, increasing the flow and head     |
+ | tolerance are good ways of improving the efficiency,     |
+ | another is lowering the internal time step. The lower the|
+ | efficiency generally the faster your model will run.     |
+ | If your efficiency is less than 1.5 then you may try     |
+ | increasing your time step so that your overall simulation|
+ | is faster.  Ideal efficiency would be around 2.0         |
+ |                                                          |
+ | Good Efficiency      < 1.5           mean iterations     |
+ | Excellent Efficiency < 2.5 and > 1.5 mean iterations     |
+ | Good      Efficiency < 4.0 and > 2.5 mean iterations     |
+ | Fair      Efficiency < 7.5 and > 4.0 mean iterations     |
+ | Poor Efficiency      > 7.5           mean iterations     |
+ *==========================================================*
+
+
+ *======================================================*
+ |        Table E9 - JUNCTION SUMMARY STATISTICS        |
+ | The Maximum area is only the area of the node, it    |
+ | does not include the area of the surrounding conduits|
+ *======================================================*
+
+                                  Uppermost   Maximum     Time        Feet of             Maximum   Maximum   Maximum   Maximum
+                           Ground PipeCrown  Junction      of       Surcharge  Freeboard Junction    Gutter    Gutter    Gutter
+             Junction   Elevation Elevation Elevation    Occurence     at Max   of node      Area     Depth     Width  Velocity
+                 Name        feet      feet      feet    Hr. Min.   Elevation      feet      ft^2      feet      feet      ft/s
+ --------------------   ---------  --------  --------   ---------   ---------  --------  -------- --------- --------- ---------
+               Node1     10.0000   -5.0000   10.0000      0    2     15.0000    0.0000  100.0000    0.0000      0.00    0.0000
+               Node2     10.0000    3.0000   10.0000      1    0      7.0000    0.0000   12.5660    0.0000      0.00    0.0000
+               Node3     10.0000    2.0000    2.0000      1    0      0.0000    8.0000   12.5660    0.0000      0.00    0.0000
+
+ *======================================================*
+ |        Table E10 - CONDUIT SUMMARY STATISTICS        |
+ | Note: The peak flow may be less than the design flow |
+ | and the conduit may still surcharge because of the   |
+ | downstream boundary conditions.                      |
+ |                                                      |
+ | * denotes an open conduit that has been overtopped   |
+ |   this is a potential source of severe errors        |
+ *======================================================*
+
+                                Conduit  Maximum  Maximum    Time      Maximum    Time   Ratio of    Maximum Water      Ratio
+                        Design   Design Vertical Computed     of      Computed     of     Max. to  Elev at Pipe Ends     d/D
+              Conduit     Flow Velocity    Depth     Flow  Occurence  Velocity Occurence   Design  Upstream  Dwnstrm   US   DS
+                 Name    (cfs)   (ft/s)     (in)    (cfs)   Hr.  Min.  (ft/s)   Hr.  Min.    Flow    (ft)     (ft)  
+ --------------------  ------- -------- --------  ------- -----------  ------- ----------  ------- -------- -------- ----- -----
+                Link2  21.0065   6.6866  24.0000  60.3416     1     2  18.8297     1    2   2.8725  10.0000   2.0000 4.500 1.000
+                 pump  Undefnd  Undefnd  Undefnd 100.0000     1     0
+              FREE# 1  Undefnd  Undefnd  Undefnd  60.3416     1     2
+
+
+ *==================================================*
+ | Table E11.  Area assumptions used in the analysis|
+ | Subcritical and Critical flow assumptions from   |
+ |    Subroutine Head.  See Figure 17-1 in the      |
+ |         manual for further information.          |
+ *==================================================*
+
+                      Duration    Duration  Durat. of Durat. of
+                         of       of Sub-    Upstream Downstream   Maximum   Maximum   Maximum
+             Conduit    Dry       Critical   Critical   Critical Hydraulic    X-Sect    Vel*D 
+              Name    Flow(min)  Flow(min)  Flow(min)  Flow(min)  Radius-m Area(ft^2) (ft^2/s)
+ -------------------- ---------- ----------  ---------  --------- ---------  --------- --------
+                Link2       0.02     359.98       0.00       0.00     0.547     3.177   103.563
+
+ *===========================================*
+ | Table E12. Mean Conduit Flow Information  |
+ *===========================================*
+                           Mean         Total      Mean       Low      Mean      Mean     Mean      Mean
+              Conduit      Flow          Flow   Percent      Flow    Froude Hydraulic    Cross   Conduit
+                 Name     (cfs)        (ft^3)    Change  Weightng    Number    Radius     Area  Roughness
+ --------------------  --------      --------  --------  --------    ------  --------   ------- ---------
+                Link2   44.8994     969827.12    3.2219    0.9999    1.8772    0.4982   2.8862    0.0140
+                 pump   45.1654     975572.62
+              FREE# 1   44.8648     969078.66
+
+ *===============================================================*
+ | Table E13. Channel losses(H), headwater depth (HW), tailwater |
+ | depth (TW), critical and normal depth (Yc and Yn).            |
+ | Use this section for culvert comparisons                      |
+ *===============================================================*
+
+              Conduit   Maximum      Head  Friction  Critical    Normal        HW        TW
+                 Name      Flow      Loss      Loss     Depth     Depth    Elevat    Elevat
+ -------------------- --------- --------- --------- --------- --------- --------- ---------
+               Link2   60.3416    0.0000    7.9301    3.6802    2.0000   10.0000    2.0000   Max Flow
+
+ *==========================================================*
+ | Table E13a. CULVERT ANALYSIS CLASSIFICATION,             |
+ | and the time the culvert was in a particular             |
+ | classification during the simulation.  The time is       |
+ | in minutes.  The Dynamic Wave Equation is used for       |
+ | all conduit analysis but the culvert flow classification |
+ | condition is based on the HW and TW depths.              |
+ *==========================================================*
+                           Mild      Mild     Steep                Mild      Mild
+                          Slope  Slope TW  Slope TW Slug Flow     Slope     Slope
+                     Critical D   Control   Insignf   Outlet/    TW > D   TW <= D                    
+              Conduit    Outlet    Outlet  Entrance  Entrance    Outlet    Outlet    Outlet     Inlet         Inlet
+                 Name   Control   Control   Control   Control   Control   Control   Control   Control Configuration
+ -------------------- --------- --------- --------- --------- --------- --------- --------- --------- -------------
+
+                Link2    0.0000    0.0000   59.0000    0.0000    0.0000    0.0000  301.0000    0.0000 None
+
+   *=====================================*
+   |    Kinematic Wave Approximations    |
+   |  Time in Minutes for Each Condition |
+   *=====================================*
+
+              Conduit Duration of     Slope    Super-      Roll
+                 Name Normal Flow  Criteria  Critical     Waves
+ -------------------- ----------- --------- --------- ---------
+               Link2      0.2667    0.2667  359.5000    0.0000
+
+ *=========================================================*
+ |     Table E15 - SPREADSHEET INFO LIST                   |
+ | Conduit Flow and Junction Depth Information for use in  |
+ | spreadsheets.  The maximum values in this table are the |
+ | true maximum values because they sample every time step.|
+ | The values in the review results may only be the        |
+ | maximum of a subset of all the time steps in the run.   |
+ | Note: These flows are only the flows in a single barrel.|
+ *=========================================================*
+
+            Conduit      Maximum         Total        Maximum       Maximum    ##             Junction     Invert       Maximum 
+              Name          Flow          Flow       Velocity        Volume    ##               Name      Elevation    Elevation 
+                           (cfs)         (ft^3)        (ft/s)        (ft^3)    ##                           (ft)         (ft)   
+ --------------------  ----------  ------------    ----------    ----------    ##  --------------------  ---------    --------- 
+               Link2      60.3416  969827.1221        18.8297      317.6528    ##                Node1    -5.0000      10.0000
+                pump     100.0000  975572.6212         0.0000        0.0000    ##                Node2     1.0000      10.0000
+             FREE# 1      60.3416  969078.6560         0.0000        0.0000    ##                Node3     0.0000       2.0000
+
+ *====================================================*
+ |     Table E15a - SPREADSHEET REACH LIST            |
+ | Peak flow and Total Flow listed by Reach or those  |
+ |      conduits or diversions having the same        |
+ |      upstream and downstream nodes.                |
+ *====================================================*
+
+            Upstream           Downstream    Maximum           Total 
+                Node                 Node       Flow            Flow 
+                                               (cfs)          (ft^3) 
+ -------------------- -------------------- ----------       ---------
+               Node2                Node3    60.3416      969827.122
+               Node1                Node2   100.0000      975572.621
+
+ #########################################################
+ # Table E16. New Conduit Information Section            #
+ #            Conduit Invert (IE) Elevation and Conduit  #
+ #            Maximum Water Surface (WS) Elevations      #
+ #########################################################
+
+         Conduit Name        Upstream Node      Downstream Node      IE Up      IE Dn      WS Up      WS Dn  Conduit Type
+ -------------------- -------------------- -------------------- ---------- ---------- ---------- ---------- -------------
+                Link2                Node2                Node3     1.000         0.0000  10.00      2.000     Circular 
+
+ ###################################################
+ # Table E17. Pump Operation Section               #
+ ###################################################
+
+     Pump Operating Time and Pump General Results 
+     ---------------------------------------------
+
+                                                      Time   # of Times
+                         Upstream       Downstream  in hours    Pump     Min HGL  Max HGL    Min Q    Max Q   Totl Q
+       Pump Name             Node             Node   Pump On   Goes On      feet     feet      cfs      cfs     ft^3
+ --------------- ---------------- ---------------- --------- ---------- -------- -------- -------- -------- --------
+        P{203.1}              201              202    0.0000      0       0.0000   0.0000   0.0000   0.0000 975572.6                                                                                                                                            
+
+ *=============================================================================*
+ |    Table E18 - Junction Continuity Error.   Division by Volume added 11/96  |
+ |                                                                             |
+ |  Continuity Error = Net Flow + Beginning Volume - Ending Volume             |
+ |                     -------------------------------------------------       |
+ |                     Total Flow + (Beginning Volume + Ending Volume)/2       |
+ |                                                                             |
+ |  Net Flow   = Node Inflow - Node Outflow                                    |
+ |  Total Flow = absolute (Inflow + Outflow)                                   |
+ |  Intermediate column is a judgement on the node continuity error.           |
+ |                                                                             |
+ |  Excellent  < 1 percent    Great  1 to  2 percent  Good  2 to  5 percent    |
+ |  Fair  5 to 10  percent    Poor  10 to 25 percent  Bad  25 to 50 percent    |
+ |  Terrible > 50  percent                                                     |
+ *=============================================================================*
+
+             Junction    <------Continuity Error ------->   Remaining   Beginning    Net Flow  Total Flow Failed to
+                 Name      Volume  % of Node  % of Inflow      Volume      Volume   Thru Node   Thru Node  Converge
+ --------------------    --------  ----------  ----------    --------  ----------  ----------  ---------- ---------
+               Node1 -34757.1989     -1.6909      3.2183     15.7492      0.0000 103341.4209 2055572.621         0
+               Node2   1152.9584      0.0593      0.1068    239.7543      0.0000   7272.2191 1945399.743         0
+               Node3   -183.7409     -0.0095      0.0170    183.3328      0.0000     -0.4081 1938905.778         0
+ The total continuity error was  -33788.     cubic feet
+ The remaining total volume was   438.84     cubic feet
+ Your mean node continuity error was   Excellent                               
+ Your worst node continuity error was  Good                                    
+
+   *===================================================*
+   |  Table E19 - Junction Inflow & Outflow Listing    |
+   |              Units are either ft^3 or m^3         |
+   |              depending on the units in your model.|
+   *===================================================*
+
+                        Constant       User       Interface       DWF         Inflow    RNF Layer     Inflow                                          
+             Junction     Inflow      Inflow        Inflow       Inlow       through      Inflow       from        Outflow    Evaporation       Basin 
+                 Name    to Node     to Node       to Node      to Node      Outfall      to Node    2D Layer     from Node    from Node        Infil.
+ --------------------  ----------  -----------  -----------  -----------  -----------  -----------  -----------  -----------  -----------  -----------
+               Node1 1080000.000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000  138082.8706       0.0000         0.00
+               Node2      0.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000    5879.5064       0.0000         0.00
+               Node3      0.0000       0.0000       0.0000       0.0000       0.0000       0.0000       0.0000  969078.6560       0.0000         0.00
+
+   *=====================================================*
+   | Table E20 - Junction Flooding and Volume Listing.   |
+   |             The maximum volume is the total volume  |
+   |             in the node including the volume in the |
+   |             flooded storage area. This is the max   |
+   |             volume at any time. The volume in the   |
+   |             flooded storage area is the total volume|
+   |             above the ground elevation, where the   |
+   |             flooded pond storage area starts.       |
+   | The fourth column is instantaneous, the fifth is the|
+   | sum of the flooded volume over the entire simulation|
+   | Units are either ft^3 or m^3 depending on the units.|
+   *=====================================================*
+
+                                                     Out of               Passed to 2D cell
+                                                  1D-System               OR  Volume Stored
+             Junction    Surcharged   Flooded      (Flooded     Maximum    in allowed Flood
+                 Name    Time (min)  Time(min)      Volume)      Volume   Pond of 1D-System
+ --------------------    ----------  ---------    ---------   ---------   -----------------
+                Node1    237.        57.5       1.381E+05   1.500E+03       0.000
+                Node2    300.        2.42       5.880E+03    113.           0.000
+                Node3       0.000       0.000       0.000    25.1           0.000
+
+ *==================================*
+ | Simulation Specific Information  |
+ *==================================*
+ Number of Input Conduits..........         1 Number of Simulated Conduits......         3
+ Number of Natural Channels........         0 Number of Junctions...............         3
+ Number of Storage Junctions.......         1 Number of Weirs...................         0
+ Number of Orifices................         0 Number of Pumps...................         1
+ Number of Free Outfalls...........         1 Number of Tide Gate Outfalls......         0
+
+
+ *=========================================================*
+ | Average % Change in Junction or Conduit is defined as:  |
+ | Conduit  % Change ==> 100.0 ( Q(n+1) - Q(n) ) / Qfull   |
+ | Junction % Change ==> 100.0 ( Y(n+1) - Y(n) ) / Yfull   |
+ *=========================================================*
+
+ The Conduit with the largest average change was..                pump with    18.794 percent
+ The Junction with the largest average change was.               Node2 with    54.816 percent
+ The Conduit with the largest sinuosity was.......               Link2 with   525.015
+
+
+ *===================================================================*
+ | Table E21. Continuity balance at the end of the simulation        |
+ |            Junction Inflow, Outflow or Street Flooding            |
+ | Error = Inflow  + Initial Volume - Outflow - Final   Volume       |
+ *===================================================================*
+
+             Inflow          Inflow       Average
+             Junction   Volume,ft^3   Inflow, cfs
+ --------------------  ------------  -------------
+               Node1    1.0800E+06        50.0000
+               Node1  -138082.8706        -6.3927
+               Node2    -5879.5064        -0.2722
+               Node3  -969078.6560       -44.8648
+
+             Outflow      Outflow          Average
+             Junction  Volume,ft^3    Outflow, cfs
+ --------------------  ------------   ------------
+               Node1   138082.8706         6.3927
+               Node2     5879.5064         0.2722
+               Node3   969078.6560        44.8648
+
+
+ *=====================================================*
+ | Initial system volume        =         0.0000 Cu Ft |
+ | Total system inflow volume   =    1.08000E+06 Cu Ft |
+ | Inflow + Initial volume      =    1.08000E+06 Cu Ft |
+ *=====================================================*
+ | Total system outflow         =    1.11304E+06 Cu Ft |
+ | Volume left (Final volume)   =       438.8363 Cu Ft |
+ | Evaporation                  =         0.0000 Cu Ft |
+ | Basin Infiltration           =         0.0000 Cu Ft |
+ | Outflow + Final Volume       =    1.11348E+06 Cu Ft |
+ *=====================================================*
+
+ *===============================================*
+ | Total Model Continuity Error                  |
+ | Error in Continuity, Percent =        -3.1000 |
+ | Error in Continuity, ft^3    =    -33479.8693 |
+ | + Error means a continuity loss, - a gain     |
+ *===============================================*
+
+
+ ###################################################
+ # Table E22. Numerical Model judgement section    #
+ ###################################################
+
+ Overall error was (minimum of Table E18 & E21)             -3.1000 percent
+ Worst nodal error was in node Node1                with    -1.6909 percent
+ Of the total inflow this loss was                           3.2183 percent
+ Your overall continuity error was                  Good
+                                                   Fair Efficiency
+ Efficiency of the simulation                       4.11
+ Most Number of Non Convergences at one Node        0.
+ Total Number Non Convergences at all Nodes         0.
+ Total Number of Nodes with Non Convergences        0.
+
+
+ #########################################################
+ # Table E23. New Basin Design Information               #
+ #            Maximum Hydraulic Grade Line,              #
+ #            Out Conduit Sizes and Maximum Flow         #
+ #########################################################
+
+ A) Resize d/s Pipes based on given HGL
+ B) Resize Basin based on given HGL
+ C) Resize d/s Pipes and Basin based on HGL and max discharge
+ D) Resize d/s pipes based on given max discharge
+
+         Basin Name    Type    Max.HGL        Conduit         Depth   Width   Barrels   Max.Flow
+                                 (ft)                          (ft)    (ft)             (ft^3/s)
+ -------------------- ------  --------- -------------------- ------- ------- --------- ---------
+
+ ===> Hydraulic model simulation ended normally.
+ ===> XP-SWMM Simulation ended normally.
+ ===> Your input file was named  : C:\GitHub\hhnote\hydraulics\xp_rtc\model\1D\pump_on_timer\pump_on_timer.DAT
+ ===> Your output file was named : C:\GitHub\hhnote\hydraulics\xp_rtc\model\1D\pump_on_timer\pump_on_timer.out
+
+ *==============================================================*
+ |         XPSWMM/XPSTORM Simulation Date and Time Summary      |
+ *==============================================================*
+ | Starting Date... December   12, 2023  Time...  14:25:15.613  |
+ |   Ending Date... December   12, 2023  Time...  14:25:16.553  |
+ |  Elapsed Time...    0.01536 minutes or      0.92188 seconds  |
+ *==============================================================*
+
