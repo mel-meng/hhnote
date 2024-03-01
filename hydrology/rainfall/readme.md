@@ -94,13 +94,13 @@ As shown in the example, when aligning the time step, if the new interval doesnâ
 
 # Python Example
 
-Refer to the Jupyter notebook (TODO: add link to Github) for the calculations in python.
+Refer to the [Jupyter notebook](https://github.com/mel-meng/hhnote/blob/main/hydrology/rainfall/rainfall.ipynb) for the calculations in python.
 
 <img src="./media/image8.png" style="width:3.85828in;height:3.85251in" alt="A screenshot of a computer screen Description automatically generated" />
 
 # Example worksheet
 
-In the sample worksheet (TODO: add link), there are 3 examples of resampling rainfall,
+In the sample [worksheet](https://github.com/mel-meng/hhnote/blob/main/hydrology/rainfall/rainfall.xlsx), there are 3 examples of resampling rainfall,
 
 - Down sampling: from 5min to 15 min
 
