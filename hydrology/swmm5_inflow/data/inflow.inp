@@ -1,0 +1,116 @@
+[TITLE]
+;;Project Title/Notes
+
+[OPTIONS]
+;;Option             Value
+FLOW_UNITS           MGD
+INFILTRATION         HORTON
+FLOW_ROUTING         KINWAVE
+LINK_OFFSETS         DEPTH
+MIN_SLOPE            0
+ALLOW_PONDING        NO
+SKIP_STEADY_STATE    NO
+
+START_DATE           01/01/2000
+START_TIME           00:00:00
+REPORT_START_DATE    01/01/2000
+REPORT_START_TIME    00:00:00
+END_DATE             01/08/2000
+END_TIME             06:00:00
+SWEEP_START          01/01
+SWEEP_END            12/31
+DRY_DAYS             0
+REPORT_STEP          00:15:00
+WET_STEP             00:05:00
+DRY_STEP             01:00:00
+ROUTING_STEP         0:00:30 
+RULE_STEP            00:00:00
+
+INERTIAL_DAMPING     PARTIAL
+NORMAL_FLOW_LIMITED  BOTH
+FORCE_MAIN_EQUATION  H-W
+VARIABLE_STEP        0.75
+LENGTHENING_STEP     0
+MIN_SURFAREA         12.566
+MAX_TRIALS           8
+HEAD_TOLERANCE       0.005
+SYS_FLOW_TOL         5
+LAT_FLOW_TOL         5
+MINIMUM_STEP         0.5
+THREADS              1
+
+[EVAPORATION]
+;;Data Source    Parameters
+;;-------------- ----------------
+CONSTANT         0.0
+DRY_ONLY         NO
+
+[JUNCTIONS]
+;;Name           Elevation  MaxDepth   InitDepth  SurDepth   Aponded   
+;;-------------- ---------- ---------- ---------- ---------- ----------
+baseline_only    0          0          0          0          0         
+time_series_only 0          0          0          0          0         
+direct_inflow_both 0          0          0          0          0         
+dwf              0          0          0          0          0         
+
+[INFLOWS]
+;;Node           Constituent      Time Series      Type     Mfactor  Sfactor  Baseline Pattern
+;;-------------- ---------------- ---------------- -------- -------- -------- -------- --------
+baseline_only    FLOW             inflow           FLOW     1.0      0        1        daily   
+time_series_only FLOW             inflow           FLOW     1.0      1.0      0        daily   
+direct_inflow_both FLOW             inflow           FLOW     1.0      1.0      1        daily   
+
+[DWF]
+;;Node           Constituent      Baseline   Patterns  
+;;-------------- ---------------- ---------- ----------
+direct_inflow_both FLOW             0          "monthly" "daily" "hourly" "weekend"
+dwf              FLOW             0.5        "monthly" "daily" "hourly" "weekend"
+
+[TIMESERIES]
+;;Name           Date       Time       Value     
+;;-------------- ---------- ---------- ----------
+inflow           01/01/2000 00:00      10        
+inflow           01/08/2000 00:00      20        
+
+[PATTERNS]
+;;Name           Type       Multipliers
+;;-------------- ---------- -----------
+daily            DAILY      0     1     2     3     4     5     6    
+;
+monthly          MONTHLY    1.0   2     1.0   1.0   1.0   1.0  
+monthly                     1.0   1.0   1.0   1.0   1.0   1.0  
+;
+hourly           HOURLY     .0151 .01373 .01812 .01098 .01098 .01922
+hourly                      .02773 .03789 .03515 .03982 .02059 .02471
+hourly                      .03021 .03789 .03350 .03158 .03954 .02114
+hourly                      .02801 .03680 .02911 .02334 .02499 .02718
+;
+weekend          WEEKEND    0.02334 0.02499 0.02718 0.0151 0.01373 0.01812
+weekend                     0.01098 0.01098 0.01922 0.02773 0.03789 0.03515
+weekend                     0.03982 0.02059 0.02471 0.03021 0.03789 0.0335
+weekend                     0.03158 0.03954 0.02114 0.02801 0.0368 0.02911
+
+[REPORT]
+;;Reporting Options
+SUBCATCHMENTS ALL
+NODES ALL
+LINKS ALL
+
+[TAGS]
+
+[MAP]
+DIMENSIONS 0.000 0.000 10000.000 10000.000
+Units      None
+
+[COORDINATES]
+;;Node           X-Coord            Y-Coord           
+;;-------------- ------------------ ------------------
+baseline_only    1007.839           7950.728          
+time_series_only 1030.235           7178.052          
+direct_inflow_both 1052.632           6326.988          
+dwf              1187.010           5386.338          
+
+[VERTICES]
+;;Link           X-Coord            Y-Coord           
+;;-------------- ------------------ ------------------
+

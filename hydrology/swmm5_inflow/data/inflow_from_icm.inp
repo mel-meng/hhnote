@@ -1,0 +1,287 @@
+;; Exported from InfoWorks ICM 2024.5.0 encoding=UTF8
+[TITLE]
+
+
+[OPTIONS]
+ALLOW_PONDING NO
+HEAD_TOLERANCE 0.005000
+INERTIAL_DAMPING PARTIAL
+INFILTRATION HORTON
+MAX_TRIALS 8
+MIN_SLOPE 0.000000
+MIN_SURFAREA 12.566000
+NORMAL_FLOW_LIMITED BOTH
+FLOW_UNITS MGD
+FORCE_MAIN_EQUATION H-W
+FLOW_ROUTING DYNWAVE
+LINK_OFFSETS ELEVATION
+IGNORE_RAINFALL NO
+IGNORE_SNOWMELT NO
+IGNORE_GROUNDWATER NO
+IGNORE_RDII NO
+IGNORE_ROUTING NO
+IGNORE_QUALITY NO
+SKIP_STEADY_STATE NO
+SYS_FLOW_TOL 5.000000
+LAT_FLOW_TOL 5.000000
+START_DATE 01/01/2000
+START_TIME 00:00:00
+END_DATE 01/08/2000
+END_TIME 06:00:00
+REPORT_START_DATE 01/01/2000
+REPORT_START_TIME 00:00:00
+SWEEP_START 01/01
+SWEEP_END 12/31
+DRY_DAYS 0.000000
+REPORT_STEP 00:15:00
+WET_STEP 00:05:00
+DRY_STEP 01:00:00
+ROUTING_STEP 30.000000
+LENGTHENING_STEP 0.000000
+VARIABLE_STEP 0.750000
+MINIMUM_STEP 0.500000
+[REPORT]
+;;INPUT YES/NO
+;;CONTINUITY YES/NO
+;;FLOWSTATS YES/NO
+;;CONTROLS YES/NO
+;;AVERAGES YES/NO
+;;SUBCATCHMENTS ALL/NONE/<list_of_subcatchment_names>
+;;NODES ALL/NONE/<list_of_node_names>
+;;LINKS ALL/NONE/<list_of_link_names>
+INPUT NO
+CONTINUITY YES
+FLOWSTATS YES
+CONTROLS NO
+AVERAGES NO
+SUBCATCHMENTS NONE
+NODES baseline_only direct_inflow_both time_series_only
+LINKS NONE
+[RAINGAGES]
+;;Name Form Intvl SCF TIMESERIES Tseries
+;;Name Form Intvl SCF FILE Fname Sta Units
+[ADJUSTMENTS]
+;;TEMPERATURE  t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 t11 t12
+;;EVAPORATION  e1 e2 e3 e4 e5 e6 e7 e8 e9 e10 e11 e12
+;;RAINFALL   r1 r2 r3 r4 r5 r6 r7 r8 r9 r10 r11 r12
+;;CONDUCTIVITY c1 c2 c3 c4 c5 c6 c7 c8 c9 c10 c11 c12 
+CONDUCTIVITY 1.0          1.0          1.0          1.0          1.0          1.0          1.0          1.0          1.0          1.0          1.0          1.0         
+EVAPORATION 0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0         
+RAINFALL 1.0          1.0          1.0          1.0          1.0          1.0          1.0          1.0          1.0          1.0          1.0          1.0         
+TEMPERATURE 32.0         32.0         32.0         32.0         32.0         32.0         32.0         32.0         32.0         32.0         32.0         32.0        
+[SUBCATCHMENTS]
+;;Name Rgage OutID Area %Imperv Width Slope Clength SnowPack
+[SUBAREAS]
+;;Subcat Nimp Nperv Simp Sperv %Zero RouteTo PctRouted
+[INFILTRATION]
+;;Subcatchment Param1 Param2 Param3 Param4 Param5 InfiltrationType
+[LID_CONTROLS]
+;;Name SURFACE  StorHt  VegFrac  Rough  Slope  Xslope
+;;Name SOIL     Thick  Por  FC  WP  Ksat  Kcoeff  Suct
+;;Name PAVEMENT Thick  Vratio  FracImp  Perm  Vclog
+;;Name STORAGE  Height  Vratio  Seepage  Vclog
+;;Name DRAIN    Coeff  Expon  Offset  Delay
+;;Name DRAINMAT Thick  Vratio  Rough
+;;Name REMOVALS PollId  %Remov ...
+[LID_USAGE]
+;;Subcat LID Number Area Width InitSat FromImp ToPerv RptFile DrainTo FromPerv
+[AQUIFERS]
+;;Name Por WP FC Ks Kslp Tslp ETu ETs Seep Ebot Egw Umc (Epat)
+[GROUNDWATER]
+;;Subcat Aquifer Node Esurf A1 B1 A2 B2 A3 Dsw (Egwt Ebot Egw Umc)
+[GWF]
+;;Subcat  LATERAL/DEEP  Expr
+[SNOWPACKS]
+;;Name PLOWABLE   Cmin  Cmax  Tbase  FWF  SD0  FW0  SNN0
+;;Name IMPERVIOUS Cmin  Cmax  Tbase  FWF  SD0  FW0  SD100
+;;Name PERVIOUS   Cmin  Cmax  Tbase  FWF  SD0  FW0  SD100
+;;Name REMOVAL   Dplow Fout Fimp Fperv Fimelt (Fsub Scatch)
+[JUNCTIONS]
+;;Name Elev (Ymax Y0 Ysur Apond)
+baseline_only 0.0          32.808399    0.0          0.0          0.0         
+direct_inflow_both 0.0          32.808399    0.0          0.0          0.0         
+dwf_all      0.0          32.808399    0.0          0.0          0.0         
+time_series_only 0.0          32.808399    0.0          0.0          0.0         
+dwf_hourly   0.0          32.808399    0.0          0.0          0.0         
+dwf_hourly_weekend 0.0          32.808399    0.0          0.0          0.0         
+[OUTFALLS]
+;;Name InvertEl FREE FlapGate
+;;Name InvertEl NORMAL FlapGate
+;;Name InvertEl FIXED FixedStage FlapGate
+;;Name InvertEl TIDAL TideTable FlapGate
+;;Name InvertEl TIMESERIES StageSeries FlapGate
+outfall      32.808399    FREE         NO          
+[STORAGE]
+;;Name Elev Ymax Y0 TABULAR    Acurve N/A Fevap Psi Ksat IMD
+;;Name Elev Ymax Y0 FUNCTIONAL A1 A2 A0 N/A Fevap Psi Ksat IMD
+[CONDUITS]
+;;Name  Node1  Node2  Length  N  Z1  Z2  (Q0  Qmax)
+[PUMPS]
+;;Name  Node1  Node2  Pcurve  (Status  Startup  Shutoff)
+[ORIFICES]
+;;Name  Node1  Node2  Type  Offset  Cd  (Gated  Orate)
+[WEIRS]
+;;Name Node1 Node2 Type CrestHt Cd (Gated EC Cd2 Sur (Width Surface))
+[OUTLETS]
+;;Name Node1 Node2 Offset TABULAR/DEPTH    Qcurve (Gated)
+;;Name Node1 Node2 Offset TABULAR/HEAD     Qcurve (Gated)
+;;Name Node1 Node2 Offset FUNCTIONAL/DEPTH C1 C2 (Gated)
+;;Name Node1 Node2 Offset FUNCTIONAL/HEAD  C1 C2 (Gated)
+[XSECTIONS]
+;;Link Shape   Geom1 Geom2 Geom3 Geom4 (Barrels Culvert)
+;;Link CUSTOM    Geom1 Curve (Barrels)
+;;Link IRREGULAR   Tsect
+[TRANSECTS]
+;;NC Nleft Nright Nchannel
+;;X1 Name Nsta Xleft Xright 0 0 0 Wfactor Eoffset
+;;GR Station Elevation ...
+[LOSSES]
+;;Conduit  Kentry  Kexit  Kavg  (Flap  Seepage)
+[CONTROLS]
+
+[POLLUTANTS]
+;;Name Units Crain Cgw Cii Kd (Sflag CoPoll CoFract Cdwf Cinit)
+[LANDUSES]
+;;Name  (SweepInterval  Availability  LastSweep)
+[COVERAGES]
+;;Subcat  Landuse  Percent  Landuse  Percent  ...
+[LOADINGS]
+;;Subcat  Pollut  InitBuildup  Pollut  InitBuildup ...
+[BUILDUP]
+;;Landuse  Pollutant  FuncType  C1  C2  C3  PerUnit
+[WASHOFF]
+;;Landuse  Pollutant  FuncType  C1  C2  SweepRmvl BmpRmvl
+[TREATMENT]
+;;Node  Pollut  Result = Func
+[INFLOWS]
+;;Node FLOW   Tseries (FLOW (1.0     Sfactor Base Pat))
+;;Node Pollut Tseries (Type (Mfactor Sfactor Base Pat))
+baseline_only FLOW         QIN#baseline_only FLOW         1.0          0.0          1.0          daily       
+direct_inflow_both FLOW         QIN#direct_inflow_both FLOW         1.0          1.0          1.0          daily       
+time_series_only FLOW         QIN#time_series_only FLOW         1.0          1.0          0.0          daily       
+[DWF]
+;;Node  Type  Base  (Pat1  Pat2  Pat3  Pat4)
+dwf_all      FLOW         0.5          monthly      daily        hourly       weekend     
+dwf_hourly   FLOW         0.5                                    hourly                   
+dwf_hourly_weekend FLOW         0.5                                    hourly       weekend     
+[RDII]
+;;Node  UHgroup  SewerArea
+[HYDROGRAPHS]
+;;Name Raingage
+;;Name Month SHORT/MEDIUM/LONG R T K (Dmax Drec D0)
+[CURVES]
+;;Name  Type  X-value  Y-value  ...
+[TIMESERIES]
+;;Name (Date)  Hour  Value  ...
+;;Name  Time  Value  ...
+;;Name  FILE  Fname
+QIN#baseline_only 01/01/2000   00:00        10.0        
+QIN#baseline_only 01/08/2000   00:00        20.000001   
+QIN#direct_inflow_both 01/01/2000   00:00        10.0        
+QIN#direct_inflow_both 01/08/2000   00:00        20.000001   
+QIN#time_series_only 01/01/2000   00:00        10.0        
+QIN#time_series_only 01/08/2000   00:00        20.000001   
+
+[EVAPORATION]
+;;CONSTANT  evap
+;;MONTHLY  e1 e2 e3 e4 e5 e6 e7 e8 e9 e10 e11 e12
+;;TIMESERIES Tseries
+;;FILE   (p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12)
+;;RECOVERY  patternID
+;;DRY_ONLY  NO/YES 
+CONSTANT 0.0         
+RECOVERY CLI#416
+DRY_ONLY NO
+[TEMPERATURE]
+;;TIMESERIES Tseries
+;;WINDSPEED  MONTHLY s1 s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12
+WINDSPEED MONTHLY 0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0         
+[PATTERNS]
+;;Name  MONTHLY  Factor1  Factor2  ...  Factor12
+;;Name  DAILY   Factor1  Factor2  ...  Factor7
+;;Name  HOURLY  Factor1  Factor2  ...  Factor24
+;;Name  WEEKEND  Factor1  Factor2  ...  Factor24
+daily        DAILY        0.000000     1.000000     2.000000     3.000000     4.000000     5.000000     6.000000    
+hourly       HOURLY       0.015100     0.013730     0.018120     0.010980     0.010980     0.019220    
+hourly                    0.027730     0.037890     0.035150     0.039820     0.020590     0.024710    
+hourly                    0.030210     0.037890     0.033500     0.031580     0.039540     0.021140    
+hourly                    0.028010     0.036800     0.029110     0.023340     0.024990     0.027180    
+monthly      MONTHLY      1.000000     2.000000     1.000000     1.000000     1.000000     1.000000    
+monthly                   1.000000     1.000000     1.000000     1.000000     1.000000     1.000000    
+weekend      WEEKEND      0.023340     0.024990     0.027180     0.015100     0.013730     0.018120    
+weekend                   0.010980     0.010980     0.019220     0.027730     0.037890     0.035150    
+weekend                   0.039820     0.020590     0.024710     0.030210     0.037890     0.033500    
+weekend                   0.031580     0.039540     0.021140     0.028010     0.036800     0.029110    
+CLI#416 MONTHLY 0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0          0.0         
+[COORDINATES]
+;;Node Xcoord Ycoord
+baseline_only 984.251969   7950.728    
+direct_inflow_both 984.251969   6326.988    
+dwf_all      984.251969   5386.338    
+time_series_only 984.251969   7178.052    
+outfall      3118.801963  6727.029454 
+dwf_hourly   2123.217871  5356.949038 
+dwf_hourly_weekend 1636.601205  5377.923895 
+[VERTICES]
+;;Link Xcoord Ycoord
+[POLYGONS]
+;;Subcatch XCoord YCoord
+[SYMBOLS]
+;;Gage  Xcoord  Ycoord
+[INNOVYZE_SUBCATCHMENTS_CENTROIDS]
+;;Subcatchment X-Coord Y-Coord
+[INNOVYZE_SUPPLEMENTARY_CONDUIT]
+;;Name  Depth  ManningsN
+[Innovyze_Supplementary_DryWeatherFlow]
+;;Node  Type  Base  (Pat1  Pat2  Pat3  Pat4)
+[Innovyze_UnitHydrograph]
+;;SubcatchmentID Length CN Tc Depression-Storage (Runoff-model-type)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

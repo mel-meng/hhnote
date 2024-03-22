@@ -130,3 +130,7 @@ dmypy.json
 *tmp/
 *xf/
 workflow/data/dtm/modify_elevation/model/
+hydrology/swmm5_inflow/figures.pptx
+hydrology/swmm5_inflow/data/inflow.rpt
+hydrology/swmm5_inflow/data/inflow.out
+hydrology/swmm5_inflow/data/inflow.ini
