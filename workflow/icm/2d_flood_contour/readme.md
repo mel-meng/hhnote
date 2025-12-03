@@ -197,7 +197,3 @@ Add the DEM to the depth grid using the Raster Calculator to get water surface e
 # Validate and Interpret Results
 
 We can visually check the difference map to quickly identify major differences. For more detailed analysis we can use advanced raster analysis.
-
-# Reference
-
-[qgis 2d flood contour compare-20251203_103654-Meeting Recording.mp4](https://myshare.autodesk.com/:v:/r/personal/mel_meng_autodesk_com/Documents/Recordings/qgis%202d%20flood%20contour%20compare-20251203_103654-Meeting%20Recording.mp4?csf=1&web=1&e=QigzKM&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
