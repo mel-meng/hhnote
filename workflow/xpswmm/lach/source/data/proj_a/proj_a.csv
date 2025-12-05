@@ -1,0 +1,5 @@
+project,subarea,area,length,slope,depth,imperviousness,soil,frequency,fire
+proj_a,1A,40.239,4800,0.00005,5.2,0.7,2,50-yr,0
+proj_a,3A,257.191,7600,0.00003,5.2,0.4,2,50-yr,0
+proj_a,4A,107.238,5100,0.0002,5.2,0.65,2,50-yr,0
+proj_a,2A,127.936,4900,0.00014,5.2,0.15,2,50-yr,0

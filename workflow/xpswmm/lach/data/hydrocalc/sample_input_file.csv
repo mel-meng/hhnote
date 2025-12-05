@@ -1,0 +1,9 @@
+project,subarea,area,length,slope,depth,imperviousness,soil,frequency,fire
+Project Name,1A,28.13,1121.07,0.01158,7.23,0.1,67,50-yr,0
+Project Name,3A,34.98,1335.24,0.09459,4.94,0.42,84,25-yr,0
+Project Name,5B,15.76,562.47,0.006426,3.8,0.6448,63,1-yr,0
+Project Name,7C,30.15,1247.32,0.002058,2.96,0.7436,78,2-yr,0.34
+Project Name,9D,23.33,980.34,0.04135,4.06,0.09768,81,10-yr,0.83
+Project Name,11A,19.05,620.8,0.07435,0.75,0.91,38,0.75 inch storm,0
+Project Name,13A,25.78,897.56,0.001528,7.5,0.2247,158,500-yr,0.71
+Project Name,15A,9.25,479.74,0.008018,0.91,0.01,64,85th percentile storm,0

@@ -134,3 +134,6 @@ hydrology/swmm5_inflow/figures.pptx
 hydrology/swmm5_inflow/data/inflow.rpt
 hydrology/swmm5_inflow/data/inflow.out
 hydrology/swmm5_inflow/data/inflow.ini
+/workflow/xpswmm/lach/source/.cursor
+/workflow/xpswmm/lach/source/data/proj_a/output
+/workflow/xpswmm/lach/source/data/proj_a/CSV_Results

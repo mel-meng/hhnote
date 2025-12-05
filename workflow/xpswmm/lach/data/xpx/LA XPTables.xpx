@@ -1,0 +1,71 @@
+DATA METRIC "" 0 1 "0" 
+GLDBITEM "XP Tables" "LA Node Data" 
+GLDBDATA TBLVAREX_DATUNT "XP Tables" "LA Node Data" 10 "0" "0" "0" "acres" "min" "0" "%" "mm;inch" "ft" "%" 
+GLDBDATA TBLVAREX_TITLE "XP Tables" "LA Node Data" 13 "Flag" "LA ID" "LA Branch Line" "Area" "TC" "Soil Type" "Impervious Percentage" "Max Rainfall [24hr 50Yr]" "LA Catchment Length" "LA Catchment Slope" "Hydrograph Output Type" "Object Description" "LA Node Type" 
+GLDBDATA TBLVAREX_ROWHT "XP Tables" "LA Node Data" 13 48 48 48 48 48 48 48 48 48 48 48 48 48 
+GLDBDATA TBLVAREX_FONT "XP Tables" "LA Node Data" 13 "Arial" "Arial" "Arial" "Arial" "Arial" "Arial" "Arial" "Arial" "Arial" "Arial" "Arial" "Arial" "Arial" 
+GLDBDATA TBLVAREX_PARENT "XP Tables" "LA Node Data" 13 0 0 0 0 0 0 0 0 0 0 0 0 0 
+GLDBDATA TBL_PUMPFLAG "XP Tables" "LA Node Data" 1 0 
+GLDBDATA TBLVAREX_DATACW "XP Tables" "LA Node Data" 13 12 12 12 12 12 12 12 12 12 12 12 12 12 
+GLDBDATA TBLVAREX_DATACC "XP Tables" "LA Node Data" 13 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 
+GLDBDATA TBLOBJ "XP Tables" "LA Node Data" 1 "1" 
+GLDBDATA TBLVAREX_FSIZE "XP Tables" "LA Node Data" 13 9 9 9 9 9 9 9 9 9 9 9 9 9 
+GLDBDATA TBLVAREX_VSBLE "XP Tables" "LA Node Data" 13 1 1 1 1 1 1 1 1 1 1 1 1 1 
+GLDBDATA TBLOBJSEL "XP Tables" "LA Node Data" 1 "0" 
+GLDBDATA TBLUSEFILTER "XP Tables" "LA Node Data" 1 0 
+GLDBDATA TBL_VIEWFLAG "XP Tables" "LA Node Data" 1 1 
+GLDBDATA TBLVAR_FIELD "XP Tables" "LA Node Data" 13 "F_LACH_N_SUBFLAG" "F_LACH_N_SUBNAME" "F_LACH_N_SUBLINE" "F_R_WAREA" "F_LACH_N_TC" "F_LACH_N_SREF" "F_R_WIMP" "F_LACH_N_RAIN" "F_LACH_N_LEN" "F_LACH_N_SLOPE" "F_LACH_N_HYD" "F_LACH_DESC" "F_LACH_N_TYPE" 
+GLDBDATA TBLVAR_TYPE "XP Tables" "LA Node Data" 13 3 3 3 3 3 3 3 3 3 3 3 3 3 
+GLDBDATA TBLVAREX_DATPRE "XP Tables" "LA Node Data" 13 3.000 3.000 3.000 3.000 3.000 3.000 1.000 3.000 3.000 3.000 3.000 3.000 3.000 
+GLDBDATA TBL_CURSC "XP Tables" "LA Node Data" 1 0 
+GLDBDATA TBLVAREX_FLIP "XP Tables" "LA Node Data" 13 0 0 0 0 0 0 0 0 0 0 0 0 0 
+GLDBDATA TBL_CONFLAG "XP Tables" "LA Node Data" 1 0 
+GLDBDATA TBLVAREX_ALIGN "XP Tables" "LA Node Data" 13 0 0 0 0 0 0 0 0 0 0 0 0 0 
+GLDBDATA TBL_SPECFLAG "XP Tables" "LA Node Data" 1 0 
+GLDBDATA TBLVAREX_FSTYLE "XP Tables" "LA Node Data" 13 0 0 0 0 0 0 0 0 0 0 0 0 0 
+GLDBDATA TBLUNITDISP "XP Tables" "LA Node Data" 1 0 
+GLDBDATA TBLVAREX_FCOLOR "XP Tables" "LA Node Data" 13 0 0 0 0 0 0 0 0 0 0 0 0 0 
+GLDBDATA TBL_ORIFLAG "XP Tables" "LA Node Data" 1 0 
+GLDBDATA TBLVAR_INDX "XP Tables" "LA Node Data" 13 0 0 0 0 0 0 0 0 0 0 0 0 0 
+GLDBDATA TBLVAR_INST "XP Tables" "LA Node Data" 13 0 0 0 0 0 0 0 0 0 0 0 0 0 
+GLDBDATA TBL_WEIRFLAG "XP Tables" "LA Node Data" 1 0 
+GLDBITEM "XP Tables" "LA Link Data" 
+GLDBDATA TBLVAREX_ROWHT "XP Tables" "LA Link Data" 14 48 48 48 48 48 48 48 48 48 48 48 48 48 48 
+GLDBDATA TBL_PUMPFLAG "XP Tables" "LA Link Data" 1 0 
+GLDBDATA TBLVAREX_DATACW "XP Tables" "LA Link Data" 14 12 12 12 12 12 12 12 12 12 12 12 12 12 12 
+GLDBDATA TBLFILTFLDID "XP Tables" "LA Link Data" 1 "1" 
+GLDBDATA TBLOBJ "XP Tables" "LA Link Data" 1 "2" 
+GLDBDATA TBLFILTOPER "XP Tables" "LA Link Data" 1 "0" 
+GLDBDATA TBLOBJSEL "XP Tables" "LA Link Data" 1 "0" 
+GLDBDATA TBLUSEFILTER "XP Tables" "LA Link Data" 1 1 
+GLDBDATA TBL_VIEWFLAG "XP Tables" "LA Link Data" 1 1 
+GLDBDATA TBLVAR_FIELD "XP Tables" "LA Link Data" 14 "FD_LACH_LINK_ID_L" "F_LACH_L_LTYPE" "F_LACH_L_TYPE" "F_WIDE" "F_LEN" "F_SLOPE" "F_ROUGH" "F_LACH_L_SSLOPE" "F_LACH_L_ROUGH_S" "F_LACH_L_MXDEPTH" "F_LACH_L_MXVEL" "F_LACH_L_HYD" "F_LACH_L_CONFL" "F_LACH_L_ARED" 
+GLDBDATA TBLVAR_TYPE "XP Tables" "LA Link Data" 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+GLDBDATA TBL_CURSC "XP Tables" "LA Link Data" 1 0 
+GLDBDATA TBLVAREX_FLIP "XP Tables" "LA Link Data" 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+GLDBDATA TBL_CONFLAG "XP Tables" "LA Link Data" 1 1 
+GLDBDATA TBLFILTVALID "XP Tables" "LA Link Data" 1 "1" 
+GLDBDATA TBL_SPECFLAG "XP Tables" "LA Link Data" 1 0 
+GLDBDATA TBLFILTJOIN "XP Tables" "LA Link Data" 1 "0" 
+GLDBDATA TBLFILTCOMPTYPE "XP Tables" "LA Link Data" 1 "0" 
+GLDBDATA TBL_ORIFLAG "XP Tables" "LA Link Data" 1 0 
+GLDBDATA TBLVAR_INDX "XP Tables" "LA Link Data" 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+GLDBDATA TBLVAR_INST "XP Tables" "LA Link Data" 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+GLDBDATA TBL_WEIRFLAG "XP Tables" "LA Link Data" 1 0 
+GLDBITEM "XP Tables" "Diversion Data" 
+GLDBDATA TBLVAREX_ROWHT "XP Tables" "Diversion Data" 13 48 48 48 48 48 48 48 48 48 48 48 48 48 
+GLDBDATA TBL_PUMPFLAG "XP Tables" "Diversion Data" 1 0 
+GLDBDATA TBLVAREX_DATACW "XP Tables" "Diversion Data" 13 12 12 12 12 12 12 12 12 12 12 12 12 12 
+GLDBDATA TBLOBJ "XP Tables" "Diversion Data" 1 "2" 
+GLDBDATA TBLUSEFILTER "XP Tables" "Diversion Data" 1 0 
+GLDBDATA TBL_VIEWFLAG "XP Tables" "Diversion Data" 1 1 
+GLDBDATA TBLVAR_FIELD "XP Tables" "Diversion Data" 3 "FD_LACH_LINK_ID_L" "F_LACH_L_SPLITQ" "F_LACH_L_SPLITVAL" 
+GLDBDATA TBLVAR_TYPE "XP Tables" "Diversion Data" 3 0 0 0 
+GLDBDATA TBL_CURSC "XP Tables" "Diversion Data" 1 0 
+GLDBDATA TBLVAREX_FLIP "XP Tables" "Diversion Data" 13 0 0 0 0 0 0 0 0 0 0 0 0 0 
+GLDBDATA TBL_CONFLAG "XP Tables" "Diversion Data" 1 1 
+GLDBDATA TBL_SPECFLAG "XP Tables" "Diversion Data" 1 0 
+GLDBDATA TBL_ORIFLAG "XP Tables" "Diversion Data" 1 0 
+GLDBDATA TBLVAR_INDX "XP Tables" "Diversion Data" 3 0 0 0 
+GLDBDATA TBLVAR_INST "XP Tables" "Diversion Data" 3 0 0 0 
+GLDBDATA TBL_WEIRFLAG "XP Tables" "Diversion Data" 1 0 

@@ -1,0 +1,11 @@
+[project]
+name = "source"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "polars>=1.35.2",
+    "numpy>=1.26.0",
+    "matplotlib>=3.8.0",
+]
