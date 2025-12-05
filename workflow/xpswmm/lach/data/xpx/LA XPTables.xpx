@@ -69,3 +69,32 @@ GLDBDATA TBL_ORIFLAG "XP Tables" "Diversion Data" 1 0
 GLDBDATA TBLVAR_INDX "XP Tables" "Diversion Data" 3 0 0 0 
 GLDBDATA TBLVAR_INST "XP Tables" "Diversion Data" 3 0 0 0 
 GLDBDATA TBL_WEIRFLAG "XP Tables" "Diversion Data" 1 0 
+GLDBITEM "XP Tables" "Gauged Inflow" 
+GLDBDATA TBLVAREX_TITLE "XP Tables" "Gauged Inflow" 5 "Gauged Inflow Flag" "Gauged Input Data" "Filename" "Station Number" "File Format" 
+GLDBDATA TBLVAREX_ROWHT "XP Tables" "Gauged Inflow" 5 48 48 52 52 52 
+GLDBDATA TBLVAREX_FONT "XP Tables" "Gauged Inflow" 5 "Arial" "Arial" "Arial" "Arial" "Arial" 
+GLDBDATA TBLVAREX_PARENT "XP Tables" "Gauged Inflow" 5 0 0 2 2 2 
+GLDBDATA TBL_PUMPFLAG "XP Tables" "Gauged Inflow" 1 0 
+GLDBDATA TBLVAREX_DATACW "XP Tables" "Gauged Inflow" 5 12 0 47 12 12 
+GLDBDATA TBLFILTFLDID "XP Tables" "Gauged Inflow" 1 "1" 
+GLDBDATA TBLVAREX_DATACC "XP Tables" "Gauged Inflow" 5 0.000 0 0.000 0.000 0.000 
+GLDBDATA TBLOBJ "XP Tables" "Gauged Inflow" 1 "1" 
+GLDBDATA TBLVAREX_FSIZE "XP Tables" "Gauged Inflow" 5 9 9 9 9 9 
+GLDBDATA TBLVAREX_VSBLE "XP Tables" "Gauged Inflow" 5 1 1 1 1 1 
+GLDBDATA TBLUSEFILTER "XP Tables" "Gauged Inflow" 1 0 
+GLDBDATA TBL_VIEWFLAG "XP Tables" "Gauged Inflow" 1 1 
+GLDBDATA TBLVAR_FIELD "XP Tables" "Gauged Inflow" 5 "F_GINFLOW" "F_HEADING_VAR" "F_UDFS_FILE" "F_UDFS_STN" "F_R_UDFS_FMTNAME" 
+GLDBDATA TBLVAR_TYPE "XP Tables" "Gauged Inflow" 5 3 7 3 3 3 
+GLDBDATA TBLVAREX_DATPRE "XP Tables" "Gauged Inflow" 5 3.000 0 3.000 3.000 3.000 
+GLDBDATA TBL_CURSC "XP Tables" "Gauged Inflow" 1 0 
+GLDBDATA TBLVAREX_FLIP "XP Tables" "Gauged Inflow" 5 0 0 0 0 0 
+GLDBDATA TBL_CONFLAG "XP Tables" "Gauged Inflow" 1 0 
+GLDBDATA TBLVAREX_ALIGN "XP Tables" "Gauged Inflow" 5 0 0 0 0 0 
+GLDBDATA TBL_SPECFLAG "XP Tables" "Gauged Inflow" 1 0 
+GLDBDATA TBLVAREX_FSTYLE "XP Tables" "Gauged Inflow" 5 0 0 0 0 0 
+GLDBDATA TBLUNITDISP "XP Tables" "Gauged Inflow" 1 0 
+GLDBDATA TBLVAREX_FCOLOR "XP Tables" "Gauged Inflow" 5 0 0 0 0 0 
+GLDBDATA TBL_ORIFLAG "XP Tables" "Gauged Inflow" 1 0 
+GLDBDATA TBLVAR_INDX "XP Tables" "Gauged Inflow" 5 0 0 0 0 0 
+GLDBDATA TBLVAR_INST "XP Tables" "Gauged Inflow" 5 0 0 0 0 0 
+GLDBDATA TBL_WEIRFLAG "XP Tables" "Gauged Inflow" 1 0 
