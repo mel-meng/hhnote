@@ -93,10 +93,11 @@ flowchart TD
 
 ## Installation
 
-1. Download `polygon_to_tin.py` to a local folder
+1. Download repo to a local folder
 2. Open QGIS with your 2D zone data loaded
-3. Open the Python Console (`Plugins` → `Python Console`)
-4. Run the script using one of these methods:
+3. Open the Python Console (`View` → `Panles`→ `Python Console`)
+4. Open `polygon_to_tin.py` and run the script.
+5. You can also run it in the console.
 
 ```python
 # Method 1: Execute file directly
@@ -171,8 +172,4 @@ Your polygon layer should have:
 | Field not found | Verify the depth/ground fields contain numeric values |
 | Empty TIN output | Check that polygons have valid geometry and non-null attribute values |
 | Processing fails | Review the QGIS log panel for detailed error messages |
-
-## License
-
-This tool is provided for use with ICM 2D Zone workflows.
 

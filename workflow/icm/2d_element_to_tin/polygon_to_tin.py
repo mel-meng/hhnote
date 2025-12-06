@@ -10,6 +10,8 @@ Usage:
 Author: Generated for ICM 2D Zone workflow
 """
 
+import os
+
 from qgis.core import (
     QgsProject,
     QgsProcessingFeedback,
@@ -235,6 +237,13 @@ class PolygonToTinDialog(QDialog):
 class PolygonToTinProcessor:
     """Process polygon layer to multiple TIN meshes."""
     
+    # Style file mapping for TIN mesh layers and input polygon layer
+    STYLE_MAPPING = {
+        'depth': 'tin_depth.qml',
+        'water surface': 'water_surface.qml',
+        '2d_zone': '2d_zone.qml',  # For the original input polygon layer
+    }
+    
     def __init__(self, params, feedback=None):
         self.params = params
         self.feedback = feedback or QgsProcessingFeedback()
@@ -250,6 +259,40 @@ class PolygonToTinProcessor:
         self.centroid_layer = None
         self.vertex_layer = None
         self.created_tins = []
+        
+        # Resolve styles folder path
+        self.styles_folder = self._get_styles_folder()
+    
+    def _get_styles_folder(self):
+        """
+        Get the path to the styles folder.
+        
+        Looks for styles in the following locations (in order):
+        1. Relative to the script file: data/styles/
+        2. Relative to current working directory: data/styles/
+        
+        Returns:
+            Path to styles folder if found, None otherwise
+        """
+        # Try relative to script location
+        try:
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            styles_path = os.path.join(script_dir, 'data', 'styles')
+            if os.path.isdir(styles_path):
+                self.feedback.pushInfo(f"Found styles folder: {styles_path}")
+                return styles_path
+        except NameError:
+            # __file__ not available (e.g., running in QGIS console via exec)
+            pass
+        
+        # Try relative to current working directory
+        cwd_styles = os.path.join(os.getcwd(), 'data', 'styles')
+        if os.path.isdir(cwd_styles):
+            self.feedback.pushInfo(f"Found styles folder: {cwd_styles}")
+            return cwd_styles
+        
+        self.feedback.pushInfo("Styles folder not found - styles will not be applied")
+        return None
         
     def run(self):
         """Execute all processing steps to create multiple TIN outputs."""
@@ -299,6 +342,10 @@ class PolygonToTinProcessor:
                     self.feedback.pushInfo(f"Successfully created TIN: {config['name']}")
                 else:
                     self.feedback.reportError(f"Failed to create TIN: {config['name']} for field: {config['field']}")
+            
+            # Apply style to the original input polygon layer
+            self.feedback.pushInfo("\nApplying style to original 2D zone layer...")
+            self._apply_style_to_layer(self.layer, '2d_zone')
             
             self.feedback.setProgress(100)
             self.feedback.pushInfo("Processing complete!")
@@ -587,10 +634,73 @@ class PolygonToTinProcessor:
             if mesh_layer.isValid():
                 QgsProject.instance().addMapLayer(mesh_layer)
                 self.feedback.pushInfo(f"Added TIN mesh layer: {tin_name}")
+                # Apply style to the mesh layer
+                self._apply_style_to_layer(mesh_layer, tin_name)
             else:
                 self.feedback.reportError(f"Failed to add TIN mesh '{tin_name}' - layer invalid")
         else:
             self.feedback.reportError(f"No TIN mesh was created for '{tin_name}'")
+    
+    def _apply_style_to_layer(self, layer, style_key):
+        """
+        Apply a QML style to a layer.
+        
+        Args:
+            layer: The QGIS layer to style
+            style_key: Key to look up in STYLE_MAPPING (e.g., 'depth', 'water surface', '2d_zone')
+        
+        Returns:
+            True if style was applied successfully, False otherwise
+        """
+        if not self.styles_folder:
+            self.feedback.pushInfo(f"  Skipping style for '{style_key}' - styles folder not found")
+            return False
+        
+        # Get the style filename from the mapping
+        style_filename = self.STYLE_MAPPING.get(style_key)
+        if not style_filename:
+            self.feedback.pushInfo(f"  No style mapping found for '{style_key}'")
+            return False
+        
+        # Build full path to style file
+        style_path = os.path.join(self.styles_folder, style_filename)
+        
+        if not os.path.isfile(style_path):
+            self.feedback.pushInfo(f"  Style file not found: {style_path}")
+            return False
+        
+        # Apply the style
+        result = layer.loadNamedStyle(style_path)
+        
+        # loadNamedStyle returns a tuple (success_message, success_bool)
+        if isinstance(result, tuple):
+            message, success = result
+            if success:
+                self.feedback.pushInfo(f"  Applied style '{style_filename}' to layer '{layer.name()}'")
+                layer.triggerRepaint()
+                # Refresh the layer symbology in the layer tree view
+                try:
+                    from qgis.utils import iface
+                    if iface:
+                        iface.layerTreeView().refreshLayerSymbology(layer.id())
+                except Exception:
+                    pass  # iface may not be available in all contexts
+                return True
+            else:
+                self.feedback.reportError(f"  Failed to apply style: {message}")
+                return False
+        else:
+            # Older QGIS versions might return just a string
+            self.feedback.pushInfo(f"  Applied style '{style_filename}' to layer '{layer.name()}'")
+            layer.triggerRepaint()
+            # Refresh the layer symbology in the layer tree view
+            try:
+                from qgis.utils import iface
+                if iface:
+                    iface.layerTreeView().refreshLayerSymbology(layer.id())
+            except Exception:
+                pass  # iface may not be available in all contexts
+            return True
 
 
 def run_polygon_to_tin():
