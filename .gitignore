@@ -137,3 +137,4 @@ hydrology/swmm5_inflow/data/inflow.ini
 /workflow/xpswmm/lach/source/.cursor
 /workflow/xpswmm/lach/source/data/proj_a/output
 /workflow/xpswmm/lach/source/data/proj_a/CSV_Results
+/workflow/icm/2d_element_to_tin/.cursor
