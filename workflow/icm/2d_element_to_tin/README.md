@@ -2,26 +2,25 @@
 
 A QGIS Python tool that converts 2D zone polygons (with depth/elevation attributes) into TIN (Triangulated Irregular Network) mesh surfaces that precisely match the original 2D element boundaries.
 
-## Key Concept: Matching TIN to 2D Element Boundaries
+## Why TIN Mesh?
 
-The fundamental challenge when creating a TIN surface from 2D zone data is ensuring the resulting mesh aligns with the original polygon boundaries.
+TIN mesh offers an ideal balance between efficiency, accuracy, and visual quality:
 
-### Why This Matters
+| Representation | Storage | Accuracy | Smoothness |
+|----------------|---------|----------|------------|
+| **Raw 2D Elements** | Compact | Exact cell values | Blocky/stepped appearance |
+| **Raster** | Large files | Resolution-dependent | Pixelated at boundaries |
+| **TIN Mesh** | Efficient | Exact at vertices | Smooth interpolated surface |
 
-When modeling hydraulic surfaces (water depth, water surface elevation), the TIN mesh structure must match the 2D element geometry used in the simulation. Simply triangulating polygon centroids creates a mesh with different edges than the original elements, leading to:
+### The Challenge
 
-- Misalignment between surface representation and simulation geometry
-- Incorrect interpolation at element boundaries
-- Visual and analytical discrepancies
+When creating a TIN surface from 2D zone data, the mesh must align with the original polygon boundaries. Simply triangulating polygon centroids creates a mesh with different edges than the original elements, leading to misalignment between surface representation and simulation geometry.
 
-### The Solution
+### How This Tool Solves It
 
-This tool uses a **dual-path approach**:
+The tool extracts both centroids (for attribute values) and vertices (for mesh geometry) from the input polygons, then interpolates values at vertex locations to create a TIN that matches the original element boundaries.
 
-1. **Centroids** provide the attribute values (depth, water surface) for interpolation
-2. **Vertices** define the mesh structure to match original polygon boundaries
-
-By draping polygon vertices onto an interpolated surface from centroids, the final TIN preserves both accurate values AND correct geometry.
+For a detailed comparison with TUFLOW's triangulation method, see [TUFLOW vs 2D Zone Elements](tuflow_vs_2d_elements.md).
 
 ## How It Works
 
@@ -35,7 +34,7 @@ flowchart TD
         B["Calculate Water Surface<br/>(ws = ground + depth)"]
     end
 
-    subgraph Dual-Path Processing
+    subgraph Processing
         direction LR
         subgraph Centroid Path
             C["Extract Centroids"]
@@ -73,7 +72,7 @@ flowchart TD
     style H fill:#fff9c4
 ```
 
-### Processing Steps Explained
+### Processing Steps
 
 | Step | Description |
 |------|-------------|
@@ -94,8 +93,8 @@ flowchart TD
 ## Installation
 
 1. Download repo to a local folder
-2. Open QGIS with your 2D zone data loaded
-3. Open the Python Console (`View` → `Panles`→ `Python Console`)
+2. Open QGIS with your 2D zone data loaded (sample data included in `data/2d/2D Zones.shp`)
+3. Open the Python Console (`View` → `Panels` → `Python Console`)
 4. Open `polygon_to_tin.py` and run the script.
 5. You can also run it in the console.
 
@@ -109,6 +108,15 @@ sys.path.append('C:/path/to/folder')
 from polygon_to_tin import run_polygon_to_tin
 run_polygon_to_tin()
 ```
+
+## Input Data Requirements
+
+Your polygon layer should have:
+
+- **Polygon geometry** - representing 2D zone elements
+- **Numeric depth field** - water depth values per element
+- **Numeric ground level field** - ground/bed elevation per element
+- **Valid, non-overlapping polygons** - for accurate triangulation
 
 ## Usage
 
@@ -149,15 +157,6 @@ The tool creates `.2dm` mesh files in the specified output folder:
 | `water_surface.2dm` | TIN mesh with water surface elevation |
 | `[field_name].2dm` | Additional TIN if optional field specified |
 
-## Input Data Requirements
-
-Your polygon layer should have:
-
-- **Polygon geometry** - representing 2D zone elements
-- **Numeric depth field** - water depth values per element
-- **Numeric ground level field** - ground/bed elevation per element
-- **Valid, non-overlapping polygons** - for accurate triangulation
-
 ## Tips
 
 - **Resolution**: Use a smaller raster resolution (e.g., 0.5) for more accurate vertex interpolation in areas with high value variation
@@ -172,4 +171,3 @@ Your polygon layer should have:
 | Field not found | Verify the depth/ground fields contain numeric values |
 | Empty TIN output | Check that polygons have valid geometry and non-null attribute values |
 | Processing fails | Review the QGIS log panel for detailed error messages |
-
