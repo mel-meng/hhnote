@@ -46,7 +46,7 @@ Here's what makes vibe coding particularly well-suited for GIS work: **it doesn'
 
 When I used vibe coding to build my tool, the AI didn't write custom algorithms for spatial processing. Instead, it orchestrated calls to existing, proven tools—the same geoprocessing functions that Model Builder uses under the hood.
 
-This is crucial for reliability. The heavy lifting—the actual spatial analysis, the coordinate transformations, the geometry operations—still happens in battle-tested libraries. Vibe coding handles everything else:
+This is crucial for reliability. The heavy lifting—the actual spatial analysis, the geometry operations—still happens in battle-tested libraries. Vibe coding handles everything else:
 
 - **Parameter management**: Figuring out the right arguments to pass to each tool
 - **Workflow orchestration**: Connecting outputs from one step to inputs of the next
@@ -63,17 +63,17 @@ And the UI aspect shouldn't be underestimated. Within my first session of vibe c
 
 Let me be specific about what happened.
 
-I had been working on a particular GIS workflow—on and off—for over a year. I understood all the details intimately. I had documents, notes, old QGIS project files, model files showing the steps. Everything was there, but it wasn't accessible.
+I had been working on a particular GIS workflow—on and off—for over a year. I understood all the details intimately. I had documents, notes, old QGIS project files, model files showing the steps. Everything was there, but I couldn't easily share it with anyone.
 
 When I finally sat down with vibe coding, the transformation was remarkable:
 
 - **Total implementation time**: Under one day (mostly within 1-3 hours of focused work)
 - **Lines of code written manually**: Zero
-- **Prior vibe coding experience**: This was essentially my first or second real project with it
+- **Prior vibe coding experience**: This was essentially my second real project programming QGIS with Python using Cursor. I've used Cursor for a few months with mixed results on various projects.
 
-I started by sharing my existing documentation and workflow descriptions. The AI understood what I was trying to accomplish and began generating the orchestration code. When something wasn't quite right, I described the issue conversationally, and it adjusted.
+I started by sharing my existing notes, and QGIS model files. The AI understood what I was trying to accomplish and began generating the orchestration code. When something wasn't quite right, I described the issue conversationally, and it adjusted.
 
-The thing that struck me most was how natural it felt. I wasn't learning a new programming language or debugging cryptic error messages. I was having a conversation about my workflow, and code emerged from that conversation.
+The thing that struck me most was how natural it felt. I wasn't learning a new programming language or debugging cryptic error messages. I simply ran the script, pasted the error message or screenshot, and Cursor was able to troubleshoot and fix the issues. I was able to add a few more features once my prototype worked.
 
 By the end, I had a packaged tool that I could actually share with others—something that would have taken significantly longer to build and document using traditional approaches.
 
@@ -87,9 +87,9 @@ For example, I needed to create technical documentation comparing how my tool's 
 
 I had the knowledge. I'd read the papers, understood the concepts, worked with the models. But translating that into clear, well-organized documentation? That's a different skill, and it takes time.
 
-With AI assistance, I was able to produce documentation where **about 90% of the content was AI-generated**, based on my prompts and guidance. I verified the technical accuracy, checked the citations, and made adjustments where needed. But the heavy lifting of organizing thoughts, structuring explanations, and producing readable prose? The AI handled that.
+With AI assistance, I was able to produce documentation where **about 90% of the content was AI-generated**, based on my simple prompts and guidance. I verified the technical accuracy, checked the citations, and made adjustments where needed. But the heavy lifting of organizing thoughts, structuring explanations, and producing readable prose? The AI handled that.
 
-Honestly, the result was better than what I would have written myself. Not because the AI knows more about hydraulic modeling than I do—it doesn't—but because it's skilled at clear explanation and logical structure. It took my expertise and presented it more effectively than I could have on my own.
+Honestly, the result was better than what I would have written myself. Not only because the AI knows more about the topic than I do—it does since it finds excellent online resources on its own—but because it's skilled at clear explanation and logical structure. My primary contribution was fact-checking.
 
 ---
 
@@ -99,7 +99,7 @@ If you work with GIS workflows—or really any domain where visual programming t
 
 It's not about replacing your expertise. It's about amplifying it.
 
-You still need to understand your domain. You still need to know what a good workflow looks like. You still need to verify that outputs make sense. But the tedious parts—writing boilerplate code, building interfaces, wrestling with syntax—those can be handled conversationally.
+You still need to understand your domain. You still need to know what a good workflow looks like. You still need to verify that outputs make sense. But the tedious parts—writing boilerplate code, building interfaces, wrestling with syntax—those can be handled by simply asking AI.
 
 For me, vibe coding transformed months of accumulated knowledge into a polished, shareable tool in a matter of hours. It filled the missing 20% that visual programming couldn't reach.
 
@@ -109,5 +109,5 @@ Give it a shot. You might be surprised by what you can build without writing a s
 
 ---
 
-*This article is based on my personal experience using AI-assisted development for GIS workflows. The specific tools and techniques mentioned reflect what worked for my use case—your mileage may vary, but the core principles apply broadly.*
+*Author's Note: In the spirit of vibe coding, this entire article was drafted by AI based on a 5-minute transcript of my verbal reflections. I provided the raw "thought data" and verified the technical accuracy; the AI handled the structure and prose. This is vibe coding in action.*
 
