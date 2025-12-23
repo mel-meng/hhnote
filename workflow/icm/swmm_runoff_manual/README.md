@@ -222,7 +222,7 @@ To set up **one** subcatchment correctly, you performed **5 calculations**, conv
 
 If you have 500 subcatchments with 50 different combinations of soils and surfaces, the risk of a typo or a unit conversion error (forgetting to divide by 12) is nearly 100%.
 
-**Recommendation**: Use the `generate_hydrology_tables_ui.rb` script. It performs all these calculations and table updates automatically based on your initial "Tagging" of the subcatchment runoff hydrology fields in InfoWorks ICM.
+**Recommendation**: Use the ruby scripting to performs all these calculations and table updates automatically based on your initial "Tagging" of the subcatchment runoff hydrology fields in InfoWorks ICM.
 
 
 
