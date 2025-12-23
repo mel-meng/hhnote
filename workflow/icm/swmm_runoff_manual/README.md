@@ -8,7 +8,7 @@ This tutorial explains how to set up subcatchment runoff hydrology in InfoWorks 
 
 Before starting this tutorial, ensure you have:
 1.  **InfoWorks ICM** installed and open.
-2.  Access to the **Reference Library** ([reference_tables.html](resources/reference_tables.html)) which contains the standard physical parameters for soils and land covers.
+2.  Access to the **Reference Library** ([reference_tables.md](resources/reference_tables.md)) which contains the standard physical parameters for soils and land covers.
 3.  A basic understanding of the **Subcatchment Grid** in InfoWorks ICM.
 
 ---
